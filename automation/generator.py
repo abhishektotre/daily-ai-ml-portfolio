@@ -63,7 +63,7 @@ def get_used_signatures(state):
                 used.add(parts[2].lower().strip())
     return used
 
-def generate_next_project(target_day: int = None, domain_override: str = None, execute: bool = True):
+def generate_next_project(target_day: int = None, domain_override: str = None, execute: bool = True, deploy: bool = False):
     state = load_state()
     next_day = target_day if target_day is not None else state["current_day"] + 1
 
@@ -146,6 +146,16 @@ def generate_next_project(target_day: int = None, domain_override: str = None, e
 
     # Refresh Master README
     update_master_readme()
+
+    # Deploy as standalone repository if requested
+    if deploy:
+        from pathlib import Path
+        from .deployer import deploy_project_as_repo
+        deploy_project_as_repo(
+            Path(target_project_dir),
+            title=project["title"],
+            summary=project.get("summary", "")
+        )
 
     return {
         "day": next_day,

@@ -8,7 +8,7 @@ set REPO_DIR=%SCRIPT_DIR%..
 cd /d "%REPO_DIR%"
 
 echo [INFO] Running Daily Project Automation...
-python -m automation.runner --generate --execute --push
+python -m automation.runner --generate --execute --deploy --push
 
 if %ERRORLEVEL% EQU 0 (
     echo [SUCCESS] Daily project successfully created, evaluated, and committed!

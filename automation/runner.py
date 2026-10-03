@@ -71,6 +71,8 @@ def main():
     parser.add_argument("--generate", action="store_true", help="Generate next daily project")
     parser.add_argument("--execute", action="store_true", help="Execute the generated project pipeline")
     parser.add_argument("--push", action="store_true", help="Commit and push changes to Git")
+    parser.add_argument("--deploy", action="store_true", help="Deploy generated project to its own standalone GitHub repository")
+    parser.add_argument("--deploy-all", action="store_true", help="Deploy all existing projects as standalone GitHub repositories")
     parser.add_argument("--status", action="store_true", help="Display current status and domain breakdown")
     parser.add_argument("--day", type=int, default=None, help="Explicit target day number")
     parser.add_argument("--domain", type=str, default=None, choices=DOMAIN_ORDER, help="Override target domain")
@@ -78,9 +80,14 @@ def main():
     args = parser.parse_args()
 
     # If no flags passed, default to showing status or executing generation
-    if not (args.generate or args.execute or args.push or args.status):
+    if not (args.generate or args.execute or args.push or args.status or args.deploy or args.deploy_all):
         parser.print_help()
         sys.exit(0)
+
+    if args.deploy_all:
+        from .deployer import deploy_all_projects
+        deploy_all_projects()
+        return
 
     if args.status:
         show_status()
@@ -91,7 +98,8 @@ def main():
         info = generate_next_project(
             target_day=args.day,
             domain_override=args.domain,
-            execute=execute_pipeline
+            execute=execute_pipeline,
+            deploy=args.deploy
         )
         print(f"\n🎉 Successfully created Day {info['day']:03d} project at {info['project_dir']}")
 
