@@ -73,6 +73,7 @@ def main():
     parser.add_argument("--push", action="store_true", help="Commit and push changes to Git")
     parser.add_argument("--deploy", action="store_true", help="Deploy generated project to its own standalone GitHub repository")
     parser.add_argument("--deploy-all", action="store_true", help="Deploy all existing projects as standalone GitHub repositories")
+    parser.add_argument("--force", action="store_true", help="Override the 1-project-per-calendar-day lock")
     parser.add_argument("--status", action="store_true", help="Display current status and domain breakdown")
     parser.add_argument("--day", type=int, default=None, help="Explicit target day number")
     parser.add_argument("--domain", type=str, default=None, choices=DOMAIN_ORDER, help="Override target domain")
@@ -99,12 +100,13 @@ def main():
             target_day=args.day,
             domain_override=args.domain,
             execute=execute_pipeline,
-            deploy=args.deploy
+            deploy=args.deploy,
+            force=args.force
         )
-        print(f"\n🎉 Successfully created Day {info['day']:03d} project at {info['project_dir']}")
-
-        if args.push:
-            commit_and_push(info)
+        if info:
+            print(f"\n🎉 Successfully created Day {info['day']:03d} project at {info['project_dir']}")
+            if args.push:
+                commit_and_push(info)
 
 if __name__ == "__main__":
     main()

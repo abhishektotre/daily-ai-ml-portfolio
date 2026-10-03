@@ -63,8 +63,21 @@ def get_used_signatures(state):
                 used.add(parts[2].lower().strip())
     return used
 
-def generate_next_project(target_day: int = None, domain_override: str = None, execute: bool = True, deploy: bool = False):
+def generate_next_project(target_day: int = None, domain_override: str = None, execute: bool = True, deploy: bool = False, force: bool = False):
     state = load_state()
+
+    # Enforce strict 1-project-per-calendar-day cadence
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    last_run_str = state.get("last_run_date", "")[:10] if state.get("last_run_date") else ""
+    if last_run_str == today_str and not force and target_day is None:
+        print("=" * 65)
+        print(f"🛑 Daily Lock Active: Today's project (Day {state.get('current_day', 0)}) was already deployed on {today_str}.")
+        print("   To preserve a strict 1-project-per-day cadence on GitHub,")
+        print(f"   Day {state.get('current_day', 0) + 1} will unlock tomorrow.")
+        print("   (Use '--force' if you intentionally wish to override this lock).")
+        print("=" * 65)
+        return None
+
     next_day = target_day if target_day is not None else state["current_day"] + 1
 
     # Domain selection
