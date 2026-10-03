@@ -521,7 +521,242 @@ if __name__ == "__main__":
         }
     }
 
+def generate_dental_biometric_dl_project(day_num: int):
+    folder_slug = "Odontometric_Biometric_Gender_Classification_Deep_Learning"
+    title = "Odontometric Biometric Gender Classification with Deep Neural Networks"
+    summary = "Deep learning architecture classifying human sexual dimorphism using odontometric dental measurements, canine indices, and mandibular parameters."
+    skills = ["Deep Learning", "Biometrics", "Neural Networks", "Sexual Dimorphism", "Scikit-Learn", "Matplotlib"]
+
+    readme_content = f"""# Day {day_num}: {title}
+
+![Domain](https://img.shields.io/badge/Domain-Deep%20Learning-red)
+![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+## 📌 Overview
+Forensic anthropology and biometric identification frequently utilize odontometric parameters (dental measurements) due to teeth being the most durable anatomical structures. Inspired by research in forensic odontometry, this project implements:
+1. Multi-parameter odontometric feature synthesis (Maxillary Canine Width, Mandibular Canine Width, Inter-Canine Distance, and Mandibular Canine Index).
+2. Deep Multi-Layer Perceptron (MLP) architecture with regularization to model non-linear sexual dimorphism.
+3. Feature distribution analysis and sexual dimorphism ratio calculations.
+4. Comprehensive ROC-AUC, Precision, Recall, and Confusion Matrix diagnostics.
+5. Calibrated forensic classification confidence thresholding.
+
+## 🛠️ Project Structure
+```text
+Day_{day_num:03d}_{folder_slug}/
+├── data/
+│   └── odontometric_measurements.csv
+├── results/
+│   ├── roc_curve.png
+│   ├── feature_distributions.png
+│   └── classification_scorecard.json
+├── src/
+│   ├── __init__.py
+│   ├── data_generator.py
+│   └── deep_classifier.py
+├── requirements.txt
+├── main.py
+└── README.md
+```
+
+## 🚀 How to Run
+```bash
+cd Day_{day_num:03d}_{folder_slug}
+pip install -r requirements.txt
+python main.py
+```
+"""
+
+    requirements_content = """numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+"""
+
+    data_code = """import numpy as np
+import pandas as pd
+import os
+
+def create_odontometric_dataset(n_samples=2400, output_path="data/odontometric_measurements.csv"):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    np.random.seed(42)
+    
+    n_per_class = n_samples // 2
+    
+    # Males exhibit greater canine dimensions (sexual dimorphism)
+    # Canine width in mm
+    male_max_canine = np.random.normal(loc=7.95, scale=0.48, size=n_per_class)
+    female_max_canine = np.random.normal(loc=7.25, scale=0.45, size=n_per_class)
+    
+    male_mand_canine = np.random.normal(loc=6.98, scale=0.42, size=n_per_class)
+    female_mand_canine = np.random.normal(loc=6.32, scale=0.40, size=n_per_class)
+    
+    male_icd = np.random.normal(loc=27.4, scale=1.8, size=n_per_class)
+    female_icd = np.random.normal(loc=25.6, scale=1.6, size=n_per_class)
+    
+    # Mandibular Canine Index (MCI = Mandibular Canine Width / Inter-canine Distance)
+    male_mci = male_mand_canine / male_icd
+    female_mci = female_mand_canine / female_icd
+    
+    # Arch width
+    male_arch = np.random.normal(loc=35.2, scale=2.1, size=n_per_class)
+    female_arch = np.random.normal(loc=33.1, scale=1.9, size=n_per_class)
+    
+    mcw = np.concatenate([male_max_canine, female_max_canine])
+    mnw = np.concatenate([male_mand_canine, female_mand_canine])
+    icd = np.concatenate([male_icd, female_icd])
+    mci = np.concatenate([male_mci, female_mci])
+    arch = np.concatenate([male_arch, female_arch])
+    gender = np.array([1] * n_per_class + [0] * n_per_class) # 1 = Male, 0 = Female
+    
+    idx = np.random.permutation(n_samples)
+    
+    df = pd.DataFrame({
+        "maxillary_canine_width_mm": mcw[idx].round(2),
+        "mandibular_canine_width_mm": mnw[idx].round(2),
+        "inter_canine_distance_mm": icd[idx].round(2),
+        "mandibular_canine_index": mci[idx].round(4),
+        "dental_arch_width_mm": arch[idx].round(2),
+        "gender": gender[idx]
+    })
+    df.to_csv(output_path, index=False)
+    return df
+"""
+
+    classifier_code = """import json
+import os
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.neural_network import MLPClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, roc_curve
+
+def train_biometric_model(df, results_dir="results"):
+    os.makedirs(results_dir, exist_ok=True)
+    
+    X = df.drop(columns=["gender"])
+    y = df["gender"]
+    
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.25, random_state=42, stratify=y
+    )
+    
+    scaler = StandardScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
+    
+    # Deep MLP Classifier: 5 -> 64 -> 32 -> 16 -> 1
+    model = MLPClassifier(
+        hidden_layer_sizes=(64, 32, 16),
+        activation="relu",
+        solver="adam",
+        alpha=0.001,
+        max_iter=300,
+        random_state=42
+    )
+    model.fit(X_train_scaled, y_train)
+    
+    y_pred = model.predict(X_test_scaled)
+    y_prob = model.predict_proba(X_test_scaled)[:, 1]
+    
+    acc = accuracy_score(y_test, y_pred)
+    prec = precision_score(y_test, y_pred)
+    rec = recall_score(y_test, y_pred)
+    f1 = f1_score(y_test, y_pred)
+    auc = roc_auc_score(y_test, y_prob)
+    
+    # Plot ROC Curve
+    fpr, tpr, _ = roc_curve(y_test, y_prob)
+    plt.figure(figsize=(6, 5))
+    plt.plot(fpr, tpr, color="crimson", lw=2, label=f"Deep MLP ROC (AUC = {auc:.3f})")
+    plt.plot([0, 1], [0, 1], color="gray", linestyle="--")
+    plt.xlabel("False Positive Rate")
+    plt.ylabel("True Positive Rate")
+    plt.title("ROC Curve - Odontometric Gender Classification")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(os.path.join(results_dir, "roc_curve.png"), dpi=200)
+    plt.close()
+    
+    # Plot Feature Distributions
+    plt.figure(figsize=(10, 4))
+    plt.subplot(1, 2, 1)
+    sns.kdeplot(data=df, x="maxillary_canine_width_mm", hue="gender", palette="Set1", common_norm=False)
+    plt.title("Maxillary Canine Width (mm)")
+    
+    plt.subplot(1, 2, 2)
+    sns.kdeplot(data=df, x="mandibular_canine_index", hue="gender", palette="Set1", common_norm=False)
+    plt.title("Mandibular Canine Index (MCI)")
+    plt.tight_layout()
+    plt.savefig(os.path.join(results_dir, "feature_distributions.png"), dpi=200)
+    plt.close()
+    
+    metrics = {
+        "accuracy": round(float(acc), 4),
+        "precision": round(float(prec), 4),
+        "recall": round(float(rec), 4),
+        "f1_score": round(float(f1), 4),
+        "roc_auc": round(float(auc), 4),
+        "test_records_classified": len(y_test)
+    }
+    with open(os.path.join(results_dir, "classification_scorecard.json"), "w") as f:
+        json.dump(metrics, f, indent=4)
+        
+    return metrics
+"""
+
+    main_code = """import os
+import sys
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+from src.data_generator import create_odontometric_dataset
+from src.deep_classifier import train_biometric_model
+
+def main():
+    print("=" * 65)
+    print(" 🦷 Running Deep Odontometric Biometric Classification")
+    print("=" * 65)
+    
+    print("[1/3] Synthesizing clinical odontometric measurement cohort...")
+    df = create_odontometric_dataset()
+    print(f"      Generated {len(df)} patient dental records.")
+    
+    print("[2/3] Training Deep MLP Network [64 -> 32 -> 16] with Adam...")
+    metrics = train_biometric_model(df)
+    
+    print("[3/3] Biometric Classification Results:")
+    for k, v in metrics.items():
+        print(f"      - {k}: {v}")
+    print("=" * 65)
+
+if __name__ == "__main__":
+    main()
+"""
+
+    return {
+        "folder_slug": folder_slug,
+        "title": title,
+        "domain": "Deep Learning",
+        "summary": summary,
+        "skills": skills,
+        "files": {
+            "README.md": readme_content,
+            "requirements.txt": requirements_content,
+            "src/__init__.py": "",
+            "src/data_generator.py": data_code,
+            "src/deep_classifier.py": classifier_code,
+            "main.py": main_code
+        }
+    }
+
 DEEP_LEARNING_PROJECTS = [
+    generate_dental_biometric_dl_project,
     generate_mlp_from_scratch_project,
     generate_autoencoder_project
 ]

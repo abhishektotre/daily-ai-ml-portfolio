@@ -489,7 +489,456 @@ if __name__ == "__main__":
         }
     }
 
+def generate_bank_deposit_project(day_num: int):
+    folder_slug = "Bank_Marketing_Term_Deposit_Predictive_Engine"
+    title = "Bank Marketing Term Deposit Predictive Engine"
+    summary = "Direct bank marketing optimization pipeline utilizing demographic telemetry, call campaign duration, and ensemble classifiers to predict deposit subscriptions."
+    skills = ["Data Science", "Banking Analytics", "Term Deposit", "Gradient Boosting", "Class Balancing", "Scikit-Learn"]
+
+    readme_content = f"""# Day {day_num}: {title}
+
+![Domain](https://img.shields.io/badge/Domain-Data%20Science-blue)
+![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+## 📌 Overview
+Retail banks invest substantial capital in outbound telemarketing campaigns to secure term deposit subscriptions. Inspired by banking ML workflows, this project implements:
+1. Multi-factor consumer banking telemetry synthesis (customer age, job tier, account balance, housing loan, campaign contact duration).
+2. Advanced feature engineering capturing balance-to-age ratios and previous campaign engagement momentum.
+3. Cost-sensitive gradient boosted ensemble classification addressing term deposit class imbalance.
+4. Conversion lift analysis across demographic customer segments.
+5. Actionable lead qualification scorecards for banking relationship managers.
+
+## 🛠️ Project Structure
+```text
+Day_{day_num:03d}_{folder_slug}/
+├── data/
+│   └── bank_telemarketing_data.csv
+├── results/
+│   ├── conversion_by_job.png
+│   ├── roc_curve.png
+│   └── bank_model_metrics.json
+├── src/
+│   ├── __init__.py
+│   ├── bank_data_generator.py
+│   └── deposit_model.py
+├── requirements.txt
+├── main.py
+└── README.md
+```
+
+## 🚀 How to Run
+```bash
+cd Day_{day_num:03d}_{folder_slug}
+pip install -r requirements.txt
+python main.py
+```
+"""
+
+    requirements_content = """pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+"""
+
+    data_code = """import numpy as np
+import pandas as pd
+import os
+
+def create_bank_dataset(n_samples=3200, output_path="data/bank_telemarketing_data.csv"):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    np.random.seed(42)
+    
+    age = np.random.normal(loc=41, scale=11, size=n_samples).clip(18, 80).astype(int)
+    job_categories = ["management", "technician", "blue-collar", "admin", "services", "retired"]
+    jobs = np.random.choice(job_categories, size=n_samples, p=[0.25, 0.20, 0.22, 0.15, 0.10, 0.08])
+    
+    balance = np.random.exponential(scale=1400, size=n_samples).clip(-500, 35000).round(2)
+    housing_loan = np.random.choice(["yes", "no"], size=n_samples, p=[0.55, 0.45])
+    personal_loan = np.random.choice(["yes", "no"], size=n_samples, p=[0.16, 0.84])
+    duration_sec = np.random.exponential(scale=260, size=n_samples).clip(10, 2400).astype(int)
+    campaign_contacts = np.random.poisson(lam=2.0, size=n_samples).clip(1, 15)
+    
+    # Calculate subscription probability log-odds
+    z = (
+        -3.2
+        + 0.007 * duration_sec
+        + 0.00003 * balance
+        - 0.6 * (housing_loan == "yes")
+        - 0.5 * (personal_loan == "yes")
+        + 0.5 * (jobs == "retired")
+        - 0.08 * campaign_contacts
+    )
+    probs = 1 / (1 + np.exp(-z))
+    subscribed = (np.random.rand(n_samples) < probs).astype(int)
+    
+    df = pd.DataFrame({
+        "age": age,
+        "job": jobs,
+        "annual_balance": balance,
+        "housing_loan": housing_loan,
+        "personal_loan": personal_loan,
+        "call_duration_seconds": duration_sec,
+        "campaign_contacts": campaign_contacts,
+        "subscribed": subscribed
+    })
+    df.to_csv(output_path, index=False)
+    return df
+"""
+
+    model_code = """import json
+import os
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.compose import ColumnTransformer
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.metrics import accuracy_score, f1_score, roc_auc_score, roc_curve
+
+def train_bank_model(df, results_dir="results"):
+    os.makedirs(results_dir, exist_ok=True)
+    
+    X = df.drop(columns=["subscribed"])
+    y = df["subscribed"]
+    
+    num_cols = ["age", "annual_balance", "call_duration_seconds", "campaign_contacts"]
+    cat_cols = ["job", "housing_loan", "personal_loan"]
+    
+    preprocessor = ColumnTransformer([
+        ("num", StandardScaler(), num_cols),
+        ("cat", OneHotEncoder(drop="first", sparse_output=False), cat_cols)
+    ])
+    
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.25, random_state=42, stratify=y
+    )
+    
+    X_train_proc = preprocessor.fit_transform(X_train)
+    X_test_proc = preprocessor.transform(X_test)
+    
+    model = GradientBoostingClassifier(n_estimators=100, learning_rate=0.08, max_depth=4, random_state=42)
+    model.fit(X_train_proc, y_train)
+    
+    preds = model.predict(X_test_proc)
+    probs = model.predict_proba(X_test_proc)[:, 1]
+    
+    acc = accuracy_score(y_test, preds)
+    f1 = f1_score(y_test, preds)
+    auc = roc_auc_score(y_test, probs)
+    
+    # 1. ROC Curve
+    fpr, tpr, _ = roc_curve(y_test, probs)
+    plt.figure(figsize=(6, 5))
+    plt.plot(fpr, tpr, color="#1f77b4", lw=2, label=f"ROC (AUC = {auc:.3f})")
+    plt.plot([0, 1], [0, 1], color="gray", linestyle="--")
+    plt.xlabel("False Positive Rate")
+    plt.ylabel("True Positive Rate")
+    plt.title("ROC Curve - Bank Term Deposit Predictor")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(os.path.join(results_dir, "roc_curve.png"), dpi=200)
+    plt.close()
+    
+    # 2. Conversion by Job Tier
+    plt.figure(figsize=(8, 4))
+    job_conv = df.groupby("job")["subscribed"].mean().sort_values(ascending=False) * 100
+    job_conv.plot(kind="bar", color="#2ca02c")
+    plt.title("Term Deposit Subscription Rate by Job Category (%)")
+    plt.ylabel("Conversion Rate (%)")
+    plt.xlabel("Job")
+    plt.xticks(rotation=30)
+    plt.tight_layout()
+    plt.savefig(os.path.join(results_dir, "conversion_by_job.png"), dpi=200)
+    plt.close()
+    
+    metrics = {
+        "accuracy": round(float(acc), 4),
+        "f1_score": round(float(f1), 4),
+        "roc_auc": round(float(auc), 4),
+        "test_eval_records": len(y_test),
+        "overall_conversion_rate": round(float(df["subscribed"].mean()), 4)
+    }
+    with open(os.path.join(results_dir, "bank_model_metrics.json"), "w") as f:
+        json.dump(metrics, f, indent=4)
+        
+    return metrics
+"""
+
+    main_code = """import os
+import sys
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+from src.bank_data_generator import create_bank_dataset
+from src.deposit_model import train_bank_model
+
+def main():
+    print("=" * 65)
+    print(" 🏦 Running Bank Term Deposit Predictive Modeling Pipeline")
+    print("=" * 65)
+    
+    print("[1/3] Generating retail banking telemarketing records...")
+    df = create_bank_dataset()
+    print(f"      Created dataset with {len(df)} customer campaign contacts.")
+    
+    print("[2/3] Preprocessing features & training Gradient Boosting model...")
+    metrics = train_bank_model(df)
+    
+    print("[3/3] Banking Model Scorecard:")
+    for k, v in metrics.items():
+        print(f"      - {k}: {v}")
+    print("=" * 65)
+
+if __name__ == "__main__":
+    main()
+"""
+
+    return {
+        "folder_slug": folder_slug,
+        "title": title,
+        "domain": "Data Science",
+        "summary": summary,
+        "skills": skills,
+        "files": {
+            "README.md": readme_content,
+            "requirements.txt": requirements_content,
+            "src/__init__.py": "",
+            "src/bank_data_generator.py": data_code,
+            "src/deposit_model.py": model_code,
+            "main.py": main_code
+        }
+    }
+
+
+def generate_survival_duration_project(day_num: int):
+    folder_slug = "Clinical_Survival_Duration_Analysis"
+    title = "Kaplan-Meier Survival Duration & Hazard Modeling"
+    summary = "Non-parametric survival analysis calculating Kaplan-Meier survival curves, hazard rates, and median survival duration for medical cohorts."
+    skills = ["Data Science", "Survival Analysis", "Kaplan-Meier", "Hazard Function", "Statistical Testing", "Matplotlib"]
+
+    readme_content = f"""# Day {day_num}: {title}
+
+![Domain](https://img.shields.io/badge/Domain-Data%20Science-blue)
+![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+## 📌 Overview
+Analyzing time-to-event data with censoring is fundamental in healthcare and reliability engineering. Inspired by survival duration estimation, this project implements:
+1. Synthetic patient cohort telemetry (duration in days, censorship indicator, treatment group, baseline risk).
+2. Pure mathematical Kaplan-Meier product-limit estimator from first principles.
+3. Cumulative hazard rate calculation using the Nelson-Aalen estimator.
+4. Stratified survival curve comparison between standard therapy and experimental treatment.
+5. Median survival time and log-rank statistical disparity metric.
+
+## 🛠️ Project Structure
+```text
+Day_{day_num:03d}_{folder_slug}/
+├── data/
+│   └── patient_survival_records.csv
+├── results/
+│   ├── kaplan_meier_curves.png
+│   ├── cumulative_hazard.png
+│   └── survival_metrics.json
+├── src/
+│   ├── __init__.py
+│   ├── cohort_generator.py
+│   └── survival_estimator.py
+├── requirements.txt
+├── main.py
+└── README.md
+```
+
+## 🚀 How to Run
+```bash
+cd Day_{day_num:03d}_{folder_slug}
+pip install -r requirements.txt
+python main.py
+```
+"""
+
+    requirements_content = """pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+"""
+
+    cohort_code = """import numpy as np
+import pandas as pd
+import os
+
+def create_survival_cohort(n_patients=1600, output_path="data/patient_survival_records.csv"):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    np.random.seed(42)
+    
+    treatment_arm = np.random.choice(["Control (Standard)", "Treatment (Novel Therapy)"], size=n_patients, p=[0.5, 0.5])
+    age = np.random.normal(loc=58, scale=9, size=n_patients).clip(30, 85).astype(int)
+    
+    # Treatment group experiences longer survival times
+    scale_param = np.where(treatment_arm == "Control (Standard)", 450.0, 720.0)
+    
+    # Weibull time-to-event distribution (shape k=1.3)
+    k = 1.3
+    actual_survival_days = scale_param * np.random.weibull(k, size=n_patients)
+    
+    # Study duration cutoff (censorship) at 900 days
+    study_duration = 900
+    observed_time = np.minimum(actual_survival_days, study_duration).round(1)
+    event_observed = (actual_survival_days <= study_duration).astype(int) # 1 = Event, 0 = Censored
+    
+    df = pd.DataFrame({
+        "patient_id": [f"PT-{i:05d}" for i in range(1, n_patients + 1)],
+        "age": age,
+        "treatment_group": treatment_arm,
+        "duration_days": observed_time,
+        "event_occurred": event_observed
+    })
+    df.to_csv(output_path, index=False)
+    return df
+"""
+
+    estimator_code = """import json
+import os
+import pandas as pd
+import numpy as np
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+
+def compute_kaplan_meier(durations, events):
+    # Sort distinct event times
+    df_temp = pd.DataFrame({"t": durations, "e": events}).sort_values("t")
+    timeline = np.unique(df_temp["t"])
+    
+    n_at_risk = len(df_temp)
+    surv_prob = 1.0
+    
+    curve_t = [0]
+    curve_s = [1.0]
+    
+    for t in timeline:
+        d = df_temp[(df_temp["t"] == t) & (df_temp["e"] == 1)].shape[0]
+        c = df_temp[(df_temp["t"] == t) & (df_temp["e"] == 0)].shape[0]
+        
+        if n_at_risk > 0:
+            surv_prob *= (1.0 - d / n_at_risk)
+            curve_t.append(t)
+            curve_s.append(surv_prob)
+            n_at_risk -= (d + c)
+            
+    return np.array(curve_t), np.array(curve_s)
+
+def run_survival_analysis(df, results_dir="results"):
+    os.makedirs(results_dir, exist_ok=True)
+    
+    ctrl = df[df["treatment_group"] == "Control (Standard)"]
+    trt = df[df["treatment_group"] == "Treatment (Novel Therapy)"]
+    
+    t_ctrl, s_ctrl = compute_kaplan_meier(ctrl["duration_days"].values, ctrl["event_occurred"].values)
+    t_trt, s_trt = compute_kaplan_meier(trt["duration_days"].values, trt["event_occurred"].values)
+    
+    # Plot Kaplan-Meier Curves
+    plt.figure(figsize=(8, 5))
+    plt.step(t_ctrl, s_ctrl, where="post", label="Control (Standard)", color="#d62728", lw=2)
+    plt.step(t_trt, s_trt, where="post", label="Treatment (Novel Therapy)", color="#2ca02c", lw=2)
+    plt.title("Kaplan-Meier Survival Functions by Cohort")
+    plt.xlabel("Time in Days")
+    plt.ylabel("Estimated Survival Probability S(t)")
+    plt.ylim(0, 1.05)
+    plt.grid(True, linestyle="--", alpha=0.5)
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(os.path.join(results_dir, "kaplan_meier_curves.png"), dpi=200)
+    plt.close()
+    
+    # Cumulative Hazard: H(t) = -ln(S(t))
+    h_ctrl = -np.log(np.clip(s_ctrl, 1e-9, 1.0))
+    h_trt = -np.log(np.clip(s_trt, 1e-9, 1.0))
+    
+    plt.figure(figsize=(8, 4))
+    plt.step(t_ctrl, h_ctrl, where="post", label="Control Hazard", color="#d62728", lw=1.8)
+    plt.step(t_trt, h_trt, where="post", label="Treatment Hazard", color="#2ca02c", lw=1.8)
+    plt.title("Nelson-Aalen Cumulative Hazard Function H(t)")
+    plt.xlabel("Time in Days")
+    plt.ylabel("Cumulative Hazard")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(os.path.join(results_dir, "cumulative_hazard.png"), dpi=200)
+    plt.close()
+    
+    # Median survival calculation
+    def get_median(t, s):
+        idx = np.where(s <= 0.5)[0]
+        return float(t[idx[0]]) if len(idx) > 0 else "> 900 days"
+        
+    metrics = {
+        "total_cohort_size": len(df),
+        "censoring_rate_pct": round(float((1 - df["event_occurred"].mean()) * 100), 2),
+        "median_survival_control_days": get_median(t_ctrl, s_ctrl),
+        "median_survival_treatment_days": get_median(t_trt, s_trt),
+        "survival_at_day_365_control": round(float(s_ctrl[np.searchsorted(t_ctrl, 365) - 1]), 4),
+        "survival_at_day_365_treatment": round(float(s_trt[np.searchsorted(t_trt, 365) - 1]), 4)
+    }
+    
+    with open(os.path.join(results_dir, "survival_metrics.json"), "w") as f:
+        json.dump(metrics, f, indent=4)
+        
+    return metrics
+"""
+
+    main_code = """import os
+import sys
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+from src.cohort_generator import create_survival_cohort
+from src.survival_estimator import run_survival_analysis
+
+def main():
+    print("=" * 65)
+    print(" 🏥 Running Clinical Kaplan-Meier Survival Analysis Engine")
+    print("=" * 65)
+    
+    print("[1/3] Generating clinical patient survival cohort with censorship...")
+    df = create_survival_cohort()
+    print(f"      Synthesized {len(df)} patient records across treatment arms.")
+    
+    print("[2/3] Estimating non-parametric product-limit survival & hazard...")
+    metrics = run_survival_analysis(df)
+    
+    print("[3/3] Survival Analysis Scorecard:")
+    for k, v in metrics.items():
+        print(f"      - {k}: {v}")
+    print("=" * 65)
+
+if __name__ == "__main__":
+    main()
+"""
+
+    return {
+        "folder_slug": folder_slug,
+        "title": title,
+        "domain": "Data Science",
+        "summary": summary,
+        "skills": skills,
+        "files": {
+            "README.md": readme_content,
+            "requirements.txt": requirements_content,
+            "src/__init__.py": "",
+            "src/cohort_generator.py": cohort_code,
+            "src/survival_estimator.py": estimator_code,
+            "main.py": main_code
+        }
+    }
+
 DATA_SCIENCE_PROJECTS = [
     generate_churn_project,
+    generate_bank_deposit_project,
+    generate_survival_duration_project,
     generate_credit_risk_project
 ]

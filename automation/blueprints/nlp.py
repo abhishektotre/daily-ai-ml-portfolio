@@ -427,7 +427,243 @@ if __name__ == "__main__":
         }
     }
 
+def generate_stock_sentiment_project(day_num: int):
+    folder_slug = "Real_Time_Stock_Market_Sentiment_Analysis_Engine"
+    title = "Real-Time Stock Market Sentiment & Financial News Analytics Engine"
+    summary = "High-throughput financial NLP pipeline computing lexical and VADER sentiment polarity on market headlines, ticker buzz, and volatility signals."
+    skills = ["NLP", "Financial Sentiment", "VADER", "Market Telemetry", "Pandas", "Matplotlib"]
+
+    readme_content = f"""# Day {day_num}: {title}
+
+![Domain](https://img.shields.io/badge/Domain-NLP-purple)
+![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+## 📌 Overview
+Market prices move rapidly based on earnings reports, corporate filings, and breaking news headlines. Inspired by algorithmic trading sentiment engines, this project implements:
+1. Multi-ticker financial news stream generation (AAPL, MSFT, NVDA, TSLA, AMZN).
+2. Domain-adapted financial sentiment extraction using VADER (Valence Aware Dictionary and sEntiment Reasoner).
+3. Aggregate ticker polarity calculation: Positive, Neutral, Negative compound distributions.
+4. Sentiment-to-Market signal classification (Bullish, Neutral, Bearish sentiment score).
+5. Cross-ticker comparative polarity indexing and distribution plots.
+
+## 🛠️ Project Structure
+```text
+Day_{day_num:03d}_{folder_slug}/
+├── data/
+│   └── financial_news_feed.csv
+├── results/
+│   ├── ticker_sentiment_comparison.png
+│   ├── sentiment_distribution.png
+│   └── market_sentiment_summary.json
+├── src/
+│   ├── __init__.py
+│   ├── news_data_generator.py
+│   └── sentiment_analyzer.py
+├── requirements.txt
+├── main.py
+└── README.md
+```
+
+## 🚀 How to Run
+```bash
+cd Day_{day_num:03d}_{folder_slug}
+pip install -r requirements.txt
+python main.py
+```
+"""
+
+    requirements_content = """pandas>=2.0.0
+numpy>=1.24.0
+vaderSentiment>=3.3.2
+matplotlib>=3.7.0
+seaborn>=0.12.0
+"""
+
+    news_data_code = """import pandas as pd
+import numpy as np
+import os
+from datetime import datetime, timedelta
+
+def create_financial_news(n_records=1200, output_path="data/financial_news_feed.csv"):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    np.random.seed(42)
+    
+    tickers = ["AAPL", "MSFT", "NVDA", "TSLA", "AMZN"]
+    
+    bullish_templates = [
+        "{ticker} delivers blowout quarterly earnings, exceeding analyst EPS forecasts by 18%.",
+        "Record-breaking demand for {ticker} next-generation AI chip architectures signals surging revenue.",
+        "Major institutional upgrade lifts {ticker} price target by 25% following breakthrough product launch.",
+        "{ticker} expands strategic cloud partnership, securing massive multi-year enterprise contracts.",
+        "Positive margin expansion and robust cash flow momentum boost {ticker} shares in pre-market rally."
+    ]
+    
+    neutral_templates = [
+        "{ticker} announces upcoming annual shareholder conference scheduled for next quarter.",
+        "{ticker} maintains fiscal guidance in line with consensus market expectations.",
+        "Federal regulatory review underway regarding {ticker} latest acquisition filing.",
+        "{ticker} management reshuffles operational team to focus on international expansion.",
+        "Market analysts maintain hold rating on {ticker} pending release of inflation print."
+    ]
+    
+    bearish_templates = [
+        "{ticker} falls short of quarterly revenue estimates amid supply chain disruptions.",
+        "Disappointing consumer demand forces {ticker} to lower full-year margin outlook.",
+        "Severe antitrust scrutiny and regulatory headwinds pressure {ticker} operating margins.",
+        "{ticker} issues cautious guidance warning of slowing global enterprise software spend.",
+        "Unexpected executive departure and delayed product rollout spark selloff in {ticker}."
+    ]
+    
+    records = []
+    base_date = datetime(2026, 1, 1)
+    
+    for i in range(n_records):
+        ticker = np.random.choice(tickers)
+        bias = np.random.choice(["bullish", "neutral", "bearish"], p=[0.42, 0.30, 0.28])
+        if bias == "bullish":
+            headline = np.random.choice(bullish_templates).format(ticker=ticker)
+        elif bias == "neutral":
+            headline = np.random.choice(neutral_templates).format(ticker=ticker)
+        else:
+            headline = np.random.choice(bearish_templates).format(ticker=ticker)
+            
+        timestamp = base_date + timedelta(hours=int(i * 2.5))
+        records.append({
+            "timestamp": timestamp.strftime("%Y-%m-%d %H:%M:%S"),
+            "ticker": ticker,
+            "headline": headline
+        })
+        
+    df = pd.DataFrame(records)
+    df.to_csv(output_path, index=False)
+    return df
+"""
+
+    sentiment_code = """import json
+import os
+import pandas as pd
+import numpy as np
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import seaborn as sns
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
+def analyze_market_sentiment(df, results_dir="results"):
+    os.makedirs(results_dir, exist_ok=True)
+    
+    analyzer = SentimentIntensityAnalyzer()
+    
+    scores = []
+    for text in df["headline"]:
+        res = analyzer.polarity_scores(text)
+        scores.append(res)
+        
+    score_df = pd.DataFrame(scores)
+    df["compound"] = score_df["compound"]
+    df["pos"] = score_df["pos"]
+    df["neu"] = score_df["neu"]
+    df["neg"] = score_df["neg"]
+    
+    def classify_sentiment(compound):
+        if compound >= 0.05:
+            return "Bullish"
+        elif compound <= -0.05:
+            return "Bearish"
+        else:
+            return "Neutral"
+            
+    df["sentiment_signal"] = df["compound"].apply(classify_sentiment)
+    
+    # 1. Ticker Mean Sentiment Comparison Plot
+    ticker_agg = df.groupby("ticker")["compound"].mean().reset_index()
+    
+    plt.figure(figsize=(8, 4))
+    colors = ["#2ca02c" if v >= 0 else "#d62728" for v in ticker_agg["compound"]]
+    plt.bar(ticker_agg["ticker"], ticker_agg["compound"], color=colors)
+    plt.axhline(0, color="gray", linestyle="--")
+    plt.title("Net Sentiment Polarity Score by Ticker (VADER)")
+    plt.xlabel("Ticker")
+    plt.ylabel("Mean Compound Score (-1.0 to +1.0)")
+    plt.tight_layout()
+    plt.savefig(os.path.join(results_dir, "ticker_sentiment_comparison.png"), dpi=200)
+    plt.close()
+    
+    # 2. Overall Sentiment Distribution
+    plt.figure(figsize=(6, 4))
+    sns.countplot(data=df, x="sentiment_signal", palette="coolwarm", order=["Bullish", "Neutral", "Bearish"])
+    plt.title("Financial Headline Sentiment Distribution")
+    plt.xlabel("Sentiment Category")
+    plt.ylabel("Count")
+    plt.tight_layout()
+    plt.savefig(os.path.join(results_dir, "sentiment_distribution.png"), dpi=200)
+    plt.close()
+    
+    summary = {
+        "total_headlines_analyzed": len(df),
+        "mean_market_sentiment": round(float(df["compound"].mean()), 4),
+        "sentiment_counts": df["sentiment_signal"].value_counts().to_dict(),
+        "ticker_rankings": {row["ticker"]: round(float(row["compound"]), 4) for _, row in ticker_agg.iterrows()}
+    }
+    
+    with open(os.path.join(results_dir, "market_sentiment_summary.json"), "w") as f:
+        json.dump(summary, f, indent=4)
+        
+    return summary
+"""
+
+    main_code = """import os
+import sys
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+from src.news_data_generator import create_financial_news
+from src.sentiment_analyzer import analyze_market_sentiment
+
+def main():
+    print("=" * 65)
+    print(" 📈 Running Real-Time Stock Market Sentiment Analytics Engine")
+    print("=" * 65)
+    
+    print("[1/3] Ingesting multi-ticker financial news stream...")
+    df = create_financial_news()
+    print(f"      Processed {len(df)} financial news headlines across {df['ticker'].nunique()} tickers.")
+    
+    print("[2/3] Computing VADER compound polarity & bullish/bearish signals...")
+    summary = analyze_market_sentiment(df)
+    
+    print("[3/3] Financial Sentiment Scorecard:")
+    print(f"      - Overall Market Sentiment Index: {summary['mean_market_sentiment']}")
+    print(f"      - Signals Breakdown: {summary['sentiment_counts']}")
+    print("      - Ticker Polarity Ranks:")
+    for ticker, score in summary["ticker_rankings"].items():
+        print(f"        * {ticker}: {score:+.4f}")
+    print("=" * 65)
+
+if __name__ == "__main__":
+    main()
+"""
+
+    return {
+        "folder_slug": folder_slug,
+        "title": title,
+        "domain": "Natural Language Processing",
+        "summary": summary,
+        "skills": skills,
+        "files": {
+            "README.md": readme_content,
+            "requirements.txt": requirements_content,
+            "src/__init__.py": "",
+            "src/news_data_generator.py": news_data_code,
+            "src/sentiment_analyzer.py": sentiment_code,
+            "main.py": main_code
+        }
+    }
+
 NLP_PROJECTS = [
+    generate_stock_sentiment_project,
     generate_sentiment_analysis_project,
     generate_textrank_summarizer_project
 ]

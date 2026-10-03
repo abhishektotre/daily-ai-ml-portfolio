@@ -1,0 +1,79 @@
+{
+    "total_expenses_processed": 900,
+    "total_spend_usd": 169950.06,
+    "anomalies_flagged_count": 9,
+    "category_audit_decisions": [
+        {
+            "category": "Dining",
+            "status": "CRITICAL_OVERSPEND",
+            "total_spent": 781.24,
+            "budget_limit": 600.0,
+            "utilization_pct": 130.2,
+            "recommendation": "Freeze non-essential Dining spend immediately and rebalance from surplus categories."
+        },
+        {
+            "category": "Groceries",
+            "status": "CRITICAL_OVERSPEND",
+            "total_spent": 9425.55,
+            "budget_limit": 1500.0,
+            "utilization_pct": 628.4,
+            "recommendation": "Freeze non-essential Groceries spend immediately and rebalance from surplus categories."
+        },
+        {
+            "category": "Healthcare",
+            "status": "CRITICAL_OVERSPEND",
+            "total_spent": 4845.21,
+            "budget_limit": 500.0,
+            "utilization_pct": 969.0,
+            "recommendation": "Freeze non-essential Healthcare spend immediately and rebalance from surplus categories."
+        },
+        {
+            "category": "Infrastructure",
+            "status": "CRITICAL_OVERSPEND",
+            "total_spent": 47284.89,
+            "budget_limit": 4000.0,
+            "utilization_pct": 1182.1,
+            "recommendation": "Freeze non-essential Infrastructure spend immediately and rebalance from surplus categories."
+        },
+        {
+            "category": "Software",
+            "status": "CRITICAL_OVERSPEND",
+            "total_spent": 3279.69,
+            "budget_limit": 400.0,
+            "utilization_pct": 819.9,
+            "recommendation": "Freeze non-essential Software spend immediately and rebalance from surplus categories."
+        },
+        {
+            "category": "Subscriptions",
+            "status": "CRITICAL_OVERSPEND",
+            "total_spent": 1452.9,
+            "budget_limit": 200.0,
+            "utilization_pct": 726.5,
+            "recommendation": "Freeze non-essential Subscriptions spend immediately and rebalance from surplus categories."
+        },
+        {
+            "category": "Transportation",
+            "status": "CRITICAL_OVERSPEND",
+            "total_spent": 8462.21,
+            "budget_limit": 800.0,
+            "utilization_pct": 1057.8,
+            "recommendation": "Freeze non-essential Transportation spend immediately and rebalance from surplus categories."
+        },
+        {
+            "category": "Travel",
+            "status": "CRITICAL_OVERSPEND",
+            "total_spent": 62535.77,
+            "budget_limit": 3000.0,
+            "utilization_pct": 2084.5,
+            "recommendation": "Freeze non-essential Travel spend immediately and rebalance from surplus categories."
+        },
+        {
+            "category": "Workspace",
+            "status": "CRITICAL_OVERSPEND",
+            "total_spent": 31882.6,
+            "budget_limit": 2000.0,
+            "utilization_pct": 1594.1,
+            "recommendation": "Freeze non-essential Workspace spend immediately and rebalance from surplus categories."
+        }
+    ]
+}

@@ -46,6 +46,23 @@ def save_state(state):
     with open(STATE_FILE, "w") as f:
         json.dump(state, f, indent=4)
 
+def get_used_signatures(state):
+    used = set()
+    # From history in state
+    for p in state.get("projects_history", []):
+        f = p.get("folder", "")
+        slug = f.split("_", 2)[-1] if "_" in f else f
+        used.add(slug.lower().strip())
+        used.add(p.get("title", "").lower().strip())
+
+    # Also scan physical projects directory
+    if os.path.exists(PROJECTS_DIR):
+        for entry in os.listdir(PROJECTS_DIR):
+            parts = entry.split("_", 2)
+            if len(parts) >= 3:
+                used.add(parts[2].lower().strip())
+    return used
+
 def generate_next_project(target_day: int = None, domain_override: str = None, execute: bool = True):
     state = load_state()
     next_day = target_day if target_day is not None else state["current_day"] + 1
@@ -61,14 +78,21 @@ def generate_next_project(target_day: int = None, domain_override: str = None, e
     domain_name = domain_info["name"]
     blueprint_list = domain_info["projects"]
 
-    # Calculate index in blueprint list for this domain
-    domain_count = state["domain_counts"].get(domain_name, 0)
+    used_sigs = get_used_signatures(state)
 
-    if domain_count < len(blueprint_list):
-        project = blueprint_list[domain_count](next_day)
-    else:
-        # Use dynamic procedural synthesizer
-        project = synthesize_project(next_day, domain_key)
+    # 1. Select first available blueprint in this domain that has not been used
+    project = None
+    for bp_func in blueprint_list:
+        candidate = bp_func(next_day)
+        cand_slug = candidate["folder_slug"].lower().strip()
+        cand_title = candidate["title"].lower().strip()
+        if cand_slug not in used_sigs and cand_title not in used_sigs:
+            project = candidate
+            break
+
+    # 2. If all curated blueprints for this domain have been used, dynamically synthesize a unique project
+    if project is None:
+        project = synthesize_project(next_day, domain_key, used_slugs=used_sigs)
 
     folder_name = f"Day_{next_day:03d}_{project['folder_slug']}"
     target_project_dir = os.path.join(PROJECTS_DIR, folder_name)

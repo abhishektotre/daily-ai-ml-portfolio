@@ -99,7 +99,10 @@ DOMAINS_CONFIG = [
     }
 ]
 
-def synthesize_project(day_num: int, domain_key: str = None):
+def synthesize_project(day_num: int, domain_key: str = None, used_slugs: set = None):
+    if used_slugs is None:
+        used_slugs = set()
+
     # Select domain in round-robin if not specified
     if not domain_key:
         domain_idx = (day_num - 1) % len(DOMAINS_CONFIG)
@@ -107,16 +110,30 @@ def synthesize_project(day_num: int, domain_key: str = None):
     else:
         cfg = next((c for c in DOMAINS_CONFIG if c["domain"].lower().replace(" ", "_") == domain_key), DOMAINS_CONFIG[0])
         
-    topic_idx = ((day_num - 1) // len(DOMAINS_CONFIG)) % len(cfg["topics"])
-    slug_name, title, summary = cfg["topics"][topic_idx]
+    topic_count = len(cfg["topics"])
+    chosen_topic = None
+    folder_slug = None
     
-    # If wrapped around multiple cycles, add variation tag
-    cycle = (day_num - 1) // (len(DOMAINS_CONFIG) * len(cfg["topics"]))
-    if cycle > 0:
-        slug_name = f"{slug_name}_v{cycle+1}"
-        title = f"{title} (Advanced Iteration {cycle+1})"
+    for attempt in range(100):
+        t_idx = ((day_num - 1 + attempt) // len(DOMAINS_CONFIG)) % topic_count
+        slug_name, title, summary = cfg["topics"][t_idx]
         
-    folder_slug = f"{cfg['slug_prefix']}_{slug_name}"
+        cycle = (day_num - 1 + attempt) // (len(DOMAINS_CONFIG) * topic_count)
+        if cycle > 0:
+            slug_name = f"{slug_name}_v{cycle+1}"
+            title = f"{title} (Advanced Iteration {cycle+1})"
+            
+        cand_slug = f"{cfg['slug_prefix']}_{slug_name}"
+        if cand_slug.lower().strip() not in used_slugs and title.lower().strip() not in used_slugs:
+            chosen_topic = (slug_name, title, summary)
+            folder_slug = cand_slug
+            break
+            
+    if not chosen_topic:
+        slug_name = f"Specialized_{cfg['slug_prefix']}_Model_Run{day_num}"
+        title = f"{cfg['domain']} Specialized Advanced Analytics Architecture"
+        summary = f"Custom analytical pipeline formulating advanced statistical modeling for {cfg['domain']}."
+        folder_slug = f"{cfg['slug_prefix']}_{slug_name}"
     
     readme = f"""# Day {day_num}: {title}
 

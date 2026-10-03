@@ -1,14 +1,14 @@
 {
-    "current_day": 3,
-    "total_projects": 3,
-    "last_run_date": "2026-10-03T19:31:17.737890",
+    "current_day": 8,
+    "total_projects": 8,
+    "last_run_date": "2026-10-03T19:45:36.425592",
     "domain_counts": {
-        "Data Science": 1,
-        "Data Analytics": 1,
+        "Data Science": 2,
+        "Data Analytics": 2,
         "Machine Learning": 1,
-        "Deep Learning": 0,
-        "Natural Language Processing": 0,
-        "Artificial Intelligence": 0
+        "Deep Learning": 1,
+        "Natural Language Processing": 1,
+        "Artificial Intelligence": 1
     },
     "projects_history": [
         {
@@ -55,6 +55,81 @@
                 "Scikit-Learn"
             ],
             "created_at": "2026-10-03T19:31:17.737898"
+        },
+        {
+            "day": 4,
+            "title": "Odontometric Biometric Gender Classification with Deep Neural Networks",
+            "domain": "Deep Learning",
+            "folder": "projects/Day_004_Odontometric_Biometric_Gender_Classification_Deep_Learning",
+            "skills": [
+                "Deep Learning",
+                "Biometrics",
+                "Neural Networks",
+                "Sexual Dimorphism",
+                "Scikit-Learn",
+                "Matplotlib"
+            ],
+            "created_at": "2026-10-03T19:44:39.042496"
+        },
+        {
+            "day": 5,
+            "title": "Real-Time Stock Market Sentiment & Financial News Analytics Engine",
+            "domain": "Natural Language Processing",
+            "folder": "projects/Day_005_Real_Time_Stock_Market_Sentiment_Analysis_Engine",
+            "skills": [
+                "NLP",
+                "Financial Sentiment",
+                "VADER",
+                "Market Telemetry",
+                "Pandas",
+                "Matplotlib"
+            ],
+            "created_at": "2026-10-03T19:45:00.789648"
+        },
+        {
+            "day": 6,
+            "title": "Smart Expense Assistant with Autonomous Agent Workflows",
+            "domain": "Artificial Intelligence",
+            "folder": "projects/Day_006_Smart_Expense_Assistant_Autonomous_Workflow_Agent",
+            "skills": [
+                "AI",
+                "Autonomous Workflows",
+                "Financial Agent",
+                "Decision Trees",
+                "Anomaly Detection",
+                "Matplotlib"
+            ],
+            "created_at": "2026-10-03T19:45:09.028444"
+        },
+        {
+            "day": 7,
+            "title": "Bank Marketing Term Deposit Predictive Engine",
+            "domain": "Data Science",
+            "folder": "projects/Day_007_Bank_Marketing_Term_Deposit_Predictive_Engine",
+            "skills": [
+                "Data Science",
+                "Banking Analytics",
+                "Term Deposit",
+                "Gradient Boosting",
+                "Class Balancing",
+                "Scikit-Learn"
+            ],
+            "created_at": "2026-10-03T19:45:28.443560"
+        },
+        {
+            "day": 8,
+            "title": "Epidemiological Time-Series Trends & Public Health KPI Dashboard",
+            "domain": "Data Analytics",
+            "folder": "projects/Day_008_Epidemiological_Time_Series_Analytics_Dashboard",
+            "skills": [
+                "Data Analytics",
+                "Time Series",
+                "Rolling Averages",
+                "Public Health",
+                "Pandas",
+                "Matplotlib"
+            ],
+            "created_at": "2026-10-03T19:45:36.425603"
         }
     ]
 }

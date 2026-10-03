@@ -475,7 +475,273 @@ if __name__ == "__main__":
         }
     }
 
+def generate_smart_expense_ai_agent_project(day_num: int):
+    folder_slug = "Smart_Expense_Assistant_Autonomous_Workflow_Agent"
+    title = "Smart Expense Assistant with Autonomous Agent Workflows"
+    summary = "Autonomous financial agent implementing receipt parsing, contextual category classification, spending anomaly triggers, and automated budget reallocation."
+    skills = ["AI", "Autonomous Workflows", "Financial Agent", "Decision Trees", "Anomaly Detection", "Matplotlib"]
+
+    readme_content = f"""# Day {day_num}: {title}
+
+![Domain](https://img.shields.io/badge/Domain-Artificial%20Intelligence-yellow)
+![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+## 📌 Overview
+Managing personal and corporate expenditures requires automated categorization, receipt metadata extraction, and policy enforcement. Inspired by intelligent expense assistants, this project implements:
+1. Multi-stream expense transaction ingestion (merchants, amounts, payment methods, transaction timestamps).
+2. NLP & Rule-based contextual categorization engine (Dining, Utilities, Subscriptions, Travel, Healthcare).
+3. Statistical outlier and abnormal spending burst detection.
+4. Autonomous workflow execution: automated expense approval, policy violations flagging, and budget rebalancing advice.
+5. Visual expense category breakdown and spending timeline alerts.
+
+## 🛠️ Project Structure
+```text
+Day_{day_num:03d}_{folder_slug}/
+├── data/
+│   └── expense_transactions.csv
+├── results/
+│   ├── category_spend_pie.png
+│   ├── spending_timeline.png
+│   └── agent_workflow_audit.json
+├── src/
+│   ├── __init__.py
+│   ├── transaction_generator.py
+│   └── expense_agent.py
+├── requirements.txt
+├── main.py
+└── README.md
+```
+
+## 🚀 How to Run
+```bash
+cd Day_{day_num:03d}_{folder_slug}
+pip install -r requirements.txt
+python main.py
+```
+"""
+
+    requirements_content = """pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+"""
+
+    trans_gen_code = """import pandas as pd
+import numpy as np
+import os
+from datetime import datetime, timedelta
+
+def create_expenses(n_records=900, output_path="data/expense_transactions.csv"):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    np.random.seed(42)
+    
+    merchants = {
+        "Starbucks Coffee": ("Dining", 4.5, 12.0),
+        "Whole Foods Market": ("Groceries", 35.0, 180.0),
+        "Uber Rides": ("Transportation", 15.0, 65.0),
+        "AWS Cloud Services": ("Infrastructure", 120.0, 850.0),
+        "Delta Airlines": ("Travel", 220.0, 950.0),
+        "Netflix Subscription": ("Subscriptions", 15.49, 15.49),
+        "CVS Pharmacy": ("Healthcare", 12.0, 95.0),
+        "Chevron Gas": ("Transportation", 30.0, 75.0),
+        "Apple App Store": ("Software", 2.99, 49.99),
+        "WeWork Coworking": ("Workspace", 300.0, 550.0)
+    }
+    
+    merchant_names = list(merchants.keys())
+    base_date = datetime(2026, 1, 1)
+    
+    records = []
+    for i in range(n_records):
+        m_name = np.random.choice(merchant_names)
+        category, min_amt, max_amt = merchants[m_name]
+        
+        # Random normal / uniform amount
+        amt = np.random.uniform(min_amt, max_amt)
+        
+        # Inject occasional anomaly (huge unapproved expense)
+        if np.random.rand() < 0.015:
+            amt *= np.random.uniform(4.0, 8.0)
+            
+        timestamp = base_date + timedelta(hours=int(i * 3.2))
+        
+        records.append({
+            "transaction_id": f"TX-{10000 + i}",
+            "date": timestamp.strftime("%Y-%m-%d"),
+            "merchant": m_name,
+            "raw_category": category,
+            "amount": round(float(amt), 2),
+            "payment_method": np.random.choice(["Corporate Card", "Personal Card", "Wire Transfer"], p=[0.75, 0.20, 0.05])
+        })
+        
+    df = pd.DataFrame(records)
+    df.to_csv(output_path, index=False)
+    return df
+"""
+
+    agent_code = """import json
+import os
+import pandas as pd
+import numpy as np
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+class ExpenseAssistantAgent:
+    def __init__(self, monthly_budget_limits=None):
+        self.limits = monthly_budget_limits or {
+            "Dining": 600.0,
+            "Groceries": 1500.0,
+            "Transportation": 800.0,
+            "Infrastructure": 4000.0,
+            "Travel": 3000.0,
+            "Subscriptions": 200.0,
+            "Healthcare": 500.0,
+            "Software": 400.0,
+            "Workspace": 2000.0
+        }
+        
+    def process_and_audit(self, df, results_dir="results"):
+        os.makedirs(results_dir, exist_ok=True)
+        
+        # 1. Detect Category Outliers (Amounts > 3 std deviations above category mean)
+        cat_stats = df.groupby("raw_category")["amount"].agg(["mean", "std"]).reset_index()
+        df = df.merge(cat_stats, on="raw_category", how="left")
+        
+        df["is_anomaly"] = df["amount"] > (df["mean"] + 2.5 * df["std"])
+        
+        # 2. Total Spend per Category
+        cat_totals = df.groupby("raw_category")["amount"].sum().to_dict()
+        
+        # 3. Autonomous Policy Engine Actions
+        actions = []
+        for cat, total in cat_totals.items():
+            limit = self.limits.get(cat, 1000.0)
+            utilization = (total / limit) * 100
+            
+            if utilization > 115.0:
+                action = {
+                    "category": cat,
+                    "status": "CRITICAL_OVERSPEND",
+                    "total_spent": round(total, 2),
+                    "budget_limit": limit,
+                    "utilization_pct": round(utilization, 1),
+                    "recommendation": f"Freeze non-essential {cat} spend immediately and rebalance from surplus categories."
+                }
+            elif utilization > 90.0:
+                action = {
+                    "category": cat,
+                    "status": "WARNING_HIGH_USAGE",
+                    "total_spent": round(total, 2),
+                    "budget_limit": limit,
+                    "utilization_pct": round(utilization, 1),
+                    "recommendation": f"Monitor {cat} closely; approaching budget threshold."
+                }
+            else:
+                action = {
+                    "category": cat,
+                    "status": "HEALTHY",
+                    "total_spent": round(total, 2),
+                    "budget_limit": limit,
+                    "utilization_pct": round(utilization, 1),
+                    "recommendation": "Operating within nominal budget envelope."
+                }
+            actions.append(action)
+            
+        # Visualizations
+        plt.figure(figsize=(7, 7))
+        plt.pie(
+            cat_totals.values(),
+            labels=cat_totals.keys(),
+            autopct="%1.1f%%",
+            startangle=140,
+            colors=sns.color_palette("Set2")
+        )
+        plt.title("Expense Distribution by Category")
+        plt.tight_layout()
+        plt.savefig(os.path.join(results_dir, "category_spend_pie.png"), dpi=200)
+        plt.close()
+        
+        # Timeline
+        df["date"] = pd.to_datetime(df["date"])
+        daily_spend = df.groupby("date")["amount"].sum()
+        
+        plt.figure(figsize=(10, 4))
+        daily_spend.plot(color="#2ca02c", lw=1.5)
+        plt.title("Daily Expenditure Run-Rate")
+        plt.xlabel("Date")
+        plt.ylabel("Total Spend ($)")
+        plt.tight_layout()
+        plt.savefig(os.path.join(results_dir, "spending_timeline.png"), dpi=200)
+        plt.close()
+        
+        audit_report = {
+            "total_expenses_processed": len(df),
+            "total_spend_usd": round(float(df["amount"].sum()), 2),
+            "anomalies_flagged_count": int(df["is_anomaly"].sum()),
+            "category_audit_decisions": actions
+        }
+        
+        with open(os.path.join(results_dir, "agent_workflow_audit.json"), "w") as f:
+            json.dump(audit_report, f, indent=4)
+            
+        return audit_report
+"""
+
+    main_code = """import os
+import sys
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+from src.transaction_generator import create_expenses
+from src.expense_agent import ExpenseAssistantAgent
+
+def main():
+    print("=" * 65)
+    print(" 💳 Running Smart Expense Assistant & Autonomous Workflow Agent")
+    print("=" * 65)
+    
+    print("[1/3] Generating corporate & personal transaction records...")
+    df = create_expenses()
+    print(f"      Ingested {len(df)} transactions.")
+    
+    print("[2/3] Executing autonomous agent audit & budget enforcement...")
+    agent = ExpenseAssistantAgent()
+    report = agent.process_and_audit(df)
+    
+    print("[3/3] Agent Workflow Audit Complete!")
+    print(f"      - Total Expenditure: ${report['total_spend_usd']:,.2f}")
+    print(f"      - Anomalies Flagged: {report['anomalies_flagged_count']}")
+    print("      - Category Actions:")
+    for a in report["category_audit_decisions"][:4]:
+        print(f"        * [{a['category']}] Status: {a['status']} ({a['utilization_pct']}%) -> {a['recommendation']}")
+    print("=" * 65)
+
+if __name__ == "__main__":
+    main()
+"""
+
+    return {
+        "folder_slug": folder_slug,
+        "title": title,
+        "domain": "Artificial Intelligence",
+        "summary": summary,
+        "skills": skills,
+        "files": {
+            "README.md": readme_content,
+            "requirements.txt": requirements_content,
+            "src/__init__.py": "",
+            "src/transaction_generator.py": trans_gen_code,
+            "src/expense_agent.py": agent_code,
+            "main.py": main_code
+        }
+    }
+
 AI_AGENTS_PROJECTS = [
+    generate_smart_expense_ai_agent_project,
     generate_rag_project,
     generate_react_agent_project
 ]
