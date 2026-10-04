@@ -60,3 +60,8 @@ venv.bak/
 
 # Standalone project repositories
 projects/*/.git/
+
+# Logs & temporary runtime outputs
+logs/
+*.log
+
