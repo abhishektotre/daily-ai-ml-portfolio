@@ -56,9 +56,9 @@ def update_master_readme():
             domain = p.get("domain", "Data Science")
             badge = f"![{domain}]({DOMAIN_BADGE_MAP.get(domain, 'https://img.shields.io/badge/Field-blue')})"
             title = p.get("title", "Project")
-            folder = p.get("folder", "")
+            target_url = p.get("repo_url") or folder
+            link = f"[{title}]({target_url})" if target_url else title
             skills = ", ".join([f"`{s}`" for s in p.get("skills", [])[:3]])
-            link = f"[{title}]({folder})" if folder else title
             rows.append(f"| {day_fmt} | {badge} | {link} | {skills} | ✅ Completed |")
         table_rows = "\n".join(rows)
 

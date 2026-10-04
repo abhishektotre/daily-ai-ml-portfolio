@@ -25,8 +25,8 @@
 
 | Day | Domain | Project & Architecture | Core Tools / Techniques | Status |
 | :---: | :---: | :--- | :--- | :---: |
-| **Day 002** | ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-green) | [SaaS Monthly Cohort Retention & Churn Analytics](projects/Day_002_SaaS_Cohort_Retention_Analytics) | `Data Analytics`, `Cohort Analysis`, `Retention Matrix` | ✅ Completed |
-| **Day 001** | ![Data Science](https://img.shields.io/badge/Data%20Science-blue) | [Customer Churn Prediction & Retention Analytics](projects/Day_001_Customer_Churn_Prediction) | `Data Science`, `EDA`, `Feature Engineering` | ✅ Completed |
+| **Day 002** | ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-green) | [SaaS Monthly Cohort Retention & Churn Analytics](https://github.com/abhishektotre/saas-cohort-retention-analytics) | `Data Analytics`, `Cohort Analysis`, `Retention Matrix` | ✅ Completed |
+| **Day 001** | ![Data Science](https://img.shields.io/badge/Data%20Science-blue) | [Customer Churn Prediction & Retention Analytics](https://github.com/abhishektotre/customer-churn-prediction) | `Data Science`, `EDA`, `Feature Engineering` | ✅ Completed |
 
 ---
 
@@ -93,4 +93,4 @@ python automation/runner.py --generate --execute --push
 python automation/runner.py --status
 ```
 
-*Last synchronized: `2026-10-04 17:20:21 UTC`*
+*Last synchronized: `2026-10-04 18:28:40 UTC`*

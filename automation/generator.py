@@ -164,11 +164,15 @@ def generate_next_project(target_day: int = None, domain_override: str = None, e
     if deploy:
         from pathlib import Path
         from .deployer import deploy_project_as_repo
-        deploy_project_as_repo(
+        ok, repo_url = deploy_project_as_repo(
             Path(target_project_dir),
             title=project["title"],
             summary=project.get("summary", "")
         )
+        if ok and repo_url:
+            state["projects_history"][-1]["repo_url"] = repo_url
+            save_state(state)
+            update_master_readme()
 
     return {
         "day": next_day,

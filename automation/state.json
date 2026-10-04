@@ -24,7 +24,8 @@
                 "Risk Profiling",
                 "Matplotlib"
             ],
-            "created_at": "2026-10-03T19:23:38.054483"
+            "created_at": "2026-10-03T19:23:38.054483",
+            "repo_url": "https://github.com/abhishektotre/customer-churn-prediction"
         },
         {
             "day": 2,
@@ -39,7 +40,8 @@
                 "Pandas",
                 "Seaborn"
             ],
-            "created_at": "2026-10-04T17:20:21.172245"
+            "created_at": "2026-10-04T17:20:21.172245",
+            "repo_url": "https://github.com/abhishektotre/saas-cohort-retention-analytics"
         }
     ]
 }
