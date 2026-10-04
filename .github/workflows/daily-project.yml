@@ -35,7 +35,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.AUTO_GH_TOKEN }}
           GITHUB_USERNAME: abhishektotre
         run: |
-          python automation/runner.py --generate --execute --deploy
+          python -m automation.runner --generate --execute --deploy
 
       - name: Commit & Push Dashboard Updates
         run: |

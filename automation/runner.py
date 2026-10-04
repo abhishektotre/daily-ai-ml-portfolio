@@ -13,8 +13,13 @@ try:
 except Exception:
     pass
 
-from .generator import generate_next_project, load_state
-from .blueprints import DOMAIN_ORDER, DOMAIN_REGISTRY
+try:
+    from .generator import generate_next_project, load_state
+    from .blueprints import DOMAIN_ORDER, DOMAIN_REGISTRY
+except (ImportError, ValueError):
+    sys.path.insert(0, BASE_DIR)
+    from automation.generator import generate_next_project, load_state
+    from automation.blueprints import DOMAIN_ORDER, DOMAIN_REGISTRY
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 

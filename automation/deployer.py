@@ -151,6 +151,16 @@ def deploy_project_as_repo(project_dir: Path, title: str = "", summary: str = ""
 
     if res_push.returncode == 0:
         print(f"\n🎉 SUCCESS! Deployed to standalone repository:\n   👉 {clean_url}\n")
+        # Clean up local project .git directory so parent orchestrator does not track it as a gitlink submodule
+        if git_dir.exists():
+            try:
+                def on_rm_error(func, path, exc_info):
+                    import stat
+                    os.chmod(path, stat.S_IWRITE)
+                    func(path)
+                shutil.rmtree(git_dir, onerror=on_rm_error)
+            except Exception:
+                pass
         return True, clean_url
     else:
         err_msg = (res_push.stderr or res_push.stdout) or ""
