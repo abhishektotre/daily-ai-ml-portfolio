@@ -1,0 +1,8 @@
+{
+    "pr_auc": 0.9504,
+    "true_negatives": 1231,
+    "false_positives": 0,
+    "false_negatives": 2,
+    "true_positives": 17,
+    "fraud_capture_rate_recall": 0.8947
+}
