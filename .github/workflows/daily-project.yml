@@ -2,8 +2,13 @@ name: Daily AI & Data Science Project Cloud Automation
 
 on:
   schedule:
-    # Runs daily at 03:00 UTC (08:30 AM IST)
-    - cron: '0 3 * * *'
+    # Multiple staggered off-peak schedules across early morning (IST)
+    - cron: '37 20 * * *' # 02:07 AM IST
+    - cron: '19 22 * * *' # 03:49 AM IST
+    - cron: '43 0 * * *'  # 06:13 AM IST
+    - cron: '27 2 * * *'  # 07:57 AM IST
+    - cron: '13 4 * * *'  # 09:43 AM IST
+    - cron: '31 6 * * *'  # 12:01 PM IST
   workflow_dispatch: # Allows manual trigger anytime from GitHub Actions tab
 
 permissions:
