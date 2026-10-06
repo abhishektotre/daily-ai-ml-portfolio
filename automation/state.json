@@ -1,12 +1,12 @@
 {
-    "current_day": 3,
-    "total_projects": 3,
-    "last_run_date": "2026-10-05T18:58:32.113604",
+    "current_day": 4,
+    "total_projects": 4,
+    "last_run_date": "2026-10-06T12:14:32.398103",
     "domain_counts": {
         "Data Science": 1,
         "Data Analytics": 1,
         "Machine Learning": 1,
-        "Deep Learning": 0,
+        "Deep Learning": 1,
         "Natural Language Processing": 0,
         "Artificial Intelligence": 0
     },
@@ -58,6 +58,22 @@
             ],
             "created_at": "2026-10-05T18:58:32.113682",
             "repo_url": "https://github.com/abhishektotre/credit-card-fraud-detection-xgboost"
+        },
+        {
+            "day": 4,
+            "title": "Odontometric Biometric Gender Classification with Deep Neural Networks",
+            "domain": "Deep Learning",
+            "folder": "projects/Day_004_Odontometric_Biometric_Gender_Classification_Deep_Learning",
+            "skills": [
+                "Deep Learning",
+                "Biometrics",
+                "Neural Networks",
+                "Sexual Dimorphism",
+                "Scikit-Learn",
+                "Matplotlib"
+            ],
+            "created_at": "2026-10-06T12:14:32.398139",
+            "repo_url": "https://github.com/abhishektotre/odontometric-biometric-gender-classification-deep-learning"
         }
     ]
 }
