@@ -50,7 +50,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No state or showcase changes to commit."
           else
-            LATEST_MSG=$(python -c 'import json; s=json.load(open("automation/state.json")); p=s["projects_history"][-1]; print(f"🚀 Day {p[\"day\"]:03d}: {p[\"title\"]} [{p[\"domain\"]}]")')
+            LATEST_MSG=$(python -c 'import json; s=json.load(open("automation/state.json")); p=s["projects_history"][-1]; print("🚀 Day {:03d}: {} [{}]".format(p["day"], p["title"], p["domain"]))')
             git commit -m "$LATEST_MSG"
             git push origin main
           fi
