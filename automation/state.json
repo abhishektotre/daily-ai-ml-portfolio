@@ -1,14 +1,14 @@
 {
-    "current_day": 5,
-    "total_projects": 5,
-    "last_run_date": "2026-10-07T23:43:40.736771",
+    "current_day": 6,
+    "total_projects": 6,
+    "last_run_date": "2026-10-08T00:24:00.696413",
     "domain_counts": {
         "Data Science": 1,
         "Data Analytics": 1,
         "Machine Learning": 1,
         "Deep Learning": 1,
         "Natural Language Processing": 1,
-        "Artificial Intelligence": 0
+        "Artificial Intelligence": 1
     },
     "projects_history": [
         {
@@ -90,6 +90,22 @@
             ],
             "created_at": "2026-10-07T23:43:40.736810",
             "repo_url": "https://github.com/abhishektotre/real-time-stock-market-sentiment-analysis-engine"
+        },
+        {
+            "day": 6,
+            "title": "Smart Expense Assistant with Autonomous Agent Workflows",
+            "domain": "Artificial Intelligence",
+            "folder": "projects/Day_006_Smart_Expense_Assistant_Autonomous_Workflow_Agent",
+            "skills": [
+                "AI",
+                "Autonomous Workflows",
+                "Financial Agent",
+                "Decision Trees",
+                "Anomaly Detection",
+                "Matplotlib"
+            ],
+            "created_at": "2026-10-08T00:24:00.696423",
+            "repo_url": "https://github.com/abhishektotre/smart-expense-assistant-autonomous-workflow-agent"
         }
     ]
 }

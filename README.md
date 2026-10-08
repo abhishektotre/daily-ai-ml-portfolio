@@ -1,7 +1,7 @@
 # 🧠 Daily AI, ML, Data Science & Analytics Portfolio
 
-[![Total Projects](https://img.shields.io/badge/Total%20Projects-5-blueviolet?style=for-the-badge&logo=github)](projects/)
-[![Current Streak](https://img.shields.io/badge/Daily%20Streak-5%20Days-orange?style=for-the-badge&logo=fire)](projects/)
+[![Total Projects](https://img.shields.io/badge/Total%20Projects-6-blueviolet?style=for-the-badge&logo=github)](projects/)
+[![Current Streak](https://img.shields.io/badge/Daily%20Streak-6%20Days-orange?style=for-the-badge&logo=fire)](projects/)
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](https://python.org)
 [![Daily Automation](https://img.shields.io/badge/Automation-Active%20%28GitHub%20Actions%29-brightgreen?style=for-the-badge&logo=githubactions)](.github/workflows/daily-project.yml)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)](LICENSE)
@@ -17,7 +17,7 @@
 | ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-orange) | **1** projects |
 | ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-red) | **1** projects |
 | ![Natural Language Processing](https://img.shields.io/badge/NLP-purple) | **1** projects |
-| ![Artificial Intelligence](https://img.shields.io/badge/AI%20%26%20Agents-yellow) | **0** projects |
+| ![Artificial Intelligence](https://img.shields.io/badge/AI%20%26%20Agents-yellow) | **1** projects |
 
 ---
 
@@ -25,6 +25,7 @@
 
 | Day | Domain | Project & Architecture | Core Tools / Techniques | Status |
 | :---: | :---: | :--- | :--- | :---: |
+| **Day 006** | ![Artificial Intelligence](https://img.shields.io/badge/AI%20%26%20Agents-yellow) | [Smart Expense Assistant with Autonomous Agent Workflows](https://github.com/abhishektotre/smart-expense-assistant-autonomous-workflow-agent) | `AI`, `Autonomous Workflows`, `Financial Agent` | ✅ Completed |
 | **Day 005** | ![Natural Language Processing](https://img.shields.io/badge/NLP-purple) | [Real-Time Stock Market Sentiment & Financial News Analytics Engine](https://github.com/abhishektotre/real-time-stock-market-sentiment-analysis-engine) | `NLP`, `Financial Sentiment`, `VADER` | ✅ Completed |
 | **Day 004** | ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-red) | [Odontometric Biometric Gender Classification with Deep Neural Networks](https://github.com/abhishektotre/odontometric-biometric-gender-classification-deep-learning) | `Deep Learning`, `Biometrics`, `Neural Networks` | ✅ Completed |
 | **Day 003** | ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-orange) | [High-Precision Financial Fraud Detection with XGBoost](https://github.com/abhishektotre/credit-card-fraud-detection-xgboost) | `Machine Learning`, `XGBoost`, `Imbalanced Data` | ✅ Completed |
@@ -96,4 +97,4 @@ python automation/runner.py --generate --execute --push
 python automation/runner.py --status
 ```
 
-*Last synchronized: `2026-10-07 23:43:47 UTC`*
+*Last synchronized: `2026-10-08 00:24:05 UTC`*
