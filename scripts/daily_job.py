@@ -14,7 +14,19 @@ LOG_DIR = BASE_DIR / "logs"
 LOG_DIR.mkdir(exist_ok=True)
 LOG_FILE = LOG_DIR / "daily_automation.log"
 
+def sync_remote():
+    try:
+        from automation.config import CONFIG
+        token = CONFIG.get("GITHUB_TOKEN")
+        username = CONFIG.get("GITHUB_USERNAME")
+        if token and username:
+            auth_url = f"https://{username}:{token}@github.com/{username}/daily-ai-ml-portfolio.git"
+            subprocess.run(["git", "pull", auth_url, "main"], cwd=str(BASE_DIR), capture_output=True, timeout=30)
+    except Exception:
+        pass
+
 def run_job():
+    sync_remote()
     now_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(f"\n{'='*70}\n")
