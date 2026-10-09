@@ -1,0 +1,7 @@
+{
+    "accuracy": 0.8775,
+    "f1_score": 0.6316,
+    "roc_auc": 0.8728,
+    "test_eval_records": 800,
+    "overall_conversion_rate": 0.2022
+}

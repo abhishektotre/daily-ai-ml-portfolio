@@ -1,9 +1,9 @@
 {
-    "current_day": 6,
-    "total_projects": 6,
-    "last_run_date": "2026-10-08T00:24:00.696413",
+    "current_day": 7,
+    "total_projects": 7,
+    "last_run_date": "2026-10-09T00:37:37.404190",
     "domain_counts": {
-        "Data Science": 1,
+        "Data Science": 2,
         "Data Analytics": 1,
         "Machine Learning": 1,
         "Deep Learning": 1,
@@ -106,6 +106,22 @@
             ],
             "created_at": "2026-10-08T00:24:00.696423",
             "repo_url": "https://github.com/abhishektotre/smart-expense-assistant-autonomous-workflow-agent"
+        },
+        {
+            "day": 7,
+            "title": "Bank Marketing Term Deposit Predictive Engine",
+            "domain": "Data Science",
+            "folder": "projects/Day_007_Bank_Marketing_Term_Deposit_Predictive_Engine",
+            "skills": [
+                "Data Science",
+                "Banking Analytics",
+                "Term Deposit",
+                "Gradient Boosting",
+                "Class Balancing",
+                "Scikit-Learn"
+            ],
+            "created_at": "2026-10-09T00:37:37.404201",
+            "repo_url": "https://github.com/abhishektotre/bank-marketing-term-deposit-predictive-engine"
         }
     ]
 }
