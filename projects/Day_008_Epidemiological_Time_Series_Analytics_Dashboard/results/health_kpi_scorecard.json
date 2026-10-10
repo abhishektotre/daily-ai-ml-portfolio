@@ -1,0 +1,8 @@
+{
+    "analysis_period_days": 180,
+    "total_cumulative_cases": 86355,
+    "total_cumulative_recoveries": 77759,
+    "peak_incidence_date": "2025-10-10",
+    "peak_7day_incidence_avg": 1138,
+    "current_rt_momentum": 0.699
+}

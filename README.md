@@ -1,7 +1,7 @@
 # 🧠 Daily AI, ML, Data Science & Analytics Portfolio
 
-[![Total Projects](https://img.shields.io/badge/Total%20Projects-7-blueviolet?style=for-the-badge&logo=github)](projects/)
-[![Current Streak](https://img.shields.io/badge/Daily%20Streak-7%20Days-orange?style=for-the-badge&logo=fire)](projects/)
+[![Total Projects](https://img.shields.io/badge/Total%20Projects-8-blueviolet?style=for-the-badge&logo=github)](projects/)
+[![Current Streak](https://img.shields.io/badge/Daily%20Streak-8%20Days-orange?style=for-the-badge&logo=fire)](projects/)
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](https://python.org)
 [![Daily Automation](https://img.shields.io/badge/Automation-Active%20%28GitHub%20Actions%29-brightgreen?style=for-the-badge&logo=githubactions)](.github/workflows/daily-project.yml)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)](LICENSE)
@@ -13,7 +13,7 @@
 ## 📊 Domain Distribution Matrix
 
 | ![Data Science](https://img.shields.io/badge/Data%20Science-blue) | **2** projects |
-| ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-green) | **1** projects |
+| ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-green) | **2** projects |
 | ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-orange) | **1** projects |
 | ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-red) | **1** projects |
 | ![Natural Language Processing](https://img.shields.io/badge/NLP-purple) | **1** projects |
@@ -25,6 +25,7 @@
 
 | Day | Domain | Project & Architecture | Core Tools / Techniques | Status |
 | :---: | :---: | :--- | :--- | :---: |
+| **Day 008** | ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-green) | [Epidemiological Time-Series Trends & Public Health KPI Dashboard](https://github.com/abhishektotre/epidemiological-time-series-analytics-dashboard) | `Data Analytics`, `Time Series`, `Rolling Averages` | ✅ Completed |
 | **Day 007** | ![Data Science](https://img.shields.io/badge/Data%20Science-blue) | [Bank Marketing Term Deposit Predictive Engine](https://github.com/abhishektotre/bank-marketing-term-deposit-predictive-engine) | `Data Science`, `Banking Analytics`, `Term Deposit` | ✅ Completed |
 | **Day 006** | ![Artificial Intelligence](https://img.shields.io/badge/AI%20%26%20Agents-yellow) | [Smart Expense Assistant with Autonomous Agent Workflows](https://github.com/abhishektotre/smart-expense-assistant-autonomous-workflow-agent) | `AI`, `Autonomous Workflows`, `Financial Agent` | ✅ Completed |
 | **Day 005** | ![Natural Language Processing](https://img.shields.io/badge/NLP-purple) | [Real-Time Stock Market Sentiment & Financial News Analytics Engine](https://github.com/abhishektotre/real-time-stock-market-sentiment-analysis-engine) | `NLP`, `Financial Sentiment`, `VADER` | ✅ Completed |
@@ -98,4 +99,4 @@ python automation/runner.py --generate --execute --push
 python automation/runner.py --status
 ```
 
-*Last synchronized: `2026-10-09 00:37:43 UTC`*
+*Last synchronized: `2026-10-10 00:18:57 UTC`*
