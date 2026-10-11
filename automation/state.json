@@ -1,11 +1,11 @@
 {
-    "current_day": 8,
-    "total_projects": 8,
-    "last_run_date": "2026-10-10T00:18:51.762429",
+    "current_day": 9,
+    "total_projects": 9,
+    "last_run_date": "2026-10-11T01:02:17.745946",
     "domain_counts": {
         "Data Science": 2,
         "Data Analytics": 2,
-        "Machine Learning": 1,
+        "Machine Learning": 2,
         "Deep Learning": 1,
         "Natural Language Processing": 1,
         "Artificial Intelligence": 1
@@ -138,6 +138,22 @@
             ],
             "created_at": "2026-10-10T00:18:51.762437",
             "repo_url": "https://github.com/abhishektotre/epidemiological-time-series-analytics-dashboard"
+        },
+        {
+            "day": 9,
+            "title": "Real Estate Valuation with Stacking Regression Ensemble",
+            "domain": "Machine Learning",
+            "folder": "projects/Day_009_Real_Estate_Valuation_Stacking_Ensemble",
+            "skills": [
+                "Machine Learning",
+                "Stacking Regressor",
+                "Ensemble Methods",
+                "Feature Engineering",
+                "R2 Score",
+                "RMSE"
+            ],
+            "created_at": "2026-10-11T01:02:17.745956",
+            "repo_url": "https://github.com/abhishektotre/real-estate-valuation-stacking-ensemble"
         }
     ]
 }

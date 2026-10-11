@@ -1,0 +1,6 @@
+{
+    "rmse_usd": 24959.08,
+    "mae_usd": 19173.07,
+    "r2_score": 0.9582,
+    "sample_count": 400
+}
