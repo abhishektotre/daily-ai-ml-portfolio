@@ -1,12 +1,12 @@
 {
-    "current_day": 9,
-    "total_projects": 9,
-    "last_run_date": "2026-10-11T01:02:17.745946",
+    "current_day": 10,
+    "total_projects": 10,
+    "last_run_date": "2026-10-12T01:22:29.792020",
     "domain_counts": {
         "Data Science": 2,
         "Data Analytics": 2,
         "Machine Learning": 2,
-        "Deep Learning": 1,
+        "Deep Learning": 2,
         "Natural Language Processing": 1,
         "Artificial Intelligence": 1
     },
@@ -154,6 +154,22 @@
             ],
             "created_at": "2026-10-11T01:02:17.745956",
             "repo_url": "https://github.com/abhishektotre/real-estate-valuation-stacking-ensemble"
+        },
+        {
+            "day": 10,
+            "title": "Deep Multi-Layer Perceptron (MLP) with Adam & Backprop from Scratch",
+            "domain": "Deep Learning",
+            "folder": "projects/Day_010_Deep_MLP_Neural_Network_From_Scratch",
+            "skills": [
+                "Deep Learning",
+                "Neural Networks",
+                "Backpropagation",
+                "Adam Optimizer",
+                "NumPy",
+                "Loss Landscapes"
+            ],
+            "created_at": "2026-10-12T01:22:29.792030",
+            "repo_url": "https://github.com/abhishektotre/deep-mlp-neural-network-from-scratch"
         }
     ]
 }

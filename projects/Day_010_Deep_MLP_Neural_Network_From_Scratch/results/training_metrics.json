@@ -1,0 +1,13 @@
+{
+    "final_loss": 0.1401,
+    "final_accuracy": 0.9442,
+    "architecture": [
+        2,
+        32,
+        16,
+        8,
+        2
+    ],
+    "optimizer": "Adam",
+    "epochs": 350
+}
