@@ -1,0 +1,6 @@
+{
+    "accuracy": 1.0,
+    "f1_score_weighted": 1.0,
+    "vocab_size": 239,
+    "test_eval_samples": 450
+}
