@@ -1,14 +1,14 @@
 {
-    "current_day": 11,
-    "total_projects": 11,
-    "last_run_date": "2026-10-13T02:14:25.589962",
+    "current_day": 12,
+    "total_projects": 12,
+    "last_run_date": "2026-10-14T01:15:55.217456",
     "domain_counts": {
         "Data Science": 2,
         "Data Analytics": 2,
         "Machine Learning": 2,
         "Deep Learning": 2,
         "Natural Language Processing": 2,
-        "Artificial Intelligence": 1
+        "Artificial Intelligence": 2
     },
     "projects_history": [
         {
@@ -186,6 +186,22 @@
             ],
             "created_at": "2026-10-13T02:14:25.589974",
             "repo_url": "https://github.com/abhishektotre/multi-aspect-sentiment-analysis-engine"
+        },
+        {
+            "day": 12,
+            "title": "Retrieval-Augmented Generation (RAG) Architecture with Vector Indexing",
+            "domain": "Artificial Intelligence",
+            "folder": "projects/Day_012_Retrieval_Augmented_Generation_RAG_Engine",
+            "skills": [
+                "AI",
+                "RAG",
+                "Vector Search",
+                "Cosine Similarity",
+                "Embeddings",
+                "Information Retrieval"
+            ],
+            "created_at": "2026-10-14T01:15:55.217465",
+            "repo_url": "https://github.com/abhishektotre/retrieval-augmented-generation-rag-engine"
         }
     ]
 }

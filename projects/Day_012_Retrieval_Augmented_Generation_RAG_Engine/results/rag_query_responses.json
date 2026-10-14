@@ -1,0 +1,35 @@
+[
+    {
+        "question": "How do residual connections prevent vanishing gradients in deep networks?",
+        "synthesized_response": "Based on the verified retrieved documents, here is the answer:\n\nFor your inquiry regarding 'How do residual connections prevent vanishing gradients in deep networks?':\nThe verified knowledge indicates that Residual Neural Networks introduce identity shortcut connections that bypass one or more layers. These skip connections resolve the vanishing gradient problem, allowing architectures with hundreds of layers like ResNet-50 and ResNet-152 to be trained effectively via standard backpropagation.\nSource references: DOC-002.",
+        "citations": [
+            {
+                "doc_id": "DOC-002",
+                "title": "Deep Residual Networks (ResNet)",
+                "relevance_score": 0.3221
+            }
+        ]
+    },
+    {
+        "question": "What is the mathematical formulation of attention in Transformers?",
+        "synthesized_response": "Based on the verified retrieved documents, here is the answer:\n\nFor your inquiry regarding 'What is the mathematical formulation of attention in Transformers?':\nThe verified knowledge indicates that The Transformer architecture replaces recurrent architectures with Multi-Head Self-Attention. Attention weights are computed as the scaled dot-product between query (Q) and key (K) matrices divided by the square root of the head dimension dk, followed by softmax and multiplication with value (V) matrices.\nSource references: DOC-003.",
+        "citations": [
+            {
+                "doc_id": "DOC-003",
+                "title": "Transformer Attention Mechanisms",
+                "relevance_score": 0.2527
+            }
+        ]
+    },
+    {
+        "question": "How does RLHF align model outputs with human reward models?",
+        "synthesized_response": "Based on the verified retrieved documents, here is the answer:\n\nFor your inquiry regarding 'How does RLHF align model outputs with human reward models?':\nThe verified knowledge indicates that RLHF aligns large language models with human preferences. First, human evaluators rank candidate outputs to train a Reward Model. Next, Proximal Policy Optimization (PPO) tunes the language model policy to maximize reward scores while maintaining a KL-divergence penalty against the original reference model.\nSource references: DOC-004.",
+        "citations": [
+            {
+                "doc_id": "DOC-004",
+                "title": "Reinforcement Learning from Human Feedback (RLHF)",
+                "relevance_score": 0.4593
+            }
+        ]
+    }
+]
