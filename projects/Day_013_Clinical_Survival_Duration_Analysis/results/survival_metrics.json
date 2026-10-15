@@ -1,0 +1,8 @@
+{
+    "total_cohort_size": 1600,
+    "censoring_rate_pct": 16.31,
+    "median_survival_control_days": 329.1,
+    "median_survival_treatment_days": 521.8,
+    "survival_at_day_365_control": 0.4665,
+    "survival_at_day_365_treatment": 0.6564
+}

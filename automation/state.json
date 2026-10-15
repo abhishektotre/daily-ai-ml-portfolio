@@ -1,9 +1,9 @@
 {
-    "current_day": 12,
-    "total_projects": 12,
-    "last_run_date": "2026-10-14T01:15:55.217456",
+    "current_day": 13,
+    "total_projects": 13,
+    "last_run_date": "2026-10-15T00:34:17.490703",
     "domain_counts": {
-        "Data Science": 2,
+        "Data Science": 3,
         "Data Analytics": 2,
         "Machine Learning": 2,
         "Deep Learning": 2,
@@ -202,6 +202,22 @@
             ],
             "created_at": "2026-10-14T01:15:55.217465",
             "repo_url": "https://github.com/abhishektotre/retrieval-augmented-generation-rag-engine"
+        },
+        {
+            "day": 13,
+            "title": "Kaplan-Meier Survival Duration & Hazard Modeling",
+            "domain": "Data Science",
+            "folder": "projects/Day_013_Clinical_Survival_Duration_Analysis",
+            "skills": [
+                "Data Science",
+                "Survival Analysis",
+                "Kaplan-Meier",
+                "Hazard Function",
+                "Statistical Testing",
+                "Matplotlib"
+            ],
+            "created_at": "2026-10-15T00:34:17.490712",
+            "repo_url": "https://github.com/abhishektotre/clinical-survival-duration-analysis"
         }
     ]
 }

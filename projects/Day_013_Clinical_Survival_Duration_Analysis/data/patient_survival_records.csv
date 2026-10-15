@@ -1,0 +1,1601 @@
+patient_id,age,treatment_group,duration_days,event_occurred
+PT-00001,52,Control (Standard),249.9,1
+PT-00002,48,Treatment (Novel Therapy),765.9,1
+PT-00003,52,Treatment (Novel Therapy),169.2,1
+PT-00004,46,Treatment (Novel Therapy),633.1,1
+PT-00005,58,Control (Standard),132.9,1
+PT-00006,51,Control (Standard),190.3,1
+PT-00007,60,Control (Standard),153.4,1
+PT-00008,43,Treatment (Novel Therapy),210.3,1
+PT-00009,60,Treatment (Novel Therapy),900.0,0
+PT-00010,65,Treatment (Novel Therapy),311.5,1
+PT-00011,40,Control (Standard),900.0,0
+PT-00012,61,Treatment (Novel Therapy),900.0,0
+PT-00013,69,Treatment (Novel Therapy),633.6,1
+PT-00014,47,Control (Standard),106.9,1
+PT-00015,73,Control (Standard),251.5,1
+PT-00016,61,Control (Standard),645.4,1
+PT-00017,51,Control (Standard),246.8,1
+PT-00018,57,Treatment (Novel Therapy),114.0,1
+PT-00019,63,Control (Standard),384.0,1
+PT-00020,58,Control (Standard),726.9,1
+PT-00021,62,Treatment (Novel Therapy),900.0,0
+PT-00022,49,Control (Standard),126.7,1
+PT-00023,59,Control (Standard),490.0,1
+PT-00024,45,Control (Standard),154.5,1
+PT-00025,56,Control (Standard),153.1,1
+PT-00026,49,Treatment (Novel Therapy),900.0,0
+PT-00027,51,Control (Standard),172.4,1
+PT-00028,69,Treatment (Novel Therapy),289.2,1
+PT-00029,67,Treatment (Novel Therapy),2.6,1
+PT-00030,63,Control (Standard),780.3,1
+PT-00031,48,Treatment (Novel Therapy),900.0,0
+PT-00032,55,Control (Standard),445.5,1
+PT-00033,68,Control (Standard),578.9,1
+PT-00034,59,Treatment (Novel Therapy),180.0,1
+PT-00035,78,Treatment (Novel Therapy),494.2,1
+PT-00036,61,Treatment (Novel Therapy),378.0,1
+PT-00037,59,Control (Standard),75.7,1
+PT-00038,55,Control (Standard),329.1,1
+PT-00039,59,Treatment (Novel Therapy),900.0,0
+PT-00040,56,Control (Standard),38.5,1
+PT-00041,64,Control (Standard),198.3,1
+PT-00042,66,Control (Standard),146.6,1
+PT-00043,50,Control (Standard),165.3,1
+PT-00044,46,Treatment (Novel Therapy),900.0,0
+PT-00045,41,Control (Standard),315.9,1
+PT-00046,62,Treatment (Novel Therapy),503.4,1
+PT-00047,48,Control (Standard),592.4,1
+PT-00048,38,Treatment (Novel Therapy),182.4,1
+PT-00049,61,Treatment (Novel Therapy),527.9,1
+PT-00050,80,Control (Standard),288.9,1
+PT-00051,57,Treatment (Novel Therapy),668.8,1
+PT-00052,65,Treatment (Novel Therapy),900.0,0
+PT-00053,58,Treatment (Novel Therapy),900.0,0
+PT-00054,57,Treatment (Novel Therapy),427.2,1
+PT-00055,66,Treatment (Novel Therapy),900.0,0
+PT-00056,55,Treatment (Novel Therapy),198.4,1
+PT-00057,60,Control (Standard),31.0,1
+PT-00058,60,Control (Standard),144.7,1
+PT-00059,51,Control (Standard),229.3,1
+PT-00060,66,Control (Standard),347.5,1
+PT-00061,56,Control (Standard),434.3,1
+PT-00062,51,Control (Standard),886.6,1
+PT-00063,62,Treatment (Novel Therapy),555.1,1
+PT-00064,49,Control (Standard),340.4,1
+PT-00065,58,Control (Standard),46.0,1
+PT-00066,57,Treatment (Novel Therapy),55.3,1
+PT-00067,67,Control (Standard),379.4,1
+PT-00068,62,Treatment (Novel Therapy),471.4,1
+PT-00069,57,Control (Standard),715.5,1
+PT-00070,65,Treatment (Novel Therapy),188.5,1
+PT-00071,70,Treatment (Novel Therapy),42.5,1
+PT-00072,63,Control (Standard),302.3,1
+PT-00073,58,Control (Standard),164.9,1
+PT-00074,46,Treatment (Novel Therapy),72.8,1
+PT-00075,48,Treatment (Novel Therapy),875.5,1
+PT-00076,55,Treatment (Novel Therapy),139.4,1
+PT-00077,52,Treatment (Novel Therapy),685.0,1
+PT-00078,56,Control (Standard),191.8,1
+PT-00079,58,Control (Standard),125.7,1
+PT-00080,62,Control (Standard),254.9,1
+PT-00081,57,Treatment (Novel Therapy),900.0,0
+PT-00082,62,Treatment (Novel Therapy),421.0,1
+PT-00083,58,Control (Standard),579.5,1
+PT-00084,40,Control (Standard),95.9,1
+PT-00085,49,Control (Standard),609.0,1
+PT-00086,56,Control (Standard),164.6,1
+PT-00087,47,Treatment (Novel Therapy),791.7,1
+PT-00088,63,Treatment (Novel Therapy),626.3,1
+PT-00089,71,Treatment (Novel Therapy),900.0,0
+PT-00090,68,Control (Standard),259.9,1
+PT-00091,56,Control (Standard),57.2,1
+PT-00092,71,Treatment (Novel Therapy),34.6,1
+PT-00093,59,Treatment (Novel Therapy),900.0,0
+PT-00094,54,Treatment (Novel Therapy),573.4,1
+PT-00095,52,Treatment (Novel Therapy),900.0,0
+PT-00096,55,Control (Standard),163.0,1
+PT-00097,54,Treatment (Novel Therapy),371.6,1
+PT-00098,59,Control (Standard),30.8,1
+PT-00099,59,Control (Standard),900.0,0
+PT-00100,58,Control (Standard),485.0,1
+PT-00101,61,Control (Standard),900.0,0
+PT-00102,68,Treatment (Novel Therapy),291.4,1
+PT-00103,66,Control (Standard),431.0,1
+PT-00104,44,Treatment (Novel Therapy),793.5,1
+PT-00105,35,Treatment (Novel Therapy),343.5,1
+PT-00106,66,Control (Standard),732.7,1
+PT-00107,45,Control (Standard),900.0,0
+PT-00108,55,Treatment (Novel Therapy),900.0,0
+PT-00109,47,Control (Standard),564.7,1
+PT-00110,41,Control (Standard),189.6,1
+PT-00111,62,Control (Standard),192.1,1
+PT-00112,64,Control (Standard),900.0,0
+PT-00113,52,Treatment (Novel Therapy),21.4,1
+PT-00114,34,Treatment (Novel Therapy),859.5,1
+PT-00115,53,Treatment (Novel Therapy),841.7,1
+PT-00116,61,Treatment (Novel Therapy),705.9,1
+PT-00117,44,Treatment (Novel Therapy),900.0,0
+PT-00118,59,Control (Standard),211.1,1
+PT-00119,57,Treatment (Novel Therapy),366.4,1
+PT-00120,63,Treatment (Novel Therapy),105.4,1
+PT-00121,59,Treatment (Novel Therapy),476.6,1
+PT-00122,49,Treatment (Novel Therapy),287.0,1
+PT-00123,68,Control (Standard),231.2,1
+PT-00124,56,Control (Standard),707.0,1
+PT-00125,57,Control (Standard),900.0,0
+PT-00126,49,Control (Standard),133.2,1
+PT-00127,54,Treatment (Novel Therapy),400.2,1
+PT-00128,50,Treatment (Novel Therapy),900.0,0
+PT-00129,56,Control (Standard),54.2,1
+PT-00130,73,Treatment (Novel Therapy),119.6,1
+PT-00131,45,Control (Standard),119.1,1
+PT-00132,43,Control (Standard),416.5,1
+PT-00133,71,Control (Standard),111.5,1
+PT-00134,56,Control (Standard),900.0,0
+PT-00135,51,Treatment (Novel Therapy),481.0,1
+PT-00136,67,Control (Standard),340.6,1
+PT-00137,52,Treatment (Novel Therapy),272.8,1
+PT-00138,74,Treatment (Novel Therapy),508.8,1
+PT-00139,64,Control (Standard),479.0,1
+PT-00140,53,Treatment (Novel Therapy),900.0,0
+PT-00141,77,Treatment (Novel Therapy),900.0,0
+PT-00142,52,Control (Standard),401.6,1
+PT-00143,64,Control (Standard),867.5,1
+PT-00144,60,Control (Standard),677.0,1
+PT-00145,69,Control (Standard),587.7,1
+PT-00146,72,Control (Standard),49.8,1
+PT-00147,58,Treatment (Novel Therapy),15.7,1
+PT-00148,51,Treatment (Novel Therapy),239.3,1
+PT-00149,62,Control (Standard),480.6,1
+PT-00150,51,Control (Standard),276.0,1
+PT-00151,76,Treatment (Novel Therapy),432.1,1
+PT-00152,59,Control (Standard),813.5,1
+PT-00153,54,Control (Standard),842.3,1
+PT-00154,59,Control (Standard),882.1,1
+PT-00155,45,Treatment (Novel Therapy),339.8,1
+PT-00156,49,Control (Standard),509.3,1
+PT-00157,68,Treatment (Novel Therapy),297.5,1
+PT-00158,52,Treatment (Novel Therapy),217.9,1
+PT-00159,48,Control (Standard),132.5,1
+PT-00160,62,Treatment (Novel Therapy),368.6,1
+PT-00161,68,Control (Standard),288.9,1
+PT-00162,64,Treatment (Novel Therapy),900.0,0
+PT-00163,66,Treatment (Novel Therapy),147.8,1
+PT-00164,51,Treatment (Novel Therapy),895.4,1
+PT-00165,45,Control (Standard),363.7,1
+PT-00166,71,Treatment (Novel Therapy),313.7,1
+PT-00167,55,Control (Standard),334.1,1
+PT-00168,55,Control (Standard),203.6,1
+PT-00169,69,Control (Standard),417.3,1
+PT-00170,63,Treatment (Novel Therapy),466.5,1
+PT-00171,62,Treatment (Novel Therapy),192.2,1
+PT-00172,77,Control (Standard),90.3,1
+PT-00173,52,Treatment (Novel Therapy),601.3,1
+PT-00174,66,Control (Standard),861.7,1
+PT-00175,58,Treatment (Novel Therapy),370.5,1
+PT-00176,60,Control (Standard),557.3,1
+PT-00177,71,Treatment (Novel Therapy),761.1,1
+PT-00178,62,Control (Standard),900.0,0
+PT-00179,62,Treatment (Novel Therapy),900.0,0
+PT-00180,67,Control (Standard),392.1,1
+PT-00181,54,Control (Standard),474.1,1
+PT-00182,50,Control (Standard),850.2,1
+PT-00183,48,Treatment (Novel Therapy),428.9,1
+PT-00184,40,Treatment (Novel Therapy),352.9,1
+PT-00185,76,Control (Standard),13.9,1
+PT-00186,48,Treatment (Novel Therapy),900.0,0
+PT-00187,56,Treatment (Novel Therapy),900.0,0
+PT-00188,55,Treatment (Novel Therapy),132.1,1
+PT-00189,60,Treatment (Novel Therapy),641.2,1
+PT-00190,65,Control (Standard),312.9,1
+PT-00191,65,Control (Standard),91.7,1
+PT-00192,52,Treatment (Novel Therapy),900.0,0
+PT-00193,56,Treatment (Novel Therapy),241.5,1
+PT-00194,60,Treatment (Novel Therapy),92.7,1
+PT-00195,55,Control (Standard),416.2,1
+PT-00196,72,Control (Standard),564.5,1
+PT-00197,62,Treatment (Novel Therapy),52.2,1
+PT-00198,64,Treatment (Novel Therapy),761.2,1
+PT-00199,63,Treatment (Novel Therapy),582.9,1
+PT-00200,68,Treatment (Novel Therapy),130.9,1
+PT-00201,59,Treatment (Novel Therapy),200.2,1
+PT-00202,46,Control (Standard),393.3,1
+PT-00203,61,Control (Standard),201.3,1
+PT-00204,52,Treatment (Novel Therapy),900.0,0
+PT-00205,53,Treatment (Novel Therapy),900.0,0
+PT-00206,63,Control (Standard),900.0,0
+PT-00207,69,Control (Standard),178.5,1
+PT-00208,58,Treatment (Novel Therapy),900.0,0
+PT-00209,60,Control (Standard),289.8,1
+PT-00210,73,Control (Standard),233.8,1
+PT-00211,60,Treatment (Novel Therapy),73.7,1
+PT-00212,81,Treatment (Novel Therapy),76.5,1
+PT-00213,63,Treatment (Novel Therapy),816.5,1
+PT-00214,42,Control (Standard),308.6,1
+PT-00215,64,Treatment (Novel Therapy),253.1,1
+PT-00216,61,Control (Standard),433.2,1
+PT-00217,69,Control (Standard),174.3,1
+PT-00218,64,Treatment (Novel Therapy),642.2,1
+PT-00219,56,Treatment (Novel Therapy),386.3,1
+PT-00220,46,Treatment (Novel Therapy),900.0,0
+PT-00221,56,Treatment (Novel Therapy),900.0,0
+PT-00222,50,Treatment (Novel Therapy),516.2,1
+PT-00223,52,Control (Standard),236.0,1
+PT-00224,63,Control (Standard),243.6,1
+PT-00225,73,Control (Standard),657.9,1
+PT-00226,61,Control (Standard),221.4,1
+PT-00227,47,Treatment (Novel Therapy),236.0,1
+PT-00228,62,Control (Standard),69.7,1
+PT-00229,68,Treatment (Novel Therapy),503.8,1
+PT-00230,52,Treatment (Novel Therapy),521.8,1
+PT-00231,56,Treatment (Novel Therapy),900.0,0
+PT-00232,58,Treatment (Novel Therapy),247.9,1
+PT-00233,50,Treatment (Novel Therapy),409.1,1
+PT-00234,63,Control (Standard),662.2,1
+PT-00235,56,Control (Standard),687.6,1
+PT-00236,61,Treatment (Novel Therapy),413.0,1
+PT-00237,50,Control (Standard),309.4,1
+PT-00238,54,Control (Standard),205.7,1
+PT-00239,64,Treatment (Novel Therapy),900.0,0
+PT-00240,54,Control (Standard),91.6,1
+PT-00241,73,Treatment (Novel Therapy),900.0,0
+PT-00242,54,Treatment (Novel Therapy),802.6,1
+PT-00243,60,Treatment (Novel Therapy),582.0,1
+PT-00244,66,Control (Standard),32.8,1
+PT-00245,45,Control (Standard),321.3,1
+PT-00246,42,Treatment (Novel Therapy),437.8,1
+PT-00247,44,Control (Standard),118.2,1
+PT-00248,69,Treatment (Novel Therapy),757.5,1
+PT-00249,53,Treatment (Novel Therapy),900.0,0
+PT-00250,81,Treatment (Novel Therapy),621.5,1
+PT-00251,52,Control (Standard),535.7,1
+PT-00252,59,Control (Standard),58.8,1
+PT-00253,71,Treatment (Novel Therapy),448.7,1
+PT-00254,76,Control (Standard),90.2,1
+PT-00255,76,Control (Standard),432.2,1
+PT-00256,68,Treatment (Novel Therapy),900.0,0
+PT-00257,67,Treatment (Novel Therapy),766.1,1
+PT-00258,63,Treatment (Novel Therapy),103.1,1
+PT-00259,65,Treatment (Novel Therapy),381.5,1
+PT-00260,53,Control (Standard),379.0,1
+PT-00261,50,Treatment (Novel Therapy),432.9,1
+PT-00262,57,Treatment (Novel Therapy),900.0,0
+PT-00263,56,Control (Standard),672.4,1
+PT-00264,53,Treatment (Novel Therapy),690.1,1
+PT-00265,64,Treatment (Novel Therapy),401.2,1
+PT-00266,66,Treatment (Novel Therapy),281.4,1
+PT-00267,58,Treatment (Novel Therapy),133.6,1
+PT-00268,71,Treatment (Novel Therapy),381.8,1
+PT-00269,47,Control (Standard),277.3,1
+PT-00270,56,Control (Standard),493.2,1
+PT-00271,51,Treatment (Novel Therapy),760.3,1
+PT-00272,41,Treatment (Novel Therapy),95.8,1
+PT-00273,57,Treatment (Novel Therapy),424.4,1
+PT-00274,56,Treatment (Novel Therapy),209.3,1
+PT-00275,71,Treatment (Novel Therapy),184.7,1
+PT-00276,63,Treatment (Novel Therapy),900.0,0
+PT-00277,48,Treatment (Novel Therapy),63.8,1
+PT-00278,74,Treatment (Novel Therapy),450.3,1
+PT-00279,68,Treatment (Novel Therapy),195.9,1
+PT-00280,63,Treatment (Novel Therapy),900.0,0
+PT-00281,55,Treatment (Novel Therapy),614.7,1
+PT-00282,49,Control (Standard),161.1,1
+PT-00283,54,Control (Standard),341.3,1
+PT-00284,67,Control (Standard),555.5,1
+PT-00285,74,Treatment (Novel Therapy),900.0,0
+PT-00286,71,Control (Standard),154.5,1
+PT-00287,53,Control (Standard),817.5,1
+PT-00288,47,Treatment (Novel Therapy),900.0,0
+PT-00289,59,Control (Standard),900.0,0
+PT-00290,42,Treatment (Novel Therapy),725.0,1
+PT-00291,60,Control (Standard),447.8,1
+PT-00292,56,Control (Standard),270.6,1
+PT-00293,53,Treatment (Novel Therapy),900.0,0
+PT-00294,43,Control (Standard),363.5,1
+PT-00295,62,Control (Standard),494.8,1
+PT-00296,53,Treatment (Novel Therapy),460.6,1
+PT-00297,47,Treatment (Novel Therapy),888.8,1
+PT-00298,32,Control (Standard),689.0,1
+PT-00299,57,Treatment (Novel Therapy),174.4,1
+PT-00300,73,Control (Standard),704.0,1
+PT-00301,72,Control (Standard),370.7,1
+PT-00302,53,Treatment (Novel Therapy),900.0,0
+PT-00303,52,Treatment (Novel Therapy),463.7,1
+PT-00304,62,Treatment (Novel Therapy),407.1,1
+PT-00305,49,Treatment (Novel Therapy),900.0,0
+PT-00306,60,Treatment (Novel Therapy),277.3,1
+PT-00307,64,Treatment (Novel Therapy),900.0,0
+PT-00308,69,Control (Standard),327.5,1
+PT-00309,57,Treatment (Novel Therapy),560.3,1
+PT-00310,56,Control (Standard),208.9,1
+PT-00311,50,Control (Standard),397.5,1
+PT-00312,50,Control (Standard),219.5,1
+PT-00313,55,Control (Standard),37.9,1
+PT-00314,61,Treatment (Novel Therapy),297.9,1
+PT-00315,66,Treatment (Novel Therapy),14.8,1
+PT-00316,50,Treatment (Novel Therapy),900.0,0
+PT-00317,71,Control (Standard),900.0,0
+PT-00318,55,Control (Standard),265.2,1
+PT-00319,57,Control (Standard),551.7,1
+PT-00320,51,Control (Standard),232.7,1
+PT-00321,36,Treatment (Novel Therapy),781.3,1
+PT-00322,65,Treatment (Novel Therapy),900.0,0
+PT-00323,64,Treatment (Novel Therapy),900.0,0
+PT-00324,55,Control (Standard),268.6,1
+PT-00325,58,Treatment (Novel Therapy),900.0,0
+PT-00326,62,Treatment (Novel Therapy),291.8,1
+PT-00327,43,Treatment (Novel Therapy),900.0,0
+PT-00328,53,Treatment (Novel Therapy),43.6,1
+PT-00329,65,Control (Standard),423.9,1
+PT-00330,46,Control (Standard),476.5,1
+PT-00331,60,Control (Standard),506.1,1
+PT-00332,45,Treatment (Novel Therapy),148.3,1
+PT-00333,62,Control (Standard),900.0,0
+PT-00334,57,Control (Standard),130.4,1
+PT-00335,43,Control (Standard),441.3,1
+PT-00336,68,Control (Standard),155.8,1
+PT-00337,51,Treatment (Novel Therapy),333.0,1
+PT-00338,50,Treatment (Novel Therapy),601.0,1
+PT-00339,59,Control (Standard),280.1,1
+PT-00340,68,Control (Standard),117.5,1
+PT-00341,48,Control (Standard),124.1,1
+PT-00342,58,Control (Standard),280.7,1
+PT-00343,61,Control (Standard),588.0,1
+PT-00344,64,Control (Standard),849.0,1
+PT-00345,59,Control (Standard),69.3,1
+PT-00346,54,Treatment (Novel Therapy),422.1,1
+PT-00347,50,Treatment (Novel Therapy),127.8,1
+PT-00348,58,Control (Standard),19.4,1
+PT-00349,48,Control (Standard),478.8,1
+PT-00350,31,Treatment (Novel Therapy),676.6,1
+PT-00351,61,Treatment (Novel Therapy),190.8,1
+PT-00352,66,Treatment (Novel Therapy),260.2,1
+PT-00353,36,Treatment (Novel Therapy),40.9,1
+PT-00354,48,Control (Standard),707.7,1
+PT-00355,63,Control (Standard),900.0,0
+PT-00356,76,Treatment (Novel Therapy),163.5,1
+PT-00357,58,Control (Standard),161.2,1
+PT-00358,51,Treatment (Novel Therapy),900.0,0
+PT-00359,56,Treatment (Novel Therapy),900.0,0
+PT-00360,70,Treatment (Novel Therapy),450.8,1
+PT-00361,52,Control (Standard),46.3,1
+PT-00362,50,Treatment (Novel Therapy),60.8,1
+PT-00363,53,Control (Standard),398.3,1
+PT-00364,49,Treatment (Novel Therapy),421.8,1
+PT-00365,59,Treatment (Novel Therapy),47.4,1
+PT-00366,72,Control (Standard),406.2,1
+PT-00367,60,Treatment (Novel Therapy),23.0,1
+PT-00368,55,Treatment (Novel Therapy),900.0,0
+PT-00369,55,Control (Standard),207.7,1
+PT-00370,43,Control (Standard),38.6,1
+PT-00371,65,Control (Standard),410.6,1
+PT-00372,57,Control (Standard),266.9,1
+PT-00373,56,Control (Standard),900.0,0
+PT-00374,85,Treatment (Novel Therapy),598.1,1
+PT-00375,60,Control (Standard),188.2,1
+PT-00376,51,Control (Standard),529.6,1
+PT-00377,54,Treatment (Novel Therapy),297.4,1
+PT-00378,68,Control (Standard),867.1,1
+PT-00379,59,Treatment (Novel Therapy),402.5,1
+PT-00380,45,Control (Standard),378.4,1
+PT-00381,66,Control (Standard),46.2,1
+PT-00382,51,Treatment (Novel Therapy),458.0,1
+PT-00383,74,Treatment (Novel Therapy),900.0,0
+PT-00384,67,Treatment (Novel Therapy),900.0,0
+PT-00385,53,Treatment (Novel Therapy),250.9,1
+PT-00386,69,Treatment (Novel Therapy),252.6,1
+PT-00387,58,Control (Standard),676.8,1
+PT-00388,65,Control (Standard),900.0,0
+PT-00389,62,Treatment (Novel Therapy),122.7,1
+PT-00390,50,Treatment (Novel Therapy),484.8,1
+PT-00391,52,Treatment (Novel Therapy),363.8,1
+PT-00392,67,Control (Standard),780.4,1
+PT-00393,54,Control (Standard),68.9,1
+PT-00394,54,Treatment (Novel Therapy),238.0,1
+PT-00395,49,Control (Standard),581.7,1
+PT-00396,61,Treatment (Novel Therapy),74.8,1
+PT-00397,76,Treatment (Novel Therapy),534.2,1
+PT-00398,48,Control (Standard),297.4,1
+PT-00399,58,Treatment (Novel Therapy),360.6,1
+PT-00400,70,Treatment (Novel Therapy),423.6,1
+PT-00401,57,Control (Standard),362.5,1
+PT-00402,62,Treatment (Novel Therapy),189.2,1
+PT-00403,48,Treatment (Novel Therapy),634.6,1
+PT-00404,61,Treatment (Novel Therapy),900.0,0
+PT-00405,56,Control (Standard),591.8,1
+PT-00406,66,Treatment (Novel Therapy),181.8,1
+PT-00407,68,Control (Standard),110.8,1
+PT-00408,81,Control (Standard),183.8,1
+PT-00409,63,Treatment (Novel Therapy),388.2,1
+PT-00410,60,Control (Standard),274.1,1
+PT-00411,59,Control (Standard),497.2,1
+PT-00412,54,Treatment (Novel Therapy),80.9,1
+PT-00413,61,Treatment (Novel Therapy),55.0,1
+PT-00414,55,Treatment (Novel Therapy),420.8,1
+PT-00415,59,Treatment (Novel Therapy),825.5,1
+PT-00416,69,Control (Standard),137.9,1
+PT-00417,48,Control (Standard),458.9,1
+PT-00418,68,Control (Standard),178.6,1
+PT-00419,69,Treatment (Novel Therapy),900.0,0
+PT-00420,56,Treatment (Novel Therapy),900.0,0
+PT-00421,38,Treatment (Novel Therapy),323.1,1
+PT-00422,52,Treatment (Novel Therapy),256.5,1
+PT-00423,69,Control (Standard),276.1,1
+PT-00424,57,Control (Standard),166.8,1
+PT-00425,49,Control (Standard),489.6,1
+PT-00426,53,Treatment (Novel Therapy),900.0,0
+PT-00427,65,Control (Standard),490.3,1
+PT-00428,62,Treatment (Novel Therapy),900.0,0
+PT-00429,55,Control (Standard),266.4,1
+PT-00430,54,Control (Standard),115.1,1
+PT-00431,54,Control (Standard),563.4,1
+PT-00432,49,Treatment (Novel Therapy),387.6,1
+PT-00433,72,Treatment (Novel Therapy),781.5,1
+PT-00434,55,Control (Standard),185.3,1
+PT-00435,68,Control (Standard),67.4,1
+PT-00436,71,Treatment (Novel Therapy),900.0,0
+PT-00437,66,Control (Standard),115.1,1
+PT-00438,54,Treatment (Novel Therapy),900.0,0
+PT-00439,61,Treatment (Novel Therapy),900.0,0
+PT-00440,57,Control (Standard),639.5,1
+PT-00441,49,Control (Standard),476.5,1
+PT-00442,60,Treatment (Novel Therapy),642.4,1
+PT-00443,47,Control (Standard),770.1,1
+PT-00444,68,Control (Standard),197.0,1
+PT-00445,53,Treatment (Novel Therapy),505.0,1
+PT-00446,59,Treatment (Novel Therapy),701.1,1
+PT-00447,60,Treatment (Novel Therapy),441.6,1
+PT-00448,55,Treatment (Novel Therapy),459.5,1
+PT-00449,63,Control (Standard),222.8,1
+PT-00450,53,Control (Standard),390.1,1
+PT-00451,65,Treatment (Novel Therapy),900.0,0
+PT-00452,45,Treatment (Novel Therapy),228.6,1
+PT-00453,59,Control (Standard),900.0,0
+PT-00454,75,Treatment (Novel Therapy),811.5,1
+PT-00455,48,Control (Standard),687.0,1
+PT-00456,51,Control (Standard),383.5,1
+PT-00457,62,Control (Standard),618.5,1
+PT-00458,59,Control (Standard),19.0,1
+PT-00459,61,Control (Standard),678.6,1
+PT-00460,62,Control (Standard),38.5,1
+PT-00461,63,Control (Standard),827.2,1
+PT-00462,67,Treatment (Novel Therapy),900.0,0
+PT-00463,61,Treatment (Novel Therapy),319.8,1
+PT-00464,55,Treatment (Novel Therapy),237.2,1
+PT-00465,64,Treatment (Novel Therapy),900.0,0
+PT-00466,75,Control (Standard),174.4,1
+PT-00467,56,Control (Standard),768.9,1
+PT-00468,49,Treatment (Novel Therapy),130.4,1
+PT-00469,67,Control (Standard),96.2,1
+PT-00470,56,Treatment (Novel Therapy),900.0,0
+PT-00471,38,Control (Standard),491.1,1
+PT-00472,65,Treatment (Novel Therapy),900.0,0
+PT-00473,53,Control (Standard),219.0,1
+PT-00474,57,Treatment (Novel Therapy),790.2,1
+PT-00475,60,Treatment (Novel Therapy),665.1,1
+PT-00476,59,Treatment (Novel Therapy),677.6,1
+PT-00477,64,Control (Standard),500.2,1
+PT-00478,54,Treatment (Novel Therapy),639.1,1
+PT-00479,62,Treatment (Novel Therapy),461.2,1
+PT-00480,55,Treatment (Novel Therapy),301.8,1
+PT-00481,64,Treatment (Novel Therapy),900.0,0
+PT-00482,63,Treatment (Novel Therapy),252.8,1
+PT-00483,49,Control (Standard),510.7,1
+PT-00484,67,Treatment (Novel Therapy),259.8,1
+PT-00485,53,Treatment (Novel Therapy),709.8,1
+PT-00486,65,Treatment (Novel Therapy),900.0,0
+PT-00487,61,Control (Standard),153.4,1
+PT-00488,74,Control (Standard),52.9,1
+PT-00489,55,Treatment (Novel Therapy),159.0,1
+PT-00490,54,Treatment (Novel Therapy),681.7,1
+PT-00491,57,Control (Standard),735.3,1
+PT-00492,55,Treatment (Novel Therapy),67.4,1
+PT-00493,65,Control (Standard),558.7,1
+PT-00494,43,Control (Standard),229.8,1
+PT-00495,48,Control (Standard),323.5,1
+PT-00496,48,Control (Standard),900.0,0
+PT-00497,66,Treatment (Novel Therapy),358.2,1
+PT-00498,73,Control (Standard),313.9,1
+PT-00499,57,Treatment (Novel Therapy),26.7,1
+PT-00500,56,Treatment (Novel Therapy),108.2,1
+PT-00501,58,Treatment (Novel Therapy),284.6,1
+PT-00502,68,Treatment (Novel Therapy),46.3,1
+PT-00503,49,Control (Standard),449.3,1
+PT-00504,60,Treatment (Novel Therapy),458.3,1
+PT-00505,66,Treatment (Novel Therapy),603.2,1
+PT-00506,62,Control (Standard),126.4,1
+PT-00507,59,Treatment (Novel Therapy),321.7,1
+PT-00508,67,Treatment (Novel Therapy),769.4,1
+PT-00509,33,Treatment (Novel Therapy),900.0,0
+PT-00510,64,Treatment (Novel Therapy),73.8,1
+PT-00511,52,Treatment (Novel Therapy),900.0,0
+PT-00512,41,Control (Standard),400.7,1
+PT-00513,62,Treatment (Novel Therapy),623.8,1
+PT-00514,70,Treatment (Novel Therapy),543.4,1
+PT-00515,56,Control (Standard),59.4,1
+PT-00516,66,Control (Standard),73.1,1
+PT-00517,72,Control (Standard),421.5,1
+PT-00518,69,Treatment (Novel Therapy),367.4,1
+PT-00519,72,Treatment (Novel Therapy),900.0,0
+PT-00520,64,Control (Standard),272.9,1
+PT-00521,58,Treatment (Novel Therapy),171.3,1
+PT-00522,43,Control (Standard),535.7,1
+PT-00523,55,Treatment (Novel Therapy),319.1,1
+PT-00524,50,Treatment (Novel Therapy),574.4,1
+PT-00525,77,Treatment (Novel Therapy),826.7,1
+PT-00526,56,Control (Standard),855.5,1
+PT-00527,59,Control (Standard),637.0,1
+PT-00528,62,Control (Standard),493.7,1
+PT-00529,58,Control (Standard),497.1,1
+PT-00530,73,Treatment (Novel Therapy),900.0,0
+PT-00531,52,Treatment (Novel Therapy),321.6,1
+PT-00532,59,Treatment (Novel Therapy),3.8,1
+PT-00533,51,Treatment (Novel Therapy),297.8,1
+PT-00534,46,Treatment (Novel Therapy),244.6,1
+PT-00535,52,Treatment (Novel Therapy),766.2,1
+PT-00536,57,Treatment (Novel Therapy),722.4,1
+PT-00537,54,Treatment (Novel Therapy),664.0,1
+PT-00538,51,Control (Standard),19.0,1
+PT-00539,45,Control (Standard),552.2,1
+PT-00540,57,Control (Standard),218.5,1
+PT-00541,44,Treatment (Novel Therapy),771.4,1
+PT-00542,64,Treatment (Novel Therapy),614.1,1
+PT-00543,58,Control (Standard),230.7,1
+PT-00544,44,Treatment (Novel Therapy),162.6,1
+PT-00545,55,Treatment (Novel Therapy),121.7,1
+PT-00546,51,Control (Standard),701.5,1
+PT-00547,60,Control (Standard),900.0,0
+PT-00548,70,Treatment (Novel Therapy),747.1,1
+PT-00549,41,Treatment (Novel Therapy),131.1,1
+PT-00550,59,Treatment (Novel Therapy),431.7,1
+PT-00551,56,Treatment (Novel Therapy),883.8,1
+PT-00552,64,Treatment (Novel Therapy),900.0,0
+PT-00553,59,Treatment (Novel Therapy),146.2,1
+PT-00554,51,Treatment (Novel Therapy),0.2,1
+PT-00555,55,Treatment (Novel Therapy),852.3,1
+PT-00556,50,Control (Standard),239.7,1
+PT-00557,67,Control (Standard),175.3,1
+PT-00558,58,Control (Standard),15.9,1
+PT-00559,75,Treatment (Novel Therapy),593.1,1
+PT-00560,57,Treatment (Novel Therapy),900.0,0
+PT-00561,51,Treatment (Novel Therapy),900.0,0
+PT-00562,44,Control (Standard),391.4,1
+PT-00563,41,Control (Standard),350.4,1
+PT-00564,43,Control (Standard),69.9,1
+PT-00565,60,Control (Standard),377.6,1
+PT-00566,62,Treatment (Novel Therapy),408.1,1
+PT-00567,43,Control (Standard),427.1,1
+PT-00568,66,Control (Standard),260.9,1
+PT-00569,53,Treatment (Novel Therapy),266.6,1
+PT-00570,59,Control (Standard),76.4,1
+PT-00571,72,Treatment (Novel Therapy),340.8,1
+PT-00572,66,Treatment (Novel Therapy),124.0,1
+PT-00573,55,Control (Standard),127.8,1
+PT-00574,49,Treatment (Novel Therapy),900.0,0
+PT-00575,38,Treatment (Novel Therapy),478.0,1
+PT-00576,51,Treatment (Novel Therapy),582.4,1
+PT-00577,56,Control (Standard),787.1,1
+PT-00578,49,Treatment (Novel Therapy),900.0,0
+PT-00579,56,Control (Standard),405.7,1
+PT-00580,58,Control (Standard),668.8,1
+PT-00581,55,Control (Standard),220.6,1
+PT-00582,52,Treatment (Novel Therapy),331.6,1
+PT-00583,59,Control (Standard),270.2,1
+PT-00584,61,Control (Standard),489.7,1
+PT-00585,48,Treatment (Novel Therapy),799.7,1
+PT-00586,70,Control (Standard),213.2,1
+PT-00587,57,Control (Standard),100.8,1
+PT-00588,58,Control (Standard),450.3,1
+PT-00589,64,Control (Standard),97.7,1
+PT-00590,60,Control (Standard),402.1,1
+PT-00591,66,Control (Standard),511.9,1
+PT-00592,60,Treatment (Novel Therapy),831.6,1
+PT-00593,52,Control (Standard),583.0,1
+PT-00594,61,Control (Standard),785.3,1
+PT-00595,47,Treatment (Novel Therapy),543.1,1
+PT-00596,58,Control (Standard),554.0,1
+PT-00597,57,Treatment (Novel Therapy),700.8,1
+PT-00598,56,Control (Standard),133.8,1
+PT-00599,56,Control (Standard),27.2,1
+PT-00600,41,Control (Standard),194.0,1
+PT-00601,53,Control (Standard),298.0,1
+PT-00602,58,Control (Standard),436.1,1
+PT-00603,59,Control (Standard),736.3,1
+PT-00604,48,Control (Standard),139.6,1
+PT-00605,69,Control (Standard),96.0,1
+PT-00606,50,Control (Standard),900.0,0
+PT-00607,66,Control (Standard),84.9,1
+PT-00608,61,Control (Standard),323.5,1
+PT-00609,52,Treatment (Novel Therapy),653.0,1
+PT-00610,73,Treatment (Novel Therapy),594.5,1
+PT-00611,47,Control (Standard),70.6,1
+PT-00612,66,Treatment (Novel Therapy),81.3,1
+PT-00613,67,Treatment (Novel Therapy),133.2,1
+PT-00614,51,Control (Standard),408.2,1
+PT-00615,70,Treatment (Novel Therapy),598.3,1
+PT-00616,55,Treatment (Novel Therapy),260.2,1
+PT-00617,60,Control (Standard),455.4,1
+PT-00618,60,Control (Standard),681.5,1
+PT-00619,56,Treatment (Novel Therapy),63.4,1
+PT-00620,65,Treatment (Novel Therapy),540.9,1
+PT-00621,65,Control (Standard),507.4,1
+PT-00622,42,Control (Standard),174.0,1
+PT-00623,69,Control (Standard),208.5,1
+PT-00624,43,Control (Standard),432.9,1
+PT-00625,67,Treatment (Novel Therapy),900.0,0
+PT-00626,68,Control (Standard),664.7,1
+PT-00627,48,Control (Standard),406.1,1
+PT-00628,54,Treatment (Novel Therapy),886.3,1
+PT-00629,48,Control (Standard),245.1,1
+PT-00630,56,Control (Standard),458.4,1
+PT-00631,55,Treatment (Novel Therapy),503.2,1
+PT-00632,65,Treatment (Novel Therapy),217.3,1
+PT-00633,69,Treatment (Novel Therapy),833.6,1
+PT-00634,70,Treatment (Novel Therapy),614.0,1
+PT-00635,52,Control (Standard),241.0,1
+PT-00636,56,Control (Standard),888.9,1
+PT-00637,42,Treatment (Novel Therapy),37.1,1
+PT-00638,50,Control (Standard),213.5,1
+PT-00639,66,Control (Standard),50.7,1
+PT-00640,72,Control (Standard),600.4,1
+PT-00641,46,Control (Standard),521.4,1
+PT-00642,52,Control (Standard),223.5,1
+PT-00643,57,Control (Standard),493.0,1
+PT-00644,60,Control (Standard),265.7,1
+PT-00645,50,Control (Standard),586.7,1
+PT-00646,61,Treatment (Novel Therapy),489.5,1
+PT-00647,53,Treatment (Novel Therapy),442.8,1
+PT-00648,57,Treatment (Novel Therapy),900.0,0
+PT-00649,62,Treatment (Novel Therapy),277.0,1
+PT-00650,58,Control (Standard),92.8,1
+PT-00651,54,Control (Standard),407.3,1
+PT-00652,57,Treatment (Novel Therapy),900.0,0
+PT-00653,57,Treatment (Novel Therapy),405.8,1
+PT-00654,54,Treatment (Novel Therapy),86.9,1
+PT-00655,55,Control (Standard),228.5,1
+PT-00656,72,Control (Standard),343.9,1
+PT-00657,63,Control (Standard),118.6,1
+PT-00658,55,Control (Standard),475.1,1
+PT-00659,64,Treatment (Novel Therapy),900.0,0
+PT-00660,54,Treatment (Novel Therapy),486.7,1
+PT-00661,68,Control (Standard),238.5,1
+PT-00662,61,Treatment (Novel Therapy),430.2,1
+PT-00663,57,Treatment (Novel Therapy),143.0,1
+PT-00664,62,Control (Standard),810.2,1
+PT-00665,43,Control (Standard),278.5,1
+PT-00666,47,Control (Standard),259.9,1
+PT-00667,47,Control (Standard),476.7,1
+PT-00668,59,Control (Standard),297.3,1
+PT-00669,73,Control (Standard),465.4,1
+PT-00670,78,Control (Standard),53.9,1
+PT-00671,63,Control (Standard),670.9,1
+PT-00672,62,Treatment (Novel Therapy),900.0,0
+PT-00673,41,Control (Standard),465.9,1
+PT-00674,53,Treatment (Novel Therapy),900.0,0
+PT-00675,50,Control (Standard),112.1,1
+PT-00676,52,Treatment (Novel Therapy),516.3,1
+PT-00677,56,Control (Standard),422.3,1
+PT-00678,53,Control (Standard),404.9,1
+PT-00679,40,Treatment (Novel Therapy),431.0,1
+PT-00680,64,Treatment (Novel Therapy),364.4,1
+PT-00681,48,Treatment (Novel Therapy),154.8,1
+PT-00682,60,Control (Standard),262.9,1
+PT-00683,76,Control (Standard),119.0,1
+PT-00684,49,Treatment (Novel Therapy),894.3,1
+PT-00685,35,Treatment (Novel Therapy),235.8,1
+PT-00686,55,Treatment (Novel Therapy),83.1,1
+PT-00687,67,Treatment (Novel Therapy),608.6,1
+PT-00688,75,Control (Standard),416.5,1
+PT-00689,46,Treatment (Novel Therapy),900.0,0
+PT-00690,62,Control (Standard),400.8,1
+PT-00691,53,Control (Standard),232.5,1
+PT-00692,57,Control (Standard),653.6,1
+PT-00693,81,Treatment (Novel Therapy),593.1,1
+PT-00694,44,Control (Standard),66.1,1
+PT-00695,60,Control (Standard),391.5,1
+PT-00696,62,Treatment (Novel Therapy),900.0,0
+PT-00697,67,Control (Standard),265.9,1
+PT-00698,58,Treatment (Novel Therapy),322.1,1
+PT-00699,60,Control (Standard),107.2,1
+PT-00700,54,Control (Standard),112.1,1
+PT-00701,60,Treatment (Novel Therapy),465.3,1
+PT-00702,54,Control (Standard),416.9,1
+PT-00703,63,Control (Standard),67.0,1
+PT-00704,54,Control (Standard),900.0,0
+PT-00705,61,Control (Standard),585.2,1
+PT-00706,57,Treatment (Novel Therapy),654.5,1
+PT-00707,68,Control (Standard),696.0,1
+PT-00708,57,Treatment (Novel Therapy),106.7,1
+PT-00709,42,Control (Standard),322.3,1
+PT-00710,69,Treatment (Novel Therapy),717.0,1
+PT-00711,49,Treatment (Novel Therapy),900.0,0
+PT-00712,52,Treatment (Novel Therapy),900.0,0
+PT-00713,52,Control (Standard),189.3,1
+PT-00714,70,Control (Standard),900.0,0
+PT-00715,38,Control (Standard),95.2,1
+PT-00716,85,Treatment (Novel Therapy),900.0,0
+PT-00717,67,Treatment (Novel Therapy),900.0,0
+PT-00718,60,Treatment (Novel Therapy),204.7,1
+PT-00719,57,Control (Standard),544.2,1
+PT-00720,60,Treatment (Novel Therapy),61.8,1
+PT-00721,62,Treatment (Novel Therapy),435.3,1
+PT-00722,63,Control (Standard),351.9,1
+PT-00723,63,Control (Standard),403.9,1
+PT-00724,58,Treatment (Novel Therapy),900.0,0
+PT-00725,56,Treatment (Novel Therapy),783.2,1
+PT-00726,56,Treatment (Novel Therapy),520.8,1
+PT-00727,56,Control (Standard),664.2,1
+PT-00728,68,Treatment (Novel Therapy),900.0,0
+PT-00729,63,Control (Standard),24.1,1
+PT-00730,31,Control (Standard),900.0,0
+PT-00731,63,Control (Standard),70.6,1
+PT-00732,59,Treatment (Novel Therapy),900.0,0
+PT-00733,57,Treatment (Novel Therapy),306.1,1
+PT-00734,54,Treatment (Novel Therapy),160.2,1
+PT-00735,68,Control (Standard),295.8,1
+PT-00736,66,Treatment (Novel Therapy),738.0,1
+PT-00737,51,Control (Standard),255.7,1
+PT-00738,61,Treatment (Novel Therapy),78.5,1
+PT-00739,49,Control (Standard),420.3,1
+PT-00740,45,Control (Standard),861.7,1
+PT-00741,52,Control (Standard),257.2,1
+PT-00742,65,Control (Standard),151.9,1
+PT-00743,66,Treatment (Novel Therapy),476.3,1
+PT-00744,62,Treatment (Novel Therapy),71.4,1
+PT-00745,64,Control (Standard),682.2,1
+PT-00746,62,Treatment (Novel Therapy),900.0,0
+PT-00747,52,Control (Standard),410.3,1
+PT-00748,61,Treatment (Novel Therapy),379.9,1
+PT-00749,65,Treatment (Novel Therapy),900.0,0
+PT-00750,64,Treatment (Novel Therapy),611.7,1
+PT-00751,68,Control (Standard),691.6,1
+PT-00752,64,Treatment (Novel Therapy),719.0,1
+PT-00753,61,Treatment (Novel Therapy),900.0,0
+PT-00754,67,Control (Standard),419.5,1
+PT-00755,57,Control (Standard),278.0,1
+PT-00756,50,Treatment (Novel Therapy),900.0,0
+PT-00757,56,Treatment (Novel Therapy),594.1,1
+PT-00758,51,Treatment (Novel Therapy),680.4,1
+PT-00759,51,Treatment (Novel Therapy),247.2,1
+PT-00760,56,Treatment (Novel Therapy),710.3,1
+PT-00761,50,Control (Standard),396.3,1
+PT-00762,55,Control (Standard),132.7,1
+PT-00763,40,Control (Standard),52.6,1
+PT-00764,59,Treatment (Novel Therapy),679.4,1
+PT-00765,58,Control (Standard),596.5,1
+PT-00766,50,Treatment (Novel Therapy),571.8,1
+PT-00767,63,Treatment (Novel Therapy),253.3,1
+PT-00768,66,Treatment (Novel Therapy),773.8,1
+PT-00769,43,Control (Standard),66.6,1
+PT-00770,51,Treatment (Novel Therapy),475.5,1
+PT-00771,51,Control (Standard),119.5,1
+PT-00772,49,Treatment (Novel Therapy),211.9,1
+PT-00773,65,Control (Standard),143.3,1
+PT-00774,56,Control (Standard),259.5,1
+PT-00775,55,Treatment (Novel Therapy),74.6,1
+PT-00776,39,Control (Standard),266.9,1
+PT-00777,63,Control (Standard),348.3,1
+PT-00778,46,Treatment (Novel Therapy),523.2,1
+PT-00779,58,Treatment (Novel Therapy),411.0,1
+PT-00780,60,Treatment (Novel Therapy),900.0,0
+PT-00781,70,Treatment (Novel Therapy),173.3,1
+PT-00782,46,Treatment (Novel Therapy),550.0,1
+PT-00783,30,Control (Standard),54.3,1
+PT-00784,59,Control (Standard),60.6,1
+PT-00785,74,Control (Standard),398.2,1
+PT-00786,69,Treatment (Novel Therapy),626.6,1
+PT-00787,59,Treatment (Novel Therapy),900.0,0
+PT-00788,53,Control (Standard),384.9,1
+PT-00789,65,Control (Standard),900.0,0
+PT-00790,49,Treatment (Novel Therapy),71.8,1
+PT-00791,62,Control (Standard),78.4,1
+PT-00792,62,Treatment (Novel Therapy),66.3,1
+PT-00793,67,Treatment (Novel Therapy),212.7,1
+PT-00794,82,Treatment (Novel Therapy),594.3,1
+PT-00795,61,Control (Standard),462.8,1
+PT-00796,53,Treatment (Novel Therapy),68.1,1
+PT-00797,57,Treatment (Novel Therapy),900.0,0
+PT-00798,42,Treatment (Novel Therapy),900.0,0
+PT-00799,51,Treatment (Novel Therapy),322.4,1
+PT-00800,54,Treatment (Novel Therapy),103.5,1
+PT-00801,53,Treatment (Novel Therapy),197.6,1
+PT-00802,59,Control (Standard),96.9,1
+PT-00803,50,Treatment (Novel Therapy),151.3,1
+PT-00804,68,Treatment (Novel Therapy),565.8,1
+PT-00805,58,Control (Standard),170.0,1
+PT-00806,57,Treatment (Novel Therapy),385.1,1
+PT-00807,55,Treatment (Novel Therapy),900.0,0
+PT-00808,59,Treatment (Novel Therapy),803.3,1
+PT-00809,65,Control (Standard),900.0,0
+PT-00810,50,Control (Standard),106.6,1
+PT-00811,52,Treatment (Novel Therapy),410.4,1
+PT-00812,55,Treatment (Novel Therapy),611.7,1
+PT-00813,45,Control (Standard),64.4,1
+PT-00814,50,Treatment (Novel Therapy),10.7,1
+PT-00815,53,Treatment (Novel Therapy),780.2,1
+PT-00816,65,Treatment (Novel Therapy),734.8,1
+PT-00817,60,Treatment (Novel Therapy),441.2,1
+PT-00818,59,Control (Standard),331.7,1
+PT-00819,65,Control (Standard),278.9,1
+PT-00820,56,Control (Standard),25.8,1
+PT-00821,61,Treatment (Novel Therapy),361.6,1
+PT-00822,57,Control (Standard),127.9,1
+PT-00823,60,Control (Standard),78.7,1
+PT-00824,52,Control (Standard),900.0,0
+PT-00825,36,Treatment (Novel Therapy),672.3,1
+PT-00826,56,Treatment (Novel Therapy),883.3,1
+PT-00827,70,Control (Standard),213.3,1
+PT-00828,66,Control (Standard),263.8,1
+PT-00829,66,Treatment (Novel Therapy),263.3,1
+PT-00830,69,Control (Standard),77.7,1
+PT-00831,58,Control (Standard),129.1,1
+PT-00832,59,Control (Standard),645.1,1
+PT-00833,52,Control (Standard),495.0,1
+PT-00834,55,Control (Standard),376.0,1
+PT-00835,63,Control (Standard),321.0,1
+PT-00836,68,Control (Standard),900.0,0
+PT-00837,56,Treatment (Novel Therapy),98.7,1
+PT-00838,53,Control (Standard),191.5,1
+PT-00839,58,Treatment (Novel Therapy),376.6,1
+PT-00840,63,Treatment (Novel Therapy),900.0,0
+PT-00841,45,Control (Standard),900.0,0
+PT-00842,37,Treatment (Novel Therapy),267.0,1
+PT-00843,53,Control (Standard),788.7,1
+PT-00844,47,Treatment (Novel Therapy),900.0,0
+PT-00845,53,Control (Standard),157.0,1
+PT-00846,56,Control (Standard),268.0,1
+PT-00847,53,Control (Standard),275.0,1
+PT-00848,71,Treatment (Novel Therapy),900.0,0
+PT-00849,60,Treatment (Novel Therapy),208.4,1
+PT-00850,60,Treatment (Novel Therapy),900.0,0
+PT-00851,63,Control (Standard),225.3,1
+PT-00852,47,Treatment (Novel Therapy),887.6,1
+PT-00853,67,Control (Standard),282.0,1
+PT-00854,57,Treatment (Novel Therapy),643.2,1
+PT-00855,64,Control (Standard),703.5,1
+PT-00856,48,Control (Standard),655.4,1
+PT-00857,44,Control (Standard),770.8,1
+PT-00858,65,Control (Standard),52.7,1
+PT-00859,61,Treatment (Novel Therapy),816.6,1
+PT-00860,49,Control (Standard),105.0,1
+PT-00861,50,Treatment (Novel Therapy),446.6,1
+PT-00862,68,Control (Standard),377.3,1
+PT-00863,47,Treatment (Novel Therapy),432.4,1
+PT-00864,72,Control (Standard),354.4,1
+PT-00865,49,Control (Standard),900.0,0
+PT-00866,63,Treatment (Novel Therapy),163.3,1
+PT-00867,55,Control (Standard),492.8,1
+PT-00868,63,Control (Standard),265.7,1
+PT-00869,53,Treatment (Novel Therapy),161.0,1
+PT-00870,56,Treatment (Novel Therapy),186.6,1
+PT-00871,58,Control (Standard),900.0,0
+PT-00872,48,Control (Standard),801.2,1
+PT-00873,64,Treatment (Novel Therapy),900.0,0
+PT-00874,53,Control (Standard),900.0,0
+PT-00875,55,Control (Standard),147.0,1
+PT-00876,49,Control (Standard),239.0,1
+PT-00877,34,Treatment (Novel Therapy),778.2,1
+PT-00878,56,Treatment (Novel Therapy),523.8,1
+PT-00879,79,Control (Standard),280.9,1
+PT-00880,65,Control (Standard),240.5,1
+PT-00881,57,Control (Standard),415.3,1
+PT-00882,55,Treatment (Novel Therapy),639.4,1
+PT-00883,58,Control (Standard),118.3,1
+PT-00884,62,Control (Standard),318.5,1
+PT-00885,47,Treatment (Novel Therapy),610.1,1
+PT-00886,68,Control (Standard),395.2,1
+PT-00887,64,Treatment (Novel Therapy),237.0,1
+PT-00888,64,Control (Standard),568.7,1
+PT-00889,61,Control (Standard),26.8,1
+PT-00890,58,Control (Standard),238.6,1
+PT-00891,64,Treatment (Novel Therapy),900.0,0
+PT-00892,63,Treatment (Novel Therapy),623.8,1
+PT-00893,54,Treatment (Novel Therapy),287.1,1
+PT-00894,52,Control (Standard),513.5,1
+PT-00895,58,Treatment (Novel Therapy),628.4,1
+PT-00896,71,Control (Standard),643.1,1
+PT-00897,46,Control (Standard),559.8,1
+PT-00898,44,Treatment (Novel Therapy),687.6,1
+PT-00899,59,Control (Standard),330.6,1
+PT-00900,58,Control (Standard),100.8,1
+PT-00901,59,Control (Standard),179.6,1
+PT-00902,60,Control (Standard),281.4,1
+PT-00903,55,Control (Standard),420.1,1
+PT-00904,71,Treatment (Novel Therapy),559.8,1
+PT-00905,43,Control (Standard),196.2,1
+PT-00906,50,Treatment (Novel Therapy),14.9,1
+PT-00907,57,Treatment (Novel Therapy),538.6,1
+PT-00908,43,Control (Standard),194.6,1
+PT-00909,56,Control (Standard),559.3,1
+PT-00910,72,Control (Standard),25.7,1
+PT-00911,58,Treatment (Novel Therapy),652.0,1
+PT-00912,60,Control (Standard),900.0,0
+PT-00913,46,Treatment (Novel Therapy),202.0,1
+PT-00914,52,Control (Standard),318.5,1
+PT-00915,54,Treatment (Novel Therapy),118.6,1
+PT-00916,55,Control (Standard),444.0,1
+PT-00917,69,Control (Standard),378.9,1
+PT-00918,63,Treatment (Novel Therapy),437.4,1
+PT-00919,47,Treatment (Novel Therapy),569.3,1
+PT-00920,60,Control (Standard),845.1,1
+PT-00921,62,Treatment (Novel Therapy),223.5,1
+PT-00922,68,Control (Standard),24.6,1
+PT-00923,72,Treatment (Novel Therapy),900.0,0
+PT-00924,48,Treatment (Novel Therapy),641.5,1
+PT-00925,50,Control (Standard),829.1,1
+PT-00926,46,Control (Standard),418.0,1
+PT-00927,55,Control (Standard),665.0,1
+PT-00928,62,Treatment (Novel Therapy),461.9,1
+PT-00929,66,Treatment (Novel Therapy),900.0,0
+PT-00930,57,Control (Standard),894.4,1
+PT-00931,55,Control (Standard),396.7,1
+PT-00932,59,Treatment (Novel Therapy),208.3,1
+PT-00933,50,Treatment (Novel Therapy),294.7,1
+PT-00934,76,Treatment (Novel Therapy),225.8,1
+PT-00935,43,Control (Standard),170.6,1
+PT-00936,59,Control (Standard),207.6,1
+PT-00937,76,Control (Standard),382.7,1
+PT-00938,58,Treatment (Novel Therapy),656.4,1
+PT-00939,56,Control (Standard),286.5,1
+PT-00940,54,Treatment (Novel Therapy),695.3,1
+PT-00941,56,Control (Standard),67.6,1
+PT-00942,70,Treatment (Novel Therapy),114.8,1
+PT-00943,38,Treatment (Novel Therapy),199.5,1
+PT-00944,71,Treatment (Novel Therapy),565.2,1
+PT-00945,45,Control (Standard),150.5,1
+PT-00946,55,Control (Standard),193.2,1
+PT-00947,54,Control (Standard),268.6,1
+PT-00948,63,Treatment (Novel Therapy),900.0,0
+PT-00949,43,Treatment (Novel Therapy),26.9,1
+PT-00950,62,Treatment (Novel Therapy),746.5,1
+PT-00951,76,Treatment (Novel Therapy),777.6,1
+PT-00952,45,Treatment (Novel Therapy),900.0,0
+PT-00953,59,Control (Standard),900.0,0
+PT-00954,52,Treatment (Novel Therapy),36.0,1
+PT-00955,61,Control (Standard),113.6,1
+PT-00956,58,Control (Standard),817.5,1
+PT-00957,52,Treatment (Novel Therapy),494.4,1
+PT-00958,62,Control (Standard),390.4,1
+PT-00959,74,Control (Standard),480.1,1
+PT-00960,56,Treatment (Novel Therapy),794.5,1
+PT-00961,64,Control (Standard),900.0,0
+PT-00962,46,Treatment (Novel Therapy),900.0,0
+PT-00963,49,Control (Standard),542.0,1
+PT-00964,62,Control (Standard),195.6,1
+PT-00965,71,Control (Standard),801.6,1
+PT-00966,61,Control (Standard),45.2,1
+PT-00967,55,Treatment (Novel Therapy),257.5,1
+PT-00968,57,Control (Standard),847.4,1
+PT-00969,46,Treatment (Novel Therapy),282.2,1
+PT-00970,63,Control (Standard),154.6,1
+PT-00971,65,Treatment (Novel Therapy),166.2,1
+PT-00972,53,Treatment (Novel Therapy),900.0,0
+PT-00973,53,Treatment (Novel Therapy),543.2,1
+PT-00974,60,Control (Standard),492.2,1
+PT-00975,54,Control (Standard),165.9,1
+PT-00976,57,Control (Standard),589.0,1
+PT-00977,76,Treatment (Novel Therapy),900.0,0
+PT-00978,55,Control (Standard),211.5,1
+PT-00979,54,Control (Standard),275.6,1
+PT-00980,52,Treatment (Novel Therapy),236.6,1
+PT-00981,64,Control (Standard),900.0,0
+PT-00982,56,Treatment (Novel Therapy),740.6,1
+PT-00983,52,Control (Standard),900.0,0
+PT-00984,69,Control (Standard),205.7,1
+PT-00985,70,Treatment (Novel Therapy),900.0,0
+PT-00986,52,Control (Standard),599.5,1
+PT-00987,41,Treatment (Novel Therapy),815.9,1
+PT-00988,67,Control (Standard),900.0,0
+PT-00989,51,Control (Standard),264.1,1
+PT-00990,65,Treatment (Novel Therapy),158.8,1
+PT-00991,40,Treatment (Novel Therapy),782.3,1
+PT-00992,66,Treatment (Novel Therapy),884.5,1
+PT-00993,47,Control (Standard),399.2,1
+PT-00994,64,Treatment (Novel Therapy),233.8,1
+PT-00995,58,Control (Standard),342.8,1
+PT-00996,49,Control (Standard),211.3,1
+PT-00997,54,Treatment (Novel Therapy),459.5,1
+PT-00998,64,Control (Standard),462.5,1
+PT-00999,58,Treatment (Novel Therapy),900.0,0
+PT-01000,63,Control (Standard),161.7,1
+PT-01001,75,Control (Standard),272.0,1
+PT-01002,43,Treatment (Novel Therapy),295.0,1
+PT-01003,72,Treatment (Novel Therapy),225.8,1
+PT-01004,58,Treatment (Novel Therapy),900.0,0
+PT-01005,49,Treatment (Novel Therapy),900.0,0
+PT-01006,46,Treatment (Novel Therapy),397.8,1
+PT-01007,56,Treatment (Novel Therapy),900.0,0
+PT-01008,66,Treatment (Novel Therapy),900.0,0
+PT-01009,56,Control (Standard),728.8,1
+PT-01010,71,Control (Standard),131.4,1
+PT-01011,44,Control (Standard),900.0,0
+PT-01012,57,Treatment (Novel Therapy),404.6,1
+PT-01013,46,Treatment (Novel Therapy),365.6,1
+PT-01014,61,Control (Standard),54.6,1
+PT-01015,65,Treatment (Novel Therapy),526.6,1
+PT-01016,54,Treatment (Novel Therapy),136.8,1
+PT-01017,34,Control (Standard),171.7,1
+PT-01018,59,Treatment (Novel Therapy),342.9,1
+PT-01019,61,Treatment (Novel Therapy),900.0,0
+PT-01020,61,Control (Standard),791.4,1
+PT-01021,69,Treatment (Novel Therapy),328.3,1
+PT-01022,48,Control (Standard),754.2,1
+PT-01023,64,Treatment (Novel Therapy),900.0,0
+PT-01024,68,Treatment (Novel Therapy),900.0,0
+PT-01025,41,Treatment (Novel Therapy),174.7,1
+PT-01026,60,Control (Standard),508.5,1
+PT-01027,53,Treatment (Novel Therapy),900.0,0
+PT-01028,57,Treatment (Novel Therapy),800.3,1
+PT-01029,61,Control (Standard),223.6,1
+PT-01030,53,Treatment (Novel Therapy),543.8,1
+PT-01031,51,Control (Standard),463.0,1
+PT-01032,58,Treatment (Novel Therapy),555.9,1
+PT-01033,48,Control (Standard),92.4,1
+PT-01034,48,Control (Standard),211.2,1
+PT-01035,64,Control (Standard),652.7,1
+PT-01036,47,Treatment (Novel Therapy),900.0,0
+PT-01037,63,Control (Standard),103.3,1
+PT-01038,62,Treatment (Novel Therapy),900.0,0
+PT-01039,42,Control (Standard),221.8,1
+PT-01040,51,Control (Standard),479.4,1
+PT-01041,68,Treatment (Novel Therapy),900.0,0
+PT-01042,49,Treatment (Novel Therapy),900.0,0
+PT-01043,53,Control (Standard),900.0,0
+PT-01044,62,Treatment (Novel Therapy),338.8,1
+PT-01045,65,Treatment (Novel Therapy),900.0,0
+PT-01046,55,Treatment (Novel Therapy),159.7,1
+PT-01047,52,Control (Standard),524.7,1
+PT-01048,70,Control (Standard),568.4,1
+PT-01049,73,Treatment (Novel Therapy),792.2,1
+PT-01050,66,Control (Standard),174.0,1
+PT-01051,58,Treatment (Novel Therapy),900.0,0
+PT-01052,50,Treatment (Novel Therapy),196.6,1
+PT-01053,50,Treatment (Novel Therapy),77.5,1
+PT-01054,62,Treatment (Novel Therapy),862.2,1
+PT-01055,61,Treatment (Novel Therapy),514.0,1
+PT-01056,70,Control (Standard),734.6,1
+PT-01057,63,Treatment (Novel Therapy),411.7,1
+PT-01058,44,Control (Standard),122.5,1
+PT-01059,67,Control (Standard),710.5,1
+PT-01060,49,Treatment (Novel Therapy),604.2,1
+PT-01061,54,Treatment (Novel Therapy),216.5,1
+PT-01062,60,Treatment (Novel Therapy),867.6,1
+PT-01063,75,Treatment (Novel Therapy),556.6,1
+PT-01064,85,Control (Standard),424.6,1
+PT-01065,63,Control (Standard),310.7,1
+PT-01066,56,Treatment (Novel Therapy),900.0,0
+PT-01067,62,Control (Standard),698.0,1
+PT-01068,65,Control (Standard),529.6,1
+PT-01069,55,Control (Standard),83.2,1
+PT-01070,74,Control (Standard),714.9,1
+PT-01071,60,Control (Standard),488.2,1
+PT-01072,62,Control (Standard),515.8,1
+PT-01073,63,Control (Standard),243.9,1
+PT-01074,61,Control (Standard),800.5,1
+PT-01075,65,Treatment (Novel Therapy),877.0,1
+PT-01076,52,Control (Standard),87.8,1
+PT-01077,52,Control (Standard),273.7,1
+PT-01078,48,Treatment (Novel Therapy),900.0,0
+PT-01079,61,Control (Standard),43.8,1
+PT-01080,65,Treatment (Novel Therapy),900.0,0
+PT-01081,62,Treatment (Novel Therapy),794.6,1
+PT-01082,73,Control (Standard),449.3,1
+PT-01083,57,Control (Standard),185.3,1
+PT-01084,64,Treatment (Novel Therapy),274.9,1
+PT-01085,48,Treatment (Novel Therapy),900.0,0
+PT-01086,54,Control (Standard),202.5,1
+PT-01087,64,Treatment (Novel Therapy),900.0,0
+PT-01088,65,Control (Standard),263.8,1
+PT-01089,55,Treatment (Novel Therapy),167.3,1
+PT-01090,57,Control (Standard),13.8,1
+PT-01091,44,Treatment (Novel Therapy),598.2,1
+PT-01092,54,Treatment (Novel Therapy),900.0,0
+PT-01093,66,Treatment (Novel Therapy),396.6,1
+PT-01094,63,Treatment (Novel Therapy),384.2,1
+PT-01095,62,Control (Standard),231.6,1
+PT-01096,58,Control (Standard),355.1,1
+PT-01097,58,Control (Standard),296.4,1
+PT-01098,52,Control (Standard),802.0,1
+PT-01099,64,Treatment (Novel Therapy),549.8,1
+PT-01100,61,Control (Standard),345.3,1
+PT-01101,62,Control (Standard),104.0,1
+PT-01102,53,Treatment (Novel Therapy),900.0,0
+PT-01103,38,Treatment (Novel Therapy),276.1,1
+PT-01104,67,Treatment (Novel Therapy),99.4,1
+PT-01105,53,Treatment (Novel Therapy),768.3,1
+PT-01106,50,Control (Standard),416.7,1
+PT-01107,64,Control (Standard),278.7,1
+PT-01108,54,Treatment (Novel Therapy),453.6,1
+PT-01109,67,Treatment (Novel Therapy),900.0,0
+PT-01110,63,Control (Standard),139.3,1
+PT-01111,64,Treatment (Novel Therapy),900.0,0
+PT-01112,45,Control (Standard),465.9,1
+PT-01113,68,Control (Standard),281.3,1
+PT-01114,60,Treatment (Novel Therapy),493.8,1
+PT-01115,54,Treatment (Novel Therapy),282.7,1
+PT-01116,59,Treatment (Novel Therapy),900.0,0
+PT-01117,42,Control (Standard),349.2,1
+PT-01118,61,Treatment (Novel Therapy),346.8,1
+PT-01119,48,Control (Standard),417.3,1
+PT-01120,45,Control (Standard),900.0,0
+PT-01121,44,Treatment (Novel Therapy),468.1,1
+PT-01122,68,Treatment (Novel Therapy),900.0,0
+PT-01123,52,Treatment (Novel Therapy),371.5,1
+PT-01124,71,Treatment (Novel Therapy),78.7,1
+PT-01125,53,Treatment (Novel Therapy),231.3,1
+PT-01126,42,Treatment (Novel Therapy),449.8,1
+PT-01127,47,Control (Standard),154.0,1
+PT-01128,69,Control (Standard),0.7,1
+PT-01129,56,Control (Standard),900.0,0
+PT-01130,53,Control (Standard),724.5,1
+PT-01131,59,Treatment (Novel Therapy),900.0,0
+PT-01132,62,Control (Standard),122.2,1
+PT-01133,68,Control (Standard),92.7,1
+PT-01134,71,Control (Standard),58.2,1
+PT-01135,54,Treatment (Novel Therapy),874.5,1
+PT-01136,46,Control (Standard),900.0,0
+PT-01137,54,Treatment (Novel Therapy),462.9,1
+PT-01138,60,Control (Standard),91.9,1
+PT-01139,49,Control (Standard),348.9,1
+PT-01140,49,Treatment (Novel Therapy),375.5,1
+PT-01141,61,Treatment (Novel Therapy),402.6,1
+PT-01142,57,Control (Standard),440.0,1
+PT-01143,58,Treatment (Novel Therapy),864.5,1
+PT-01144,51,Treatment (Novel Therapy),138.4,1
+PT-01145,55,Control (Standard),35.1,1
+PT-01146,49,Treatment (Novel Therapy),900.0,0
+PT-01147,66,Treatment (Novel Therapy),259.2,1
+PT-01148,67,Treatment (Novel Therapy),77.7,1
+PT-01149,41,Treatment (Novel Therapy),217.2,1
+PT-01150,49,Treatment (Novel Therapy),60.2,1
+PT-01151,44,Treatment (Novel Therapy),420.7,1
+PT-01152,52,Treatment (Novel Therapy),900.0,0
+PT-01153,57,Treatment (Novel Therapy),367.7,1
+PT-01154,44,Treatment (Novel Therapy),478.1,1
+PT-01155,49,Treatment (Novel Therapy),788.7,1
+PT-01156,48,Treatment (Novel Therapy),553.9,1
+PT-01157,59,Control (Standard),760.0,1
+PT-01158,58,Treatment (Novel Therapy),900.0,0
+PT-01159,51,Treatment (Novel Therapy),20.8,1
+PT-01160,59,Control (Standard),616.4,1
+PT-01161,53,Treatment (Novel Therapy),496.9,1
+PT-01162,55,Control (Standard),900.0,0
+PT-01163,73,Control (Standard),327.0,1
+PT-01164,70,Treatment (Novel Therapy),900.0,0
+PT-01165,46,Control (Standard),584.5,1
+PT-01166,65,Treatment (Novel Therapy),274.8,1
+PT-01167,65,Treatment (Novel Therapy),590.7,1
+PT-01168,47,Treatment (Novel Therapy),900.0,0
+PT-01169,65,Control (Standard),751.8,1
+PT-01170,71,Control (Standard),78.0,1
+PT-01171,47,Treatment (Novel Therapy),841.9,1
+PT-01172,49,Treatment (Novel Therapy),372.1,1
+PT-01173,67,Treatment (Novel Therapy),15.9,1
+PT-01174,60,Control (Standard),270.8,1
+PT-01175,62,Treatment (Novel Therapy),261.1,1
+PT-01176,61,Treatment (Novel Therapy),900.0,0
+PT-01177,61,Treatment (Novel Therapy),363.6,1
+PT-01178,46,Control (Standard),694.4,1
+PT-01179,67,Treatment (Novel Therapy),2.4,1
+PT-01180,68,Treatment (Novel Therapy),333.6,1
+PT-01181,55,Treatment (Novel Therapy),267.4,1
+PT-01182,57,Control (Standard),162.5,1
+PT-01183,44,Treatment (Novel Therapy),93.7,1
+PT-01184,62,Treatment (Novel Therapy),214.5,1
+PT-01185,63,Control (Standard),383.0,1
+PT-01186,57,Treatment (Novel Therapy),317.1,1
+PT-01187,68,Treatment (Novel Therapy),448.4,1
+PT-01188,54,Control (Standard),253.0,1
+PT-01189,63,Control (Standard),792.4,1
+PT-01190,48,Treatment (Novel Therapy),900.0,0
+PT-01191,57,Control (Standard),334.2,1
+PT-01192,56,Treatment (Novel Therapy),356.3,1
+PT-01193,60,Control (Standard),84.1,1
+PT-01194,54,Treatment (Novel Therapy),900.0,0
+PT-01195,56,Control (Standard),53.1,1
+PT-01196,65,Treatment (Novel Therapy),323.4,1
+PT-01197,54,Treatment (Novel Therapy),323.8,1
+PT-01198,43,Treatment (Novel Therapy),346.4,1
+PT-01199,73,Treatment (Novel Therapy),192.1,1
+PT-01200,70,Control (Standard),623.7,1
+PT-01201,46,Treatment (Novel Therapy),150.5,1
+PT-01202,64,Control (Standard),452.6,1
+PT-01203,53,Control (Standard),94.9,1
+PT-01204,60,Control (Standard),60.2,1
+PT-01205,60,Control (Standard),882.9,1
+PT-01206,55,Treatment (Novel Therapy),217.5,1
+PT-01207,50,Treatment (Novel Therapy),900.0,0
+PT-01208,51,Control (Standard),374.1,1
+PT-01209,49,Control (Standard),65.1,1
+PT-01210,50,Treatment (Novel Therapy),900.0,0
+PT-01211,57,Control (Standard),170.7,1
+PT-01212,51,Control (Standard),756.2,1
+PT-01213,64,Control (Standard),122.8,1
+PT-01214,71,Treatment (Novel Therapy),900.0,0
+PT-01215,52,Treatment (Novel Therapy),26.0,1
+PT-01216,60,Control (Standard),348.4,1
+PT-01217,62,Control (Standard),604.4,1
+PT-01218,62,Treatment (Novel Therapy),900.0,0
+PT-01219,58,Treatment (Novel Therapy),900.0,0
+PT-01220,64,Control (Standard),680.7,1
+PT-01221,62,Treatment (Novel Therapy),900.0,0
+PT-01222,46,Control (Standard),141.5,1
+PT-01223,65,Control (Standard),193.7,1
+PT-01224,65,Treatment (Novel Therapy),314.7,1
+PT-01225,51,Control (Standard),253.1,1
+PT-01226,58,Treatment (Novel Therapy),422.3,1
+PT-01227,64,Control (Standard),374.1,1
+PT-01228,56,Control (Standard),117.3,1
+PT-01229,67,Treatment (Novel Therapy),815.2,1
+PT-01230,79,Control (Standard),122.1,1
+PT-01231,50,Treatment (Novel Therapy),336.2,1
+PT-01232,45,Control (Standard),342.0,1
+PT-01233,60,Control (Standard),643.4,1
+PT-01234,64,Control (Standard),565.2,1
+PT-01235,55,Treatment (Novel Therapy),740.5,1
+PT-01236,71,Control (Standard),114.8,1
+PT-01237,45,Treatment (Novel Therapy),601.7,1
+PT-01238,64,Control (Standard),71.5,1
+PT-01239,52,Treatment (Novel Therapy),405.3,1
+PT-01240,73,Control (Standard),277.6,1
+PT-01241,75,Treatment (Novel Therapy),61.3,1
+PT-01242,51,Treatment (Novel Therapy),299.8,1
+PT-01243,53,Treatment (Novel Therapy),900.0,0
+PT-01244,65,Treatment (Novel Therapy),900.0,0
+PT-01245,54,Treatment (Novel Therapy),379.1,1
+PT-01246,57,Treatment (Novel Therapy),65.2,1
+PT-01247,58,Control (Standard),129.1,1
+PT-01248,40,Control (Standard),263.2,1
+PT-01249,57,Treatment (Novel Therapy),900.0,0
+PT-01250,51,Treatment (Novel Therapy),169.2,1
+PT-01251,53,Treatment (Novel Therapy),900.0,0
+PT-01252,70,Control (Standard),85.3,1
+PT-01253,46,Control (Standard),900.0,0
+PT-01254,65,Control (Standard),256.1,1
+PT-01255,55,Treatment (Novel Therapy),900.0,0
+PT-01256,55,Control (Standard),230.7,1
+PT-01257,65,Control (Standard),445.8,1
+PT-01258,61,Control (Standard),137.1,1
+PT-01259,63,Control (Standard),108.8,1
+PT-01260,66,Treatment (Novel Therapy),900.0,0
+PT-01261,55,Control (Standard),900.0,0
+PT-01262,52,Treatment (Novel Therapy),900.0,0
+PT-01263,48,Control (Standard),443.8,1
+PT-01264,50,Control (Standard),662.0,1
+PT-01265,84,Control (Standard),59.2,1
+PT-01266,69,Control (Standard),225.6,1
+PT-01267,45,Control (Standard),212.2,1
+PT-01268,46,Control (Standard),453.3,1
+PT-01269,62,Treatment (Novel Therapy),382.9,1
+PT-01270,62,Control (Standard),110.3,1
+PT-01271,62,Treatment (Novel Therapy),668.2,1
+PT-01272,55,Treatment (Novel Therapy),900.0,0
+PT-01273,56,Treatment (Novel Therapy),410.3,1
+PT-01274,60,Control (Standard),100.2,1
+PT-01275,58,Control (Standard),139.9,1
+PT-01276,38,Control (Standard),164.9,1
+PT-01277,55,Control (Standard),203.5,1
+PT-01278,50,Treatment (Novel Therapy),736.3,1
+PT-01279,59,Control (Standard),421.6,1
+PT-01280,84,Control (Standard),514.8,1
+PT-01281,61,Treatment (Novel Therapy),389.7,1
+PT-01282,55,Treatment (Novel Therapy),900.0,0
+PT-01283,66,Treatment (Novel Therapy),231.1,1
+PT-01284,62,Control (Standard),316.6,1
+PT-01285,61,Control (Standard),650.4,1
+PT-01286,63,Treatment (Novel Therapy),207.7,1
+PT-01287,76,Control (Standard),86.0,1
+PT-01288,47,Control (Standard),811.3,1
+PT-01289,62,Control (Standard),230.9,1
+PT-01290,49,Control (Standard),501.6,1
+PT-01291,62,Control (Standard),26.9,1
+PT-01292,49,Control (Standard),508.2,1
+PT-01293,54,Treatment (Novel Therapy),342.0,1
+PT-01294,55,Treatment (Novel Therapy),79.9,1
+PT-01295,66,Treatment (Novel Therapy),687.2,1
+PT-01296,66,Control (Standard),166.9,1
+PT-01297,46,Control (Standard),259.6,1
+PT-01298,58,Control (Standard),67.0,1
+PT-01299,51,Treatment (Novel Therapy),175.2,1
+PT-01300,46,Treatment (Novel Therapy),323.8,1
+PT-01301,56,Control (Standard),73.0,1
+PT-01302,55,Treatment (Novel Therapy),900.0,0
+PT-01303,79,Control (Standard),8.9,1
+PT-01304,61,Treatment (Novel Therapy),523.9,1
+PT-01305,45,Treatment (Novel Therapy),151.2,1
+PT-01306,52,Treatment (Novel Therapy),333.5,1
+PT-01307,67,Treatment (Novel Therapy),900.0,0
+PT-01308,76,Treatment (Novel Therapy),189.5,1
+PT-01309,43,Control (Standard),900.0,0
+PT-01310,41,Treatment (Novel Therapy),232.8,1
+PT-01311,74,Control (Standard),567.9,1
+PT-01312,61,Treatment (Novel Therapy),601.3,1
+PT-01313,50,Treatment (Novel Therapy),900.0,0
+PT-01314,62,Treatment (Novel Therapy),610.8,1
+PT-01315,34,Control (Standard),366.1,1
+PT-01316,58,Treatment (Novel Therapy),222.7,1
+PT-01317,60,Treatment (Novel Therapy),194.0,1
+PT-01318,66,Treatment (Novel Therapy),900.0,0
+PT-01319,48,Control (Standard),221.2,1
+PT-01320,58,Control (Standard),249.8,1
+PT-01321,49,Control (Standard),591.4,1
+PT-01322,60,Control (Standard),228.2,1
+PT-01323,49,Treatment (Novel Therapy),900.0,0
+PT-01324,54,Control (Standard),563.3,1
+PT-01325,49,Treatment (Novel Therapy),669.6,1
+PT-01326,63,Control (Standard),804.4,1
+PT-01327,65,Control (Standard),45.5,1
+PT-01328,55,Treatment (Novel Therapy),283.1,1
+PT-01329,58,Treatment (Novel Therapy),501.9,1
+PT-01330,44,Control (Standard),158.5,1
+PT-01331,55,Treatment (Novel Therapy),900.0,0
+PT-01332,57,Treatment (Novel Therapy),900.0,0
+PT-01333,81,Control (Standard),284.6,1
+PT-01334,47,Treatment (Novel Therapy),368.6,1
+PT-01335,71,Treatment (Novel Therapy),900.0,0
+PT-01336,66,Treatment (Novel Therapy),478.9,1
+PT-01337,60,Control (Standard),331.3,1
+PT-01338,73,Treatment (Novel Therapy),378.4,1
+PT-01339,61,Control (Standard),883.3,1
+PT-01340,61,Control (Standard),394.1,1
+PT-01341,57,Control (Standard),594.5,1
+PT-01342,69,Control (Standard),667.7,1
+PT-01343,67,Treatment (Novel Therapy),368.3,1
+PT-01344,52,Treatment (Novel Therapy),466.4,1
+PT-01345,46,Treatment (Novel Therapy),900.0,0
+PT-01346,56,Control (Standard),244.1,1
+PT-01347,50,Control (Standard),639.6,1
+PT-01348,57,Control (Standard),900.0,0
+PT-01349,69,Treatment (Novel Therapy),706.7,1
+PT-01350,53,Control (Standard),567.9,1
+PT-01351,57,Treatment (Novel Therapy),900.0,0
+PT-01352,58,Treatment (Novel Therapy),900.0,0
+PT-01353,65,Control (Standard),265.1,1
+PT-01354,37,Treatment (Novel Therapy),74.8,1
+PT-01355,52,Control (Standard),269.7,1
+PT-01356,59,Treatment (Novel Therapy),785.6,1
+PT-01357,68,Treatment (Novel Therapy),485.1,1
+PT-01358,53,Control (Standard),577.2,1
+PT-01359,41,Control (Standard),240.0,1
+PT-01360,63,Treatment (Novel Therapy),724.0,1
+PT-01361,52,Treatment (Novel Therapy),213.8,1
+PT-01362,47,Control (Standard),577.7,1
+PT-01363,52,Treatment (Novel Therapy),600.0,1
+PT-01364,56,Treatment (Novel Therapy),231.1,1
+PT-01365,52,Treatment (Novel Therapy),317.7,1
+PT-01366,38,Control (Standard),576.8,1
+PT-01367,66,Treatment (Novel Therapy),522.4,1
+PT-01368,69,Treatment (Novel Therapy),242.8,1
+PT-01369,63,Control (Standard),900.0,0
+PT-01370,47,Control (Standard),536.1,1
+PT-01371,56,Treatment (Novel Therapy),900.0,0
+PT-01372,57,Control (Standard),286.9,1
+PT-01373,63,Treatment (Novel Therapy),513.6,1
+PT-01374,64,Control (Standard),849.0,1
+PT-01375,51,Control (Standard),358.6,1
+PT-01376,58,Treatment (Novel Therapy),843.5,1
+PT-01377,62,Control (Standard),173.9,1
+PT-01378,71,Treatment (Novel Therapy),481.0,1
+PT-01379,64,Control (Standard),94.7,1
+PT-01380,65,Treatment (Novel Therapy),233.0,1
+PT-01381,58,Control (Standard),2.1,1
+PT-01382,70,Control (Standard),37.9,1
+PT-01383,61,Treatment (Novel Therapy),900.0,0
+PT-01384,50,Control (Standard),167.9,1
+PT-01385,70,Treatment (Novel Therapy),768.6,1
+PT-01386,64,Control (Standard),715.4,1
+PT-01387,54,Treatment (Novel Therapy),606.4,1
+PT-01388,53,Control (Standard),113.2,1
+PT-01389,60,Treatment (Novel Therapy),882.3,1
+PT-01390,62,Control (Standard),421.0,1
+PT-01391,59,Control (Standard),555.2,1
+PT-01392,60,Control (Standard),604.8,1
+PT-01393,73,Control (Standard),900.0,0
+PT-01394,67,Treatment (Novel Therapy),636.7,1
+PT-01395,59,Control (Standard),230.0,1
+PT-01396,66,Treatment (Novel Therapy),745.0,1
+PT-01397,48,Control (Standard),58.8,1
+PT-01398,61,Control (Standard),847.4,1
+PT-01399,74,Treatment (Novel Therapy),147.3,1
+PT-01400,56,Treatment (Novel Therapy),353.9,1
+PT-01401,50,Control (Standard),674.2,1
+PT-01402,52,Control (Standard),418.4,1
+PT-01403,48,Control (Standard),264.1,1
+PT-01404,50,Treatment (Novel Therapy),511.6,1
+PT-01405,54,Treatment (Novel Therapy),900.0,0
+PT-01406,45,Control (Standard),229.0,1
+PT-01407,58,Treatment (Novel Therapy),900.0,0
+PT-01408,66,Treatment (Novel Therapy),115.1,1
+PT-01409,49,Treatment (Novel Therapy),900.0,0
+PT-01410,71,Treatment (Novel Therapy),900.0,0
+PT-01411,62,Control (Standard),130.8,1
+PT-01412,67,Control (Standard),289.2,1
+PT-01413,52,Control (Standard),120.8,1
+PT-01414,65,Control (Standard),526.4,1
+PT-01415,48,Treatment (Novel Therapy),586.8,1
+PT-01416,66,Treatment (Novel Therapy),724.8,1
+PT-01417,59,Control (Standard),139.8,1
+PT-01418,62,Control (Standard),149.1,1
+PT-01419,47,Control (Standard),39.6,1
+PT-01420,49,Treatment (Novel Therapy),348.1,1
+PT-01421,63,Control (Standard),386.4,1
+PT-01422,49,Treatment (Novel Therapy),900.0,0
+PT-01423,62,Control (Standard),484.0,1
+PT-01424,45,Control (Standard),292.7,1
+PT-01425,65,Treatment (Novel Therapy),900.0,0
+PT-01426,46,Treatment (Novel Therapy),865.5,1
+PT-01427,62,Control (Standard),900.0,0
+PT-01428,63,Treatment (Novel Therapy),577.0,1
+PT-01429,51,Treatment (Novel Therapy),284.9,1
+PT-01430,63,Treatment (Novel Therapy),76.5,1
+PT-01431,60,Control (Standard),549.0,1
+PT-01432,53,Treatment (Novel Therapy),149.3,1
+PT-01433,48,Control (Standard),205.4,1
+PT-01434,40,Treatment (Novel Therapy),583.1,1
+PT-01435,61,Control (Standard),390.3,1
+PT-01436,43,Control (Standard),421.2,1
+PT-01437,58,Control (Standard),121.3,1
+PT-01438,55,Treatment (Novel Therapy),407.8,1
+PT-01439,64,Control (Standard),436.2,1
+PT-01440,55,Treatment (Novel Therapy),900.0,0
+PT-01441,55,Treatment (Novel Therapy),881.3,1
+PT-01442,64,Control (Standard),900.0,0
+PT-01443,61,Treatment (Novel Therapy),900.0,0
+PT-01444,60,Control (Standard),413.5,1
+PT-01445,62,Treatment (Novel Therapy),219.3,1
+PT-01446,44,Control (Standard),483.8,1
+PT-01447,64,Treatment (Novel Therapy),707.0,1
+PT-01448,63,Treatment (Novel Therapy),676.7,1
+PT-01449,48,Treatment (Novel Therapy),530.9,1
+PT-01450,55,Treatment (Novel Therapy),578.3,1
+PT-01451,57,Control (Standard),225.4,1
+PT-01452,56,Treatment (Novel Therapy),566.7,1
+PT-01453,61,Treatment (Novel Therapy),224.7,1
+PT-01454,70,Treatment (Novel Therapy),900.0,0
+PT-01455,67,Control (Standard),133.2,1
+PT-01456,46,Treatment (Novel Therapy),111.8,1
+PT-01457,63,Treatment (Novel Therapy),469.2,1
+PT-01458,69,Treatment (Novel Therapy),760.6,1
+PT-01459,61,Control (Standard),294.3,1
+PT-01460,67,Treatment (Novel Therapy),302.6,1
+PT-01461,76,Control (Standard),385.1,1
+PT-01462,67,Treatment (Novel Therapy),373.6,1
+PT-01463,60,Control (Standard),900.0,0
+PT-01464,67,Treatment (Novel Therapy),900.0,0
+PT-01465,59,Treatment (Novel Therapy),546.0,1
+PT-01466,58,Control (Standard),221.2,1
+PT-01467,54,Treatment (Novel Therapy),899.8,1
+PT-01468,72,Control (Standard),35.9,1
+PT-01469,50,Treatment (Novel Therapy),513.2,1
+PT-01470,71,Treatment (Novel Therapy),362.6,1
+PT-01471,62,Treatment (Novel Therapy),900.0,0
+PT-01472,45,Treatment (Novel Therapy),24.1,1
+PT-01473,61,Treatment (Novel Therapy),609.2,1
+PT-01474,39,Control (Standard),566.7,1
+PT-01475,63,Control (Standard),328.3,1
+PT-01476,65,Treatment (Novel Therapy),112.3,1
+PT-01477,52,Treatment (Novel Therapy),900.0,0
+PT-01478,59,Treatment (Novel Therapy),565.1,1
+PT-01479,75,Treatment (Novel Therapy),693.5,1
+PT-01480,53,Control (Standard),164.4,1
+PT-01481,48,Treatment (Novel Therapy),523.4,1
+PT-01482,71,Control (Standard),288.3,1
+PT-01483,75,Treatment (Novel Therapy),101.0,1
+PT-01484,58,Control (Standard),83.7,1
+PT-01485,67,Control (Standard),712.4,1
+PT-01486,70,Control (Standard),166.3,1
+PT-01487,51,Control (Standard),138.9,1
+PT-01488,53,Treatment (Novel Therapy),549.1,1
+PT-01489,69,Control (Standard),603.4,1
+PT-01490,73,Control (Standard),54.3,1
+PT-01491,63,Control (Standard),400.7,1
+PT-01492,50,Control (Standard),92.0,1
+PT-01493,75,Control (Standard),35.7,1
+PT-01494,53,Control (Standard),47.8,1
+PT-01495,54,Treatment (Novel Therapy),900.0,0
+PT-01496,61,Treatment (Novel Therapy),145.9,1
+PT-01497,71,Treatment (Novel Therapy),67.6,1
+PT-01498,65,Control (Standard),294.4,1
+PT-01499,61,Control (Standard),724.7,1
+PT-01500,62,Treatment (Novel Therapy),288.4,1
+PT-01501,58,Treatment (Novel Therapy),453.1,1
+PT-01502,63,Control (Standard),38.4,1
+PT-01503,35,Control (Standard),302.3,1
+PT-01504,55,Control (Standard),401.4,1
+PT-01505,60,Control (Standard),395.7,1
+PT-01506,47,Control (Standard),224.1,1
+PT-01507,61,Treatment (Novel Therapy),341.4,1
+PT-01508,56,Treatment (Novel Therapy),134.3,1
+PT-01509,73,Treatment (Novel Therapy),394.2,1
+PT-01510,72,Treatment (Novel Therapy),127.0,1
+PT-01511,53,Treatment (Novel Therapy),900.0,0
+PT-01512,56,Treatment (Novel Therapy),900.0,0
+PT-01513,57,Treatment (Novel Therapy),900.0,0
+PT-01514,53,Control (Standard),767.8,1
+PT-01515,59,Control (Standard),421.4,1
+PT-01516,51,Control (Standard),520.0,1
+PT-01517,47,Treatment (Novel Therapy),311.0,1
+PT-01518,63,Treatment (Novel Therapy),718.0,1
+PT-01519,63,Control (Standard),307.0,1
+PT-01520,50,Treatment (Novel Therapy),521.7,1
+PT-01521,66,Control (Standard),588.7,1
+PT-01522,52,Treatment (Novel Therapy),307.7,1
+PT-01523,60,Control (Standard),215.0,1
+PT-01524,65,Control (Standard),900.0,0
+PT-01525,57,Control (Standard),50.3,1
+PT-01526,62,Control (Standard),328.7,1
+PT-01527,53,Control (Standard),893.6,1
+PT-01528,56,Control (Standard),430.0,1
+PT-01529,56,Treatment (Novel Therapy),600.9,1
+PT-01530,51,Treatment (Novel Therapy),275.9,1
+PT-01531,56,Control (Standard),231.1,1
+PT-01532,44,Treatment (Novel Therapy),900.0,0
+PT-01533,53,Treatment (Novel Therapy),617.6,1
+PT-01534,55,Control (Standard),350.7,1
+PT-01535,55,Control (Standard),79.4,1
+PT-01536,55,Control (Standard),18.8,1
+PT-01537,57,Control (Standard),900.0,0
+PT-01538,62,Treatment (Novel Therapy),404.9,1
+PT-01539,65,Control (Standard),423.6,1
+PT-01540,52,Treatment (Novel Therapy),106.2,1
+PT-01541,47,Treatment (Novel Therapy),801.3,1
+PT-01542,48,Control (Standard),900.0,0
+PT-01543,53,Treatment (Novel Therapy),639.5,1
+PT-01544,54,Control (Standard),96.3,1
+PT-01545,51,Treatment (Novel Therapy),647.8,1
+PT-01546,46,Control (Standard),600.1,1
+PT-01547,53,Treatment (Novel Therapy),436.4,1
+PT-01548,59,Treatment (Novel Therapy),900.0,0
+PT-01549,63,Control (Standard),465.9,1
+PT-01550,52,Treatment (Novel Therapy),900.0,0
+PT-01551,54,Treatment (Novel Therapy),707.1,1
+PT-01552,49,Treatment (Novel Therapy),159.3,1
+PT-01553,57,Treatment (Novel Therapy),335.5,1
+PT-01554,50,Treatment (Novel Therapy),228.9,1
+PT-01555,63,Control (Standard),881.0,1
+PT-01556,41,Control (Standard),592.1,1
+PT-01557,54,Treatment (Novel Therapy),790.0,1
+PT-01558,60,Control (Standard),204.2,1
+PT-01559,59,Treatment (Novel Therapy),211.5,1
+PT-01560,82,Treatment (Novel Therapy),900.0,0
+PT-01561,61,Control (Standard),320.3,1
+PT-01562,48,Control (Standard),157.7,1
+PT-01563,57,Treatment (Novel Therapy),697.0,1
+PT-01564,42,Control (Standard),38.7,1
+PT-01565,57,Treatment (Novel Therapy),352.2,1
+PT-01566,50,Control (Standard),316.2,1
+PT-01567,66,Treatment (Novel Therapy),175.9,1
+PT-01568,53,Control (Standard),900.0,0
+PT-01569,56,Treatment (Novel Therapy),236.0,1
+PT-01570,52,Control (Standard),99.0,1
+PT-01571,73,Treatment (Novel Therapy),230.6,1
+PT-01572,55,Control (Standard),603.8,1
+PT-01573,74,Treatment (Novel Therapy),457.3,1
+PT-01574,65,Treatment (Novel Therapy),625.8,1
+PT-01575,62,Control (Standard),23.2,1
+PT-01576,61,Control (Standard),34.2,1
+PT-01577,61,Control (Standard),300.0,1
+PT-01578,40,Treatment (Novel Therapy),900.0,0
+PT-01579,55,Treatment (Novel Therapy),900.0,0
+PT-01580,65,Treatment (Novel Therapy),113.6,1
+PT-01581,57,Control (Standard),369.1,1
+PT-01582,45,Control (Standard),895.0,1
+PT-01583,57,Treatment (Novel Therapy),416.6,1
+PT-01584,73,Control (Standard),698.0,1
+PT-01585,69,Treatment (Novel Therapy),161.7,1
+PT-01586,57,Control (Standard),900.0,0
+PT-01587,66,Treatment (Novel Therapy),900.0,0
+PT-01588,54,Control (Standard),900.0,0
+PT-01589,42,Control (Standard),494.0,1
+PT-01590,49,Treatment (Novel Therapy),390.6,1
+PT-01591,72,Treatment (Novel Therapy),900.0,0
+PT-01592,55,Treatment (Novel Therapy),301.4,1
+PT-01593,55,Control (Standard),224.0,1
+PT-01594,55,Control (Standard),520.0,1
+PT-01595,75,Treatment (Novel Therapy),900.0,0
+PT-01596,72,Treatment (Novel Therapy),900.0,0
+PT-01597,77,Control (Standard),144.9,1
+PT-01598,56,Control (Standard),645.8,1
+PT-01599,60,Control (Standard),564.1,1
+PT-01600,44,Treatment (Novel Therapy),88.9,1

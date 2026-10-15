@@ -1,7 +1,7 @@
 # 🧠 Daily AI, ML, Data Science & Analytics Portfolio
 
-[![Total Projects](https://img.shields.io/badge/Total%20Projects-12-blueviolet?style=for-the-badge&logo=github)](projects/)
-[![Current Streak](https://img.shields.io/badge/Daily%20Streak-12%20Days-orange?style=for-the-badge&logo=fire)](projects/)
+[![Total Projects](https://img.shields.io/badge/Total%20Projects-13-blueviolet?style=for-the-badge&logo=github)](projects/)
+[![Current Streak](https://img.shields.io/badge/Daily%20Streak-13%20Days-orange?style=for-the-badge&logo=fire)](projects/)
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](https://python.org)
 [![Daily Automation](https://img.shields.io/badge/Automation-Active%20%28GitHub%20Actions%29-brightgreen?style=for-the-badge&logo=githubactions)](.github/workflows/daily-project.yml)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)](LICENSE)
@@ -12,7 +12,7 @@
 
 ## 📊 Domain Distribution Matrix
 
-| ![Data Science](https://img.shields.io/badge/Data%20Science-blue) | **2** projects |
+| ![Data Science](https://img.shields.io/badge/Data%20Science-blue) | **3** projects |
 | ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-green) | **2** projects |
 | ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-orange) | **2** projects |
 | ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-red) | **2** projects |
@@ -25,6 +25,7 @@
 
 | Day | Domain | Project & Architecture | Core Tools / Techniques | Status |
 | :---: | :---: | :--- | :--- | :---: |
+| **Day 013** | ![Data Science](https://img.shields.io/badge/Data%20Science-blue) | [Kaplan-Meier Survival Duration & Hazard Modeling](https://github.com/abhishektotre/clinical-survival-duration-analysis) | `Data Science`, `Survival Analysis`, `Kaplan-Meier` | ✅ Completed |
 | **Day 012** | ![Artificial Intelligence](https://img.shields.io/badge/AI%20%26%20Agents-yellow) | [Retrieval-Augmented Generation (RAG) Architecture with Vector Indexing](https://github.com/abhishektotre/retrieval-augmented-generation-rag-engine) | `AI`, `RAG`, `Vector Search` | ✅ Completed |
 | **Day 011** | ![Natural Language Processing](https://img.shields.io/badge/NLP-purple) | [Multi-Aspect Customer Feedback Sentiment & Emotion Engine](https://github.com/abhishektotre/multi-aspect-sentiment-analysis-engine) | `NLP`, `Sentiment Analysis`, `TF-IDF` | ✅ Completed |
 | **Day 010** | ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-red) | [Deep Multi-Layer Perceptron (MLP) with Adam & Backprop from Scratch](https://github.com/abhishektotre/deep-mlp-neural-network-from-scratch) | `Deep Learning`, `Neural Networks`, `Backpropagation` | ✅ Completed |
@@ -103,4 +104,4 @@ python automation/runner.py --generate --execute --push
 python automation/runner.py --status
 ```
 
-*Last synchronized: `2026-10-14 01:16:00 UTC`*
+*Last synchronized: `2026-10-15 00:34:23 UTC`*
