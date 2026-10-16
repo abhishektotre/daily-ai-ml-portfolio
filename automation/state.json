@@ -1,10 +1,10 @@
 {
-    "current_day": 13,
-    "total_projects": 13,
-    "last_run_date": "2026-10-15T00:34:17.490703",
+    "current_day": 14,
+    "total_projects": 14,
+    "last_run_date": "2026-10-16T00:27:06.758949",
     "domain_counts": {
         "Data Science": 3,
-        "Data Analytics": 2,
+        "Data Analytics": 3,
         "Machine Learning": 2,
         "Deep Learning": 2,
         "Natural Language Processing": 2,
@@ -218,6 +218,22 @@
             ],
             "created_at": "2026-10-15T00:34:17.490712",
             "repo_url": "https://github.com/abhishektotre/clinical-survival-duration-analysis"
+        },
+        {
+            "day": 14,
+            "title": "E-Commerce Customer Transaction & Basket Value Analytics",
+            "domain": "Data Analytics",
+            "folder": "projects/Day_014_ECommerce_Customer_Transaction_Analytics",
+            "skills": [
+                "Data Analytics",
+                "Pareto Analysis",
+                "Basket Value",
+                "E-Commerce",
+                "Revenue Concentration",
+                "Seaborn"
+            ],
+            "created_at": "2026-10-16T00:27:06.758959",
+            "repo_url": "https://github.com/abhishektotre/ecommerce-customer-transaction-analytics"
         }
     ]
 }

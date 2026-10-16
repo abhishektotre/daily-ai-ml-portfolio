@@ -1,0 +1,8 @@
+{
+    "total_transactions": 5000,
+    "unique_customers": 881,
+    "gross_merchandise_value_usd": 867430.95,
+    "average_order_value_usd": 173.49,
+    "average_basket_item_count": 2.16,
+    "top_20_pct_customer_revenue_share": 68.26
+}
