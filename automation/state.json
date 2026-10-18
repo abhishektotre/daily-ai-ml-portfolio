@@ -1,12 +1,12 @@
 {
-    "current_day": 15,
-    "total_projects": 15,
-    "last_run_date": "2026-10-17T00:31:55.907087",
+    "current_day": 16,
+    "total_projects": 16,
+    "last_run_date": "2026-10-18T00:05:06.136009",
     "domain_counts": {
         "Data Science": 3,
         "Data Analytics": 3,
         "Machine Learning": 3,
-        "Deep Learning": 2,
+        "Deep Learning": 3,
         "Natural Language Processing": 2,
         "Artificial Intelligence": 2
     },
@@ -249,6 +249,22 @@
             ],
             "created_at": "2026-10-17T00:31:55.907098",
             "repo_url": "https://github.com/abhishektotre/ml-vehicle-residual-value-gradient-boosting"
+        },
+        {
+            "day": 16,
+            "title": "Deep Autoencoder for Unsupervised Anomaly Detection",
+            "domain": "Deep Learning",
+            "folder": "projects/Day_016_Deep_Autoencoder_Anomaly_Detection",
+            "skills": [
+                "Deep Learning",
+                "Autoencoder",
+                "Anomaly Detection",
+                "Reconstruction Error",
+                "Dimensionality Reduction",
+                "Scikit-Learn"
+            ],
+            "created_at": "2026-10-18T00:05:06.136020",
+            "repo_url": "https://github.com/abhishektotre/deep-autoencoder-anomaly-detection"
         }
     ]
 }

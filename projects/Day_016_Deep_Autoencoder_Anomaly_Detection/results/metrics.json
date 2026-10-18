@@ -1,0 +1,8 @@
+{
+    "reconstruction_threshold": 0.4758,
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1_score": 0.8571,
+    "total_anomalies_flagged": 120,
+    "true_anomalies_present": 90
+}
