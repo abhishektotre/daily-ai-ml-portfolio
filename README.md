@@ -1,7 +1,7 @@
 # 🧠 Daily AI, ML, Data Science & Analytics Portfolio
 
-[![Total Projects](https://img.shields.io/badge/Total%20Projects-16-blueviolet?style=for-the-badge&logo=github)](projects/)
-[![Current Streak](https://img.shields.io/badge/Daily%20Streak-16%20Days-orange?style=for-the-badge&logo=fire)](projects/)
+[![Total Projects](https://img.shields.io/badge/Total%20Projects-17-blueviolet?style=for-the-badge&logo=github)](projects/)
+[![Current Streak](https://img.shields.io/badge/Daily%20Streak-17%20Days-orange?style=for-the-badge&logo=fire)](projects/)
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](https://python.org)
 [![Daily Automation](https://img.shields.io/badge/Automation-Active%20%28GitHub%20Actions%29-brightgreen?style=for-the-badge&logo=githubactions)](.github/workflows/daily-project.yml)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)](LICENSE)
@@ -16,7 +16,7 @@
 | ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-green) | **3** projects |
 | ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-orange) | **3** projects |
 | ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-red) | **3** projects |
-| ![Natural Language Processing](https://img.shields.io/badge/NLP-purple) | **2** projects |
+| ![Natural Language Processing](https://img.shields.io/badge/NLP-purple) | **3** projects |
 | ![Artificial Intelligence](https://img.shields.io/badge/AI%20%26%20Agents-yellow) | **2** projects |
 
 ---
@@ -25,6 +25,7 @@
 
 | Day | Domain | Project & Architecture | Core Tools / Techniques | Status |
 | :---: | :---: | :--- | :--- | :---: |
+| **Day 017** | ![Natural Language Processing](https://img.shields.io/badge/NLP-purple) | [Extractive Document Summarization with TextRank Algorithm](https://github.com/abhishektotre/extractive-text-summarization-textrank) | `NLP`, `TextRank`, `PageRank` | ✅ Completed |
 | **Day 016** | ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-red) | [Deep Autoencoder for Unsupervised Anomaly Detection](https://github.com/abhishektotre/deep-autoencoder-anomaly-detection) | `Deep Learning`, `Autoencoder`, `Anomaly Detection` | ✅ Completed |
 | **Day 015** | ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-orange) | [Automotive Residual Value Depreciation Engine](https://github.com/abhishektotre/ml-vehicle-residual-value-gradient-boosting) | `Machine Learning`, `Predictive Analytics`, `Machine Learning` | ✅ Completed |
 | **Day 014** | ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-green) | [E-Commerce Customer Transaction & Basket Value Analytics](https://github.com/abhishektotre/ecommerce-customer-transaction-analytics) | `Data Analytics`, `Pareto Analysis`, `Basket Value` | ✅ Completed |
@@ -107,4 +108,4 @@ python automation/runner.py --generate --execute --push
 python automation/runner.py --status
 ```
 
-*Last synchronized: `2026-10-18 00:05:11 UTC`*
+*Last synchronized: `2026-10-19 00:14:05 UTC`*

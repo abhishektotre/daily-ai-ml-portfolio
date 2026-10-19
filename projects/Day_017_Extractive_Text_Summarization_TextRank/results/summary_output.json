@@ -1,0 +1,10 @@
+{
+    "original_sentence_count": 10,
+    "summary_sentence_count": 3,
+    "compression_ratio": 0.3,
+    "key_extracted_sentences": [
+        "Organizations across finance, healthcare, and retail are actively deploying automated machine learning pipelines to streamline operational workflows.",
+        "Furthermore, data drift and concept shift present ongoing maintenance hurdles, demanding continuous telemetry monitoring and automated retraining architectures.",
+        "Consequently, organizations must invest heavily in mature MLOps practices, integrating automated testing, version control, and model registries into their core software delivery pipelines."
+    ]
+}
