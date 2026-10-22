@@ -1,10 +1,10 @@
 {
-    "current_day": 19,
-    "total_projects": 19,
-    "last_run_date": "2026-10-21T00:39:53.430419",
+    "current_day": 20,
+    "total_projects": 20,
+    "last_run_date": "2026-10-22T00:42:57.943672",
     "domain_counts": {
         "Data Science": 4,
-        "Data Analytics": 3,
+        "Data Analytics": 4,
         "Machine Learning": 3,
         "Deep Learning": 3,
         "Natural Language Processing": 3,
@@ -313,6 +313,22 @@
             ],
             "created_at": "2026-10-21T00:39:53.430431",
             "repo_url": "https://github.com/abhishektotre/credit-risk-assessment-engine"
+        },
+        {
+            "day": 20,
+            "title": "E-Commerce Customer RFM Segmentation & Value Matrix",
+            "domain": "Data Analytics",
+            "folder": "projects/Day_020_Customer_RFM_Segmentation_Matrix",
+            "skills": [
+                "Data Analytics",
+                "RFM Segmentation",
+                "Customer Lifetime Value",
+                "K-Means",
+                "Clustering",
+                "Visualizations"
+            ],
+            "created_at": "2026-10-22T00:42:57.943682",
+            "repo_url": "https://github.com/abhishektotre/customer-rfm-segmentation-matrix"
         }
     ]
 }
