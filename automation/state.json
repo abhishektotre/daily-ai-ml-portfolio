@@ -1,9 +1,9 @@
 {
-    "current_day": 24,
-    "total_projects": 24,
-    "last_run_date": "2026-10-26T00:25:34.390873",
+    "current_day": 25,
+    "total_projects": 25,
+    "last_run_date": "2026-10-27T00:04:12.380902",
     "domain_counts": {
-        "Data Science": 4,
+        "Data Science": 5,
         "Data Analytics": 4,
         "Machine Learning": 4,
         "Deep Learning": 4,
@@ -389,6 +389,21 @@
             ],
             "created_at": "2026-10-26T00:25:34.390885",
             "repo_url": "https://github.com/abhishektotre/ds-patient-mortality-risk-stratification-v2"
+        },
+        {
+            "day": 25,
+            "title": "Supply Chain Lead-Time & Disruption Predictor (Advanced Iteration 2)",
+            "domain": "Data Science",
+            "folder": "projects/Day_025_DS_Supply_Chain_Disruption_Predictor_v2",
+            "skills": [
+                "Data Science",
+                "Predictive Analytics",
+                "Machine Learning",
+                "Data Pipeline",
+                "Python"
+            ],
+            "created_at": "2026-10-27T00:04:12.380915",
+            "repo_url": "https://github.com/abhishektotre/ds-supply-chain-disruption-predictor-v2"
         }
     ]
 }
