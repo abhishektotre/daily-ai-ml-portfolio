@@ -1,10 +1,10 @@
 {
-    "current_day": 25,
-    "total_projects": 25,
-    "last_run_date": "2026-10-27T00:04:12.380902",
+    "current_day": 26,
+    "total_projects": 26,
+    "last_run_date": "2026-10-28T01:26:26.806974",
     "domain_counts": {
         "Data Science": 5,
-        "Data Analytics": 4,
+        "Data Analytics": 5,
         "Machine Learning": 4,
         "Deep Learning": 4,
         "Natural Language Processing": 4,
@@ -404,6 +404,21 @@
             ],
             "created_at": "2026-10-27T00:04:12.380915",
             "repo_url": "https://github.com/abhishektotre/ds-supply-chain-disruption-predictor-v2"
+        },
+        {
+            "day": 26,
+            "title": "Digital Marketing Multi-Touch Attribution Modeling (Advanced Iteration 2)",
+            "domain": "Data Analytics",
+            "folder": "projects/Day_026_DA_Marketing_Multi_Touch_Attribution_v2",
+            "skills": [
+                "Data Analytics",
+                "Predictive Analytics",
+                "Machine Learning",
+                "Data Pipeline",
+                "Python"
+            ],
+            "created_at": "2026-10-28T01:26:26.806985",
+            "repo_url": "https://github.com/abhishektotre/da-marketing-multi-touch-attribution-v2"
         }
     ]
 }
