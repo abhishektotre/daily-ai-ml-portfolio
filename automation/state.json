@@ -1,11 +1,11 @@
 {
-    "current_day": 26,
-    "total_projects": 26,
-    "last_run_date": "2026-10-28T01:26:26.806974",
+    "current_day": 27,
+    "total_projects": 27,
+    "last_run_date": "2026-10-29T00:22:47.598522",
     "domain_counts": {
         "Data Science": 5,
         "Data Analytics": 5,
-        "Machine Learning": 4,
+        "Machine Learning": 5,
         "Deep Learning": 4,
         "Natural Language Processing": 4,
         "Artificial Intelligence": 4
@@ -419,6 +419,21 @@
             ],
             "created_at": "2026-10-28T01:26:26.806985",
             "repo_url": "https://github.com/abhishektotre/da-marketing-multi-touch-attribution-v2"
+        },
+        {
+            "day": 27,
+            "title": "Industrial IoT Equipment Failure & Remaining Useful Life (Advanced Iteration 2)",
+            "domain": "Machine Learning",
+            "folder": "projects/Day_027_ML_Industrial_IoT_Predictive_Maintenance_v2",
+            "skills": [
+                "Machine Learning",
+                "Predictive Analytics",
+                "Machine Learning",
+                "Data Pipeline",
+                "Python"
+            ],
+            "created_at": "2026-10-29T00:22:47.598536",
+            "repo_url": "https://github.com/abhishektotre/ml-industrial-iot-predictive-maintenance-v2"
         }
     ]
 }
