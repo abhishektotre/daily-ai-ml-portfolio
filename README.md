@@ -1,7 +1,7 @@
 # 🧠 Daily AI, ML, Data Science & Analytics Portfolio
 
-[![Total Projects](https://img.shields.io/badge/Total%20Projects-27-blueviolet?style=for-the-badge&logo=github)](projects/)
-[![Current Streak](https://img.shields.io/badge/Daily%20Streak-27%20Days-orange?style=for-the-badge&logo=fire)](projects/)
+[![Total Projects](https://img.shields.io/badge/Total%20Projects-28-blueviolet?style=for-the-badge&logo=github)](projects/)
+[![Current Streak](https://img.shields.io/badge/Daily%20Streak-28%20Days-orange?style=for-the-badge&logo=fire)](projects/)
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](https://python.org)
 [![Daily Automation](https://img.shields.io/badge/Automation-Active%20%28GitHub%20Actions%29-brightgreen?style=for-the-badge&logo=githubactions)](.github/workflows/daily-project.yml)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)](LICENSE)
@@ -15,7 +15,7 @@
 | ![Data Science](https://img.shields.io/badge/Data%20Science-blue) | **5** projects |
 | ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-green) | **5** projects |
 | ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-orange) | **5** projects |
-| ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-red) | **4** projects |
+| ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-red) | **5** projects |
 | ![Natural Language Processing](https://img.shields.io/badge/NLP-purple) | **4** projects |
 | ![Artificial Intelligence](https://img.shields.io/badge/AI%20%26%20Agents-yellow) | **4** projects |
 
@@ -25,6 +25,7 @@
 
 | Day | Domain | Project & Architecture | Core Tools / Techniques | Status |
 | :---: | :---: | :--- | :--- | :---: |
+| **Day 028** | ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-red) | [LSTM Recurrent Network for Multivariate Financial Series (Advanced Iteration 2)](https://github.com/abhishektotre/dl-lstm-recurrent-stock-trend-forecaster-v2) | `Deep Learning`, `Predictive Analytics`, `Machine Learning` | ✅ Completed |
 | **Day 027** | ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-orange) | [Industrial IoT Equipment Failure & Remaining Useful Life (Advanced Iteration 2)](https://github.com/abhishektotre/ml-industrial-iot-predictive-maintenance-v2) | `Machine Learning`, `Predictive Analytics`, `Machine Learning` | ✅ Completed |
 | **Day 026** | ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-green) | [Digital Marketing Multi-Touch Attribution Modeling (Advanced Iteration 2)](https://github.com/abhishektotre/da-marketing-multi-touch-attribution-v2) | `Data Analytics`, `Predictive Analytics`, `Machine Learning` | ✅ Completed |
 | **Day 025** | ![Data Science](https://img.shields.io/badge/Data%20Science-blue) | [Supply Chain Lead-Time & Disruption Predictor (Advanced Iteration 2)](https://github.com/abhishektotre/ds-supply-chain-disruption-predictor-v2) | `Data Science`, `Predictive Analytics`, `Machine Learning` | ✅ Completed |
@@ -118,4 +119,4 @@ python automation/runner.py --generate --execute --push
 python automation/runner.py --status
 ```
 
-*Last synchronized: `2026-10-29 00:22:52 UTC`*
+*Last synchronized: `2026-10-30 00:18:42 UTC`*
