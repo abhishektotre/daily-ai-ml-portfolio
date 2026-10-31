@@ -1,13 +1,13 @@
 {
-    "current_day": 28,
-    "total_projects": 28,
-    "last_run_date": "2026-10-30T00:18:37.491228",
+    "current_day": 29,
+    "total_projects": 29,
+    "last_run_date": "2026-10-31T00:02:12.479403",
     "domain_counts": {
         "Data Science": 5,
         "Data Analytics": 5,
         "Machine Learning": 5,
         "Deep Learning": 5,
-        "Natural Language Processing": 4,
+        "Natural Language Processing": 5,
         "Artificial Intelligence": 4
     },
     "projects_history": [
@@ -449,6 +449,21 @@
             ],
             "created_at": "2026-10-30T00:18:37.491239",
             "repo_url": "https://github.com/abhishektotre/dl-lstm-recurrent-stock-trend-forecaster-v2"
+        },
+        {
+            "day": 29,
+            "title": "Customer Lifetime Value & Survival Duration Modeling (Advanced Iteration 2)",
+            "domain": "Natural Language Processing",
+            "folder": "projects/Day_029_DS_Customer_LTV_Survival_Analysis_v2",
+            "skills": [
+                "Data Science",
+                "Predictive Analytics",
+                "Machine Learning",
+                "Data Pipeline",
+                "Python"
+            ],
+            "created_at": "2026-10-31T00:02:12.479415",
+            "repo_url": "https://github.com/abhishektotre/ds-customer-ltv-survival-analysis-v2"
         }
     ]
 }
