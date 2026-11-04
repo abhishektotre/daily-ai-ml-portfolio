@@ -1,11 +1,11 @@
 {
-    "current_day": 32,
-    "total_projects": 32,
-    "last_run_date": "2026-11-03T02:37:53.615847",
+    "current_day": 33,
+    "total_projects": 33,
+    "last_run_date": "2026-11-04T00:52:59.607788",
     "domain_counts": {
         "Data Science": 6,
         "Data Analytics": 6,
-        "Machine Learning": 5,
+        "Machine Learning": 6,
         "Deep Learning": 5,
         "Natural Language Processing": 5,
         "Artificial Intelligence": 5
@@ -508,6 +508,20 @@
                 "Python"
             ],
             "created_at": "2026-11-03T02:37:53.615858"
+        },
+        {
+            "day": 33,
+            "title": "Network Intrusion & Anomaly Classification with Isolation Forest (Advanced Iteration 2)",
+            "domain": "Machine Learning",
+            "folder": "projects/Day_033_ML_Cybersecurity_Network_Intrusion_Detection_v2",
+            "skills": [
+                "Machine Learning",
+                "Predictive Analytics",
+                "Machine Learning",
+                "Data Pipeline",
+                "Python"
+            ],
+            "created_at": "2026-11-04T00:52:59.607800"
         }
     ]
 }
