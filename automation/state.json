@@ -507,7 +507,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-03T02:37:53.615858"
+            "created_at": "2026-11-03T02:37:53.615858",
+            "repo_url": "https://github.com/abhishektotre/da-product-engagement-stickiness-kpis-v2"
         },
         {
             "day": 33,
@@ -521,7 +522,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-04T00:52:59.607800"
+            "created_at": "2026-11-04T00:52:59.607800",
+            "repo_url": "https://github.com/abhishektotre/ml-cybersecurity-network-intrusion-detection-v2"
         },
         {
             "day": 34,
@@ -535,7 +537,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-05T01:02:41.884927"
+            "created_at": "2026-11-05T01:02:41.884927",
+            "repo_url": "https://github.com/abhishektotre/dl-siamese-metric-verification-network-v2"
         },
         {
             "day": 35,
@@ -549,7 +552,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-06T01:06:40.417711"
+            "created_at": "2026-11-06T01:06:40.417711",
+            "repo_url": "https://github.com/abhishektotre/ds-supply-chain-disruption-predictor-v3"
         },
         {
             "day": 36,
@@ -563,7 +567,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-07T00:18:02.828772"
+            "created_at": "2026-11-07T00:18:02.828772",
+            "repo_url": "https://github.com/abhishektotre/ds-customer-ltv-survival-analysis-v3"
         },
         {
             "day": 37,
@@ -577,7 +582,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-08T01:28:35.751268"
+            "created_at": "2026-11-08T01:28:35.751268",
+            "repo_url": "https://github.com/abhishektotre/ds-telecom-network-congestion-forecasting-v3"
         },
         {
             "day": 38,
@@ -591,7 +597,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-09T01:45:26.642296"
+            "created_at": "2026-11-09T01:45:26.642296",
+            "repo_url": "https://github.com/abhishektotre/da-retail-basket-association-rules-v2"
         },
         {
             "day": 39,
@@ -605,7 +612,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-10T02:54:51.759557"
+            "created_at": "2026-11-10T02:54:51.759557",
+            "repo_url": "https://github.com/abhishektotre/ml-vehicle-residual-value-gradient-boosting-v2"
         },
         {
             "day": 40,
@@ -619,7 +627,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-11T00:53:13.237449"
+            "created_at": "2026-11-11T00:53:13.237449",
+            "repo_url": "https://github.com/abhishektotre/dl-convolutional-edge-pattern-recognizer-v2"
         },
         {
             "day": 41,
@@ -633,7 +642,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-12T02:00:08.649969"
+            "created_at": "2026-11-12T02:00:08.649969",
+            "repo_url": "https://github.com/abhishektotre/ds-patient-mortality-risk-stratification-v4"
         },
         {
             "day": 42,
