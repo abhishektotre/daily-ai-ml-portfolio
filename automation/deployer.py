@@ -103,6 +103,7 @@ def deploy_project_as_repo(project_dir: Path, title: str = "", summary: str = ""
     print(f" 📁 Local Directory: {project_dir}")
     print("=" * 65)
 
+    git_dir = project_dir / ".git"
     success = False
     try:
         # 1. Ensure .gitignore and LICENSE exist inside the project
