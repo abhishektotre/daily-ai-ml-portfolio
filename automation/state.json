@@ -657,7 +657,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-13T01:28:06.309315"
+            "created_at": "2026-11-13T01:28:06.309315",
+            "repo_url": "https://github.com/abhishektotre/ds-supply-chain-disruption-predictor-v4"
         },
         {
             "day": 43,
@@ -671,7 +672,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-14T01:00:59.734232"
+            "created_at": "2026-11-14T01:00:59.734232",
+            "repo_url": "https://github.com/abhishektotre/ds-customer-ltv-survival-analysis-v4"
         },
         {
             "day": 44,
@@ -685,7 +687,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-15T00:15:09.513900"
+            "created_at": "2026-11-15T00:15:09.513900",
+            "repo_url": "https://github.com/abhishektotre/da-subscription-pricing-elasticity-study-v2"
         },
         {
             "day": 45,
@@ -699,7 +702,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-16T00:21:02.649122"
+            "created_at": "2026-11-16T00:21:02.649122",
+            "repo_url": "https://github.com/abhishektotre/ml-multiclass-genomic-disease-diagnostics-v2"
         },
         {
             "day": 46,
@@ -713,7 +717,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-17T03:08:34.087908"
+            "created_at": "2026-11-17T03:08:34.087908",
+            "repo_url": "https://github.com/abhishektotre/dl-denoising-autoencoder-signal-reconstruction-v2"
         },
         {
             "day": 47,
@@ -727,7 +732,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-18T02:35:38.543669"
+            "created_at": "2026-11-18T02:35:38.543669",
+            "repo_url": "https://github.com/abhishektotre/ds-telecom-network-congestion-forecasting-v4"
         },
         {
             "day": 48,
@@ -741,7 +747,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-19T01:59:35.782329"
+            "created_at": "2026-11-19T01:59:35.782329",
+            "repo_url": "https://github.com/abhishektotre/ds-patient-mortality-risk-stratification-v5"
         },
         {
             "day": 49,
@@ -755,7 +762,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-20T01:53:54.553405"
+            "created_at": "2026-11-20T01:53:54.553405",
+            "repo_url": "https://github.com/abhishektotre/ds-supply-chain-disruption-predictor-v5"
         },
         {
             "day": 50,
@@ -769,7 +777,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-21T17:12:59.438759"
+            "created_at": "2026-11-21T17:12:59.438759",
+            "repo_url": "https://github.com/abhishektotre/da-marketing-multi-touch-attribution-v3"
         },
         {
             "day": 51,
