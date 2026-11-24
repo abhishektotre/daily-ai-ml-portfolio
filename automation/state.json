@@ -792,7 +792,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-22T10:41:36.633241"
+            "created_at": "2026-11-22T10:41:36.633241",
+            "repo_url": "https://github.com/abhishektotre/ml-industrial-iot-predictive-maintenance-v3"
         },
         {
             "day": 52,
@@ -806,7 +807,8 @@
                 "Data Pipeline",
                 "Python"
             ],
-            "created_at": "2026-11-24T21:03:23.469904"
+            "created_at": "2026-11-24T21:03:23.469904",
+            "repo_url": "https://github.com/abhishektotre/dl-lstm-recurrent-stock-trend-forecaster-v3"
         }
     ]
 }

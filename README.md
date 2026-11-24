@@ -25,8 +25,8 @@
 
 | Day | Domain | Project & Architecture | Core Tools / Techniques | Status |
 | :---: | :---: | :--- | :--- | :---: |
-| **Day 052** | ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-red) | [LSTM Recurrent Network for Multivariate Financial Series (Advanced Iteration 3)](projects/Day_052_DL_LSTM_Recurrent_Stock_Trend_Forecaster_v3) | `Deep Learning`, `Predictive Analytics`, `Machine Learning` | ✅ Completed |
-| **Day 051** | ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-orange) | [Industrial IoT Equipment Failure & Remaining Useful Life (Advanced Iteration 3)](projects/Day_051_ML_Industrial_IoT_Predictive_Maintenance_v3) | `Machine Learning`, `Predictive Analytics`, `Machine Learning` | ✅ Completed |
+| **Day 052** | ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-red) | [LSTM Recurrent Network for Multivariate Financial Series (Advanced Iteration 3)](https://github.com/abhishektotre/dl-lstm-recurrent-stock-trend-forecaster-v3) | `Deep Learning`, `Predictive Analytics`, `Machine Learning` | ✅ Completed |
+| **Day 051** | ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-orange) | [Industrial IoT Equipment Failure & Remaining Useful Life (Advanced Iteration 3)](https://github.com/abhishektotre/ml-industrial-iot-predictive-maintenance-v3) | `Machine Learning`, `Predictive Analytics`, `Machine Learning` | ✅ Completed |
 | **Day 050** | ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-green) | [Digital Marketing Multi-Touch Attribution Modeling (Advanced Iteration 3)](https://github.com/abhishektotre/da-marketing-multi-touch-attribution-v3) | `Data Analytics`, `Predictive Analytics`, `Machine Learning` | ✅ Completed |
 | **Day 049** | ![Data Science](https://img.shields.io/badge/Data%20Science-blue) | [Supply Chain Lead-Time & Disruption Predictor (Advanced Iteration 5)](https://github.com/abhishektotre/ds-supply-chain-disruption-predictor-v5) | `Data Science`, `Predictive Analytics`, `Machine Learning` | ✅ Completed |
 | **Day 048** | ![Artificial Intelligence](https://img.shields.io/badge/AI%20%26%20Agents-yellow) | [Patient Mortality Risk Stratification & Clinical Biomarkers (Advanced Iteration 5)](https://github.com/abhishektotre/ds-patient-mortality-risk-stratification-v5) | `Data Science`, `Predictive Analytics`, `Machine Learning` | ✅ Completed |
@@ -143,4 +143,4 @@ python automation/runner.py --generate --execute --push
 python automation/runner.py --status
 ```
 
-*Last synchronized: `2026-11-24 16:16:14 UTC`*
+*Last synchronized: `2026-11-24 18:04:38 UTC`*
