@@ -67,7 +67,9 @@ def create_github_repo(repo_name: str, description: str, token: str, username: s
                     return True, f"Repository https://github.com/{username}/{repo_name} already exists. Proceeding to push."
                 return False, f"GitHub API error (422): {response.text}"
             elif response.status_code == 403:
-                # Check for secondary rate limit
+                # If secondary rate limit is active, don't sleep in a loop -- return immediately so we don't spam GitHub
+                if "secondary rate limit" in response.text.lower():
+                    return False, "GitHub secondary rate limit active (content creation temporarily blocked). Please wait for cooldown."
                 retry_after = int(response.headers.get("Retry-After", 45))
                 print(f"       ⚠️ GitHub rate limit hit (403). Waiting {retry_after}s before retry (attempt {attempt+1}/{max_retries})...")
                 time.sleep(retry_after)
@@ -146,6 +148,9 @@ def deploy_project_as_repo(project_dir: Path, title: str = "", summary: str = ""
         print(" [3/4] Ensuring GitHub remote repository exists...")
         api_success, api_msg = create_github_repo(repo_name, description, token, username, private=is_private)
         print(f"       {api_msg}")
+
+        if not api_success:
+            return False, api_msg
 
         # 5. Configure Remote and Push
         print(" [4/4] Pushing to GitHub remote repository...")
@@ -229,6 +234,9 @@ def deploy_all_projects(only_missing: bool = True):
                 with open(state_file, "w") as f:
                     json.dump(state, f, indent=4)
         results.append((p_dir.name, ok, url))
+        if not ok and "secondary rate limit" in str(url).lower():
+            print(" 🛑 Secondary rate limit detected on GitHub API; pausing batch creation to allow cooldown.")
+            break
         if idx < len(subdirs) - 1:
             print(f" Pausing 15s to stay well within GitHub API creation limits...")
             time.sleep(15)
